@@ -1,3 +1,8 @@
 export default function () {
-  return <div>首頁</div>;
+  return (
+    <div>
+      <div className="h-[300px] bg-yellow-100" />
+      首頁
+    </div>
+  );
 }
