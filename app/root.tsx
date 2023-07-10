@@ -2,6 +2,7 @@ import { cssBundleHref } from "@remix-run/css-bundle";
 import type { LinksFunction, LoaderArgs } from "@remix-run/node";
 import { json } from "@remix-run/node";
 import {
+  Link,
   Links,
   LiveReload,
   Meta,
@@ -32,7 +33,30 @@ export default function App() {
         <Links />
       </head>
       <body className="h-full">
+        <header className="container py-5 text-right">
+          <ul className="[&>*]:mx-2 [&>*]:inline-block">
+            <li>
+              <Link to="/">首頁</Link>
+            </li>
+            <li>
+              <Link to="/plan">計畫自由選</Link>
+            </li>
+            <li>
+              <Link to="/choice">選擇障礙專區</Link>
+            </li>
+            <li>
+              <Link to="/curing">CP 值專區</Link>
+            </li>
+            <li>
+              <Link to="/assessment">專業評估</Link>
+            </li>
+            <li>
+              <Link to="/contact">關於我們</Link>
+            </li>
+          </ul>
+        </header>
         <Outlet />
+        <footer className="container py-5">footer</footer>
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
