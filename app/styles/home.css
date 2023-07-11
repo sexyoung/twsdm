@@ -1,3 +1,4 @@
 .hero {
   background-image: url(~/images/home-hero.png);
+  @apply flex flex-col items-center justify-center gap-3 lg:gap-9;
 }

@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .hero {
+    @apply relative h-[414px] bg-slate-400 bg-cover bg-center text-white before:absolute before:inset-0 before:bg-black before:opacity-25 before:content-[''] md:h-[480px] lg:h-[655px];
+  }
+
+  .hero > * {
+    @apply relative;
+  }
+}

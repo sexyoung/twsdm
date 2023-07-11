@@ -8,7 +8,7 @@ export const links: LinksFunction = () => [
 export default function () {
   return (
     <div>
-      <div className="hero flex h-[414px] flex-col items-center justify-center gap-3 bg-slate-400 bg-cover bg-center text-white md:h-[480px] lg:h-[655px] lg:gap-9">
+      <div className="hero">
         <div className="text-2xl md:text-4xl lg:text-6xl">哈囉！歡迎來到</div>
         <div className="text-2xl md:text-4xl lg:text-6xl">
           子宮內膜異位症大小事
