@@ -2,7 +2,9 @@ import { Link } from "@remix-run/react";
 
 export default function Links() {
   const handleClick = () => {
-    document.getElementById("menu-toggle")?.click();
+    if ((document.getElementById("menu-toggle") as HTMLInputElement).checked) {
+      document.getElementById("menu-toggle")?.click();
+    }
   };
   return (
     <>
