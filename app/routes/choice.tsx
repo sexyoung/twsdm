@@ -14,8 +14,8 @@ export default function () {
       <div className="choice-banner bg-slate-400">
         <div className="banner-text">有選擇障礙嗎？</div>
       </div>
-      <div className="choice-content">
-        <div>
+      <div className="choice-all-content">
+        <div className="choice-content">
           <div className="choice-title">
             即使是專業的醫師，也無法在短時間傳達所有治療的效益、時效性及副作用
           </div>
@@ -26,12 +26,30 @@ export default function () {
             在進一步的抽血報告及影像檢查出爐前，若沒有禁忌症，您可以先嘗試以下這些方案並在下次回診前與醫師討論您的使用心得。
           </div>
         </div>
-
-        <div className="icon-container">
-          <div className="choice-icon">
-            123
-            {/* <FontAwesomeIcon icon={["fas", "pills"]} /> */}
-            456
+        <div className="icons-container">
+          <div className="icon-container" onClick={() => {}}>
+            <div className="choice-icon">
+              {/* <FontAwesomeIcon icon={["fas", "pills"]} /> */}
+            </div>
+            <div className="choice-icon-text">症狀控制藥物</div>
+          </div>
+          <div className="icon-container" onClick={() => {}}>
+            <div className="choice-icon">
+              {/* <FontAwesomeIcon icon={["fas", "pills"]} /> */}
+            </div>
+            <div className="choice-icon-text">口服賀爾蒙</div>
+          </div>
+          <div className="icon-container" onClick={() => {}}>
+            <div className="choice-icon">
+              {/* <FontAwesomeIcon icon={["fas", "pills"]} /> */}
+            </div>
+            <div className="choice-icon-text">性腺激素釋放素促進劑</div>
+          </div>
+          <div className="icon-container" onClick={() => {}}>
+            <div className="choice-icon">
+              {/* <FontAwesomeIcon icon={["fas", "pills"]} /> */}
+            </div>
+            <div className="choice-icon-text">手術</div>
           </div>
         </div>
       </div>
