@@ -5,7 +5,7 @@ export const meta: V2_MetaFunction = () => [{ title: "計畫自由選" }];
 export default function () {
   return (
     <div>
-      <div className="h-[300px] bg-yellow-100" />
+      <div className="h-[414px] bg-slate-400 bg-cover bg-center text-white md:h-[480px] lg:h-[655px]" />
       計畫自由選
     </div>
   );
