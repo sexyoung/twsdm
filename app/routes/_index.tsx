@@ -9,13 +9,9 @@ export default function () {
   return (
     <div>
       <div className="hero">
-        <div className="text-2xl md:text-4xl lg:text-6xl">哈囉！歡迎來到</div>
-        <div className="text-2xl md:text-4xl lg:text-6xl">
-          子宮內膜異位症大小事
-        </div>
-        <div className="text-lg md:text-lg lg:text-2xl ">
-          您的線上微專業諮詢
-        </div>
+        <div className="text">哈囉！歡迎來到</div>
+        <div className="text">子宮內膜異位症大小事</div>
+        <div className="text-lg md:text-lg lg:text-2xl">您的線上微專業諮詢</div>
       </div>
       <div className="p-6">
         首頁 Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci

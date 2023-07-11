@@ -23,10 +23,7 @@ export default function Header() {
           type="checkbox"
           id="menu-toggle"
         />
-        <ul
-          id="menu"
-          className="mx-auto hidden w-full text-center md:inline-block md:w-auto [&>*]:mx-2 [&>*]:text-white md:[&>*]:inline"
-        >
+        <ul id="menu" className="header-menu">
           <Links />
         </ul>
       </nav>
