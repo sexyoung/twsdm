@@ -6,3 +6,58 @@
 .hero > .text {
   @apply text-2xl md:text-4xl lg:text-6xl;
 }
+
+.first-title {
+  @apply text-center
+    text-xl
+    font-medium
+    after:mx-auto
+    after:mt-6
+    after:block
+    after:h-[3px]
+    after:w-28
+    after:bg-[#ffd936]
+    after:content-['']
+    md:text-4xl;
+}
+
+.link-btn {
+  @apply rounded bg-[#ffd936] px-4 py-2;
+}
+
+.section {
+  @apply px-10 py-24;
+}
+
+.img {
+  @apply bg-transparent bg-center bg-no-repeat;
+}
+
+.first-section .img {
+  @apply h-40 bg-contain;
+}
+
+.first-section > *:nth-of-type(1) .img {
+  background-image: url(~/images/4-3.webp);
+}
+
+.first-section > *:nth-of-type(2) .img {
+  background-image: url(~/images/5-1.webp);
+}
+
+.first-section > *:nth-of-type(3) .img {
+  background-image: url(~/images/6-1.webp);
+}
+
+.first-section .title {
+  @apply mt-4 text-xl;
+}
+
+.first-section .desc {
+  @apply mt-2 font-light;
+}
+
+.emoji {
+  @apply mb-12 h-40 bg-cover bg-top md:h-60 md:bg-contain;
+  background-image: url(~/images/emoji.webp);
+}

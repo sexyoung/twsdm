@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { cssBundleHref } from "@remix-run/css-bundle";
 import type { LinksFunction, LoaderArgs } from "@remix-run/node";
 import { json } from "@remix-run/node";
@@ -10,18 +11,20 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
+/** @deprecated */
 import { getUser } from "~/session.server";
+
 import stylesheet from "~/tailwind.css";
 
 import Header from "./components/header";
 import Footer from "./components/footer";
-import { useEffect, useState } from "react";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
 ];
 
+/** @deprecated */
 export const loader = async ({ request }: LoaderArgs) => {
   return json({ user: await getUser(request) });
 };
