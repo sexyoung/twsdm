@@ -11,7 +11,7 @@ export default function Header() {
         </Link>
         <label htmlFor="menu-toggle" className="pointer-cursor block md:hidden">
           <svg
-            className="fill-current text-gray-900"
+            className="cursor-pointer fill-current text-white"
             xmlns="http://www.w3.org/2000/svg"
             width="20"
             height="20"

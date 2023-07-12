@@ -1,0 +1,4 @@
+.hero {
+  background-image: url(~/images/contact-bg.webp);
+  @apply flex flex-col items-center justify-center gap-3 lg:gap-9;
+}

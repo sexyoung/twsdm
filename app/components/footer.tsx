@@ -3,7 +3,7 @@ import Links from "./links";
 
 export default function Footer() {
   return (
-    <footer className="container mx-auto py-5 text-center lg:flex lg:items-start lg:items-center lg:gap-10 lg:text-left">
+    <footer className="container mx-auto py-5 text-center text-[#536942] lg:flex lg:items-start lg:items-center lg:gap-10 lg:text-left">
       <img
         src={logo}
         className="mx-auto block h-[auto] w-[120px] lg:mr-5 lg:inline-block"
