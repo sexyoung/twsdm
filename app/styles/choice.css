@@ -38,25 +38,105 @@
   padding-bottom: 60px;
 }
 
-.choice-img1 {
+.choice-img-container {
   width: 100%;
-  height: 300px;
+  padding: 10px;
+}
+
+.choice-img {
+  width: 100%;
+  aspect-ratio: 5 / 4;
   background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.img1 {
   background-image: url(~/images/choice_1-3.webp);
 }
 
-.icons-container {
+.img2 {
+  background-image: url(~/images/choice_2-3.webp);
+}
+
+.img3 {
+  background-image: url(~/images/choice_3-3.webp);
+}
+
+.img4 {
+  background-image: url(~/images/choice_4-2.webp);
+}
+
+.img-title {
+  opacity: 90%;
+  padding: 0 20px;
+  font-size: 70px;
+  width: fit-content;
+  border-radius: 10px;
+}
+
+.img-text {
+  opacity: 90%;
+
+  font-size: 36px;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.img-box {
+  bottom: 20%;
+  display: flex;
+  width: 810px;
+  align-items: end;
+  position: absolute;
+  flex-direction: column;
+}
+
+.img1-box {
+  right: 10px;
+}
+
+.img1-title {
+  color: #ffffff;
+  background-color: #c3975f;
+}
+
+.img1-text {
+  color: #c3975f;
+  background-color: #fbf7ee;
+}
+
+.img2-box {
+  left: 10px;
+}
+
+.img2-title {
+  color: #ffffff;
+  background-color: #e82012;
+}
+
+.img2-text {
+  color: #6e5b44;
+  background-color: #f3f2ea;
+}
+
+.img .icons-container {
   width: 370px;
 }
 
 .icon-container {
   display: inline-block;
+  vertical-align: top;
   width: 50%;
 }
 
 .choice-icon {
   width: 80px;
   height: 80px;
+  display: flex;
+  font-size: 40px;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   margin: 42px auto 15px;
   background-color: #fff;
@@ -64,7 +144,7 @@
 
 .choice-icon-text {
   color: #536942;
-  font-size: 0.75rem;
+  font-size: 1rem;
   text-align: center;
 }
 
@@ -90,6 +170,17 @@
   .banner-text {
     font-size: 1.5rem;
   }
+  .img-box {
+    bottom: 10%;
+    width: 90%;
+  }
+  .img-text {
+    font-size: 30px;
+  }
+  .img-title {
+    font-size: 60px;
+    border-radius: 6px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -98,6 +189,12 @@
   }
   .icon-container {
     width: 50%;
+  }
+  .img-text {
+    font-size: 20px;
+  }
+  .img-title {
+    font-size: 44px;
   }
 }
 
@@ -111,5 +208,24 @@
   }
   .choice-text {
     padding-bottom: 20px;
+  }
+  .img-text {
+    width: 100%;
+    font-size: 18px;
+  }
+  .img-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 375px) {
+  .img-box {
+    bottom: 6px;
+  }
+  .img-text {
+    font-size: 14px;
+  }
+  .img-title {
+    font-size: 20px;
   }
 }
