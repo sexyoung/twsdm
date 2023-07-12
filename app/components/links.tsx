@@ -4,6 +4,9 @@ export default function Links() {
   const handleClick = () => {
     if ((document.getElementById("menu-toggle") as HTMLInputElement).checked) {
       document.getElementById("menu-toggle")?.click();
+      window.scrollTo({
+        top: 0,
+      });
     }
   };
   return (
