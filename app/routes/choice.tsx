@@ -8,6 +8,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import type { LinksFunction, V2_MetaFunction } from "@remix-run/node";
 import stylesheet from "~/styles/choice.css";
+import { Link } from "@remix-run/react";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
@@ -17,46 +18,48 @@ export const meta: V2_MetaFunction = () => [{ title: "選擇障礙專區" }];
 
 export default function () {
   return (
-    <>
+    <div>
       <div className="choice-banner bg-slate-400">
         <div className="banner-text">有選擇障礙嗎？</div>
       </div>
-      <div className="choice-all-content">
-        <div className="choice-content">
-          <div className="choice-title">
-            即使是專業的醫師，也無法在短時間傳達所有治療的效益、時效性及副作用
-          </div>
-          <div className="choice-text">
-            透過我們的預選方案，帶您初步認識大部分女性接受的第一線治療選項。
-          </div>
-          <div className="choice-text">
-            在進一步的抽血報告及影像檢查出爐前，若沒有禁忌症，您可以先嘗試以下這些方案並在下次回診前與醫師討論您的使用心得。
-          </div>
-        </div>
-        <div className="icons-container">
-          <div className="icon-container" onClick={() => {}}>
-            <div className="choice-icon">
-              <FontAwesomeIcon icon={faPills} color="#536942" />
+      <div className="bg-[#f6f8f5]">
+        <div className="choice-all-content">
+          <div className="choice-content">
+            <div className="choice-title">
+              即使是專業的醫師，也無法在短時間傳達所有治療的效益、時效性及副作用
             </div>
-            <div className="choice-icon-text">症狀控制藥物</div>
-          </div>
-          <div className="icon-container" onClick={() => {}}>
-            <div className="choice-icon">
-              <FontAwesomeIcon icon={faTablets} color="#536942" />
+            <div className="choice-text">
+              透過我們的預選方案，帶您初步認識大部分女性接受的第一線治療選項。
             </div>
-            <div className="choice-icon-text">口服賀爾蒙</div>
-          </div>
-          <div className="icon-container" onClick={() => {}}>
-            <div className="choice-icon">
-              <FontAwesomeIcon icon={faSyringe} color="#536942" />
+            <div className="choice-text">
+              在進一步的抽血報告及影像檢查出爐前，若沒有禁忌症，您可以先嘗試以下這些方案並在下次回診前與醫師討論您的使用心得。
             </div>
-            <div className="choice-icon-text">性腺激素釋放素促進劑</div>
           </div>
-          <div className="icon-container" onClick={() => {}}>
-            <div className="choice-icon">
-              <FontAwesomeIcon icon={faHospitalSymbol} color="#536942" />
-            </div>
-            <div className="choice-icon-text">手術</div>
+          <div className="icons-container">
+            <Link className="icon-container" to="/curing">
+              <div className="choice-icon">
+                <FontAwesomeIcon icon={faPills} color="#536942" />
+              </div>
+              <div className="choice-icon-text">症狀控制藥物</div>
+            </Link>
+            <Link className="icon-container" to="/curing">
+              <div className="choice-icon">
+                <FontAwesomeIcon icon={faTablets} color="#536942" />
+              </div>
+              <div className="choice-icon-text">口服賀爾蒙</div>
+            </Link>
+            <Link className="icon-container" to="/curing">
+              <div className="choice-icon">
+                <FontAwesomeIcon icon={faSyringe} color="#536942" />
+              </div>
+              <div className="choice-icon-text">性腺激素釋放素促進劑</div>
+            </Link>
+            <Link className="icon-container" to="/curing">
+              <div className="choice-icon">
+                <FontAwesomeIcon icon={faHospitalSymbol} color="#536942" />
+              </div>
+              <div className="choice-icon-text">手術</div>
+            </Link>
           </div>
         </div>
       </div>
@@ -86,11 +89,28 @@ export default function () {
         </div>
       </div>
       <div className="choice-img-container">
-        <div className="choice-img img3">3</div>
+        <div className="choice-img img3">
+          <div className="img-box img3-box">
+            <div className="img-title img3-title">長期預防復發</div>
+            <div className="img-text img3-text">
+              為保存卵巢品質、預防反覆復發及手術，目前建議針對卵巢巧克力囊腫應採取長期控制。適合長期使用的藥物治療包含：
+              <span className="underline">異位寧、黛麗安</span>等口服賀爾蒙。
+            </div>
+          </div>
+        </div>
       </div>
       <div className="choice-img-container">
-        <div className="choice-img img4">4</div>
+        <div className="choice-img img4">
+          <div className="img-box img4-box">
+            <div className="img-text img4-text">
+              任何時候臨床醫師懷疑有惡性腫瘤的可能時，都建議進行手術並取得檢體化驗。此外，手術治療也是藥物治療相對不理想時的最後一道防線。
+            </div>
+            <div className="img-title img4-title">
+              對腫瘤有疑慮丶藥物治療失敗
+            </div>
+          </div>
+        </div>
       </div>
-    </>
+    </div>
   );
 }
