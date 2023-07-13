@@ -2,3 +2,7 @@
   background-image: url(~/images/contact-bg.webp);
   @apply flex flex-col items-center justify-center gap-3 lg:gap-9;
 }
+
+.title {
+  @apply mb-2 mt-4 w-fit bg-[#4e81bd] px-2 py-1 text-white;
+}
