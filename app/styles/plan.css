@@ -1,0 +1,41 @@
+.hero {
+  background-image: url(~/images/hero-2.png);
+  @apply flex h-[560px] flex-col items-center justify-center;
+}
+
+.hero .text {
+  @apply text-3xl;
+}
+
+.section {
+  @apply container mx-auto max-w-[900px] px-8 text-3xl text-[#536942];
+}
+
+.section .title {
+  @apply mt-12 text-center font-bold;
+}
+
+.section .plan-block {
+  @apply inline-grid w-full grid-cols-1 gap-4 md:grid-cols-2;
+}
+
+.plan-block > * {
+  aspect-ratio: 16 / 9;
+  @apply bg-cover bg-center bg-no-repeat;
+}
+
+.plan-block > *:nth-of-type(1) {
+  background-image: url(~/images/plan-1.png);
+}
+
+.plan-block > *:nth-of-type(2) {
+  background-image: url(~/images/plan-2.png);
+}
+
+.plan-block > *:nth-of-type(3) {
+  background-image: url(~/images/plan-3.png);
+}
+
+.plan-block > *:nth-of-type(4) {
+  background-image: url(~/images/plan-4.png);
+}
