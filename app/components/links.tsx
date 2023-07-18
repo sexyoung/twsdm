@@ -1,6 +1,13 @@
 import { Link } from "@remix-run/react";
+import { useTranslation } from "react-i18next";
 
-export default function Links() {
+type HeaderProps = {
+  lang: string;
+};
+
+export default function Links({ lang }: HeaderProps) {
+  let { t } = useTranslation("common");
+  const prefix = lang && `/${lang}`;
   const handleClick = () => {
     if ((document.getElementById("menu-toggle") as HTMLInputElement).checked) {
       document.getElementById("menu-toggle")?.click();
@@ -12,33 +19,33 @@ export default function Links() {
   return (
     <>
       <li>
-        <Link onClick={handleClick} to="/">
-          首頁
+        <Link onClick={handleClick} to={`${prefix}/`}>
+          {t("menu.home")}
         </Link>
       </li>
       <li>
-        <Link onClick={handleClick} to="/plan">
-          計畫自由選
+        <Link onClick={handleClick} to={`${prefix}/plan`}>
+          {t("menu.plan")}
         </Link>
       </li>
       <li>
-        <Link onClick={handleClick} to="/choice">
-          選擇障礙專區
+        <Link onClick={handleClick} to={`${prefix}/choice`}>
+          {t("menu.choice")}
         </Link>
       </li>
       <li>
-        <Link onClick={handleClick} to="/curing">
-          CP 值專區
+        <Link onClick={handleClick} to={`${prefix}/curing`}>
+          {t("menu.curing")}
         </Link>
       </li>
       <li>
-        <Link onClick={handleClick} to="/assessment">
-          專業評估
+        <Link onClick={handleClick} to={`${prefix}/assessment`}>
+          {t("menu.assessment")}
         </Link>
       </li>
       <li>
-        <Link onClick={handleClick} to="/contact">
-          關於我們
+        <Link onClick={handleClick} to={`${prefix}/contact`}>
+          {t("menu.contact")}
         </Link>
       </li>
     </>

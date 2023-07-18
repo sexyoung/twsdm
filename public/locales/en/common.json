@@ -1,0 +1,11 @@
+{
+  "greeting": "Hello",
+  "menu": {
+    "home": "home",
+    "plan": "plan",
+    "choice": "choice",
+    "curing": "curing",
+    "assessment": "assessment",
+    "contact": "contact"
+  }
+}

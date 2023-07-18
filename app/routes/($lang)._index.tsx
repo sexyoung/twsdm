@@ -1,5 +1,6 @@
 import type { LinksFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
+import { useTranslation } from "react-i18next";
 import stylesheet from "~/styles/home.css";
 
 export const links: LinksFunction = () => [
@@ -7,11 +8,14 @@ export const links: LinksFunction = () => [
 ];
 
 export default function () {
+  let { t } = useTranslation("home");
+  console.log(t("greeting"));
+
   return (
     <div className="text-[#536942]">
       <div className="hero">
-        <div className="text">哈囉！歡迎來到</div>
-        <div className="text">子宮內膜異位症大小事</div>
+        <div className="text">{t("helloWelcome")}</div>
+        <div className="text">{t("thing")}</div>
         <div className="text-lg md:text-lg lg:text-2xl">您的線上微專業諮詢</div>
       </div>
       <div className="section container mx-auto">

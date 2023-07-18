@@ -1,8 +1,13 @@
-import logo from "~/images/logo.png";
-import Links from "./links";
 import { Link } from "@remix-run/react";
 
-export default function Header() {
+import logo from "~/images/logo.png";
+import Links from "./links";
+
+type HeaderProps = {
+  lang: string;
+};
+
+export default function Header({ lang }: HeaderProps) {
   return (
     <header className="fixed inset-x-0 top-0 z-50 md:absolute">
       <nav className="container mx-auto flex flex-wrap items-start justify-between px-5 py-5 text-right md:block md:px-0">
@@ -27,7 +32,7 @@ export default function Header() {
           id="menu-toggle"
         />
         <ul id="menu" className="header-menu">
-          <Links />
+          <Links {...{ lang }} />
         </ul>
       </nav>
     </header>
