@@ -1,6 +1,46 @@
 {
-  "greeting": "GREETING!",
-  "helloWelcome": "Hello Welcome",
-  "thing": "Endometriosis big and small",
+  "title1": "Hello Welcome",
+  "title2": "Endometriosis big and small",
+  "title3": "Your online micro-professional consultation",
+  "planFreeChoose": "Plan Free Choose:",
+  "3step": "3 step",
+  "3stepArticle": [
+    {
+      "title": "tell me what you want",
+      "text": "bla bla bla bla bla bla bla bla bla bla ",
+      "eng": "We seek your participation, and help to explore options."
+    },
+    {
+      "title": "title2",
+      "text": "bla bla bla bla bla bla bla bla bla bla ",
+      "eng": "We help to compare options, and assess value and preference."
+    },
+    {
+      "title": "with Dr",
+      "text": "bla bla bla bla bla bla bla bla bla bla ",
+      "eng": "We reach a decision together, and evaluate the decision."
+    }
+  ],
+  "go2freeChoose": "go to free Choose GO!",
+  "choiceBarrier": {
+    "title1": "choice barrier?",
+    "title2": "bla bla bla",
+    "title3": "plan",
+    "text": "bla bla bla bla bla bla bla bla bla bla ",
+    "goTo": "go to choice barrier"
+  },
+  "treatments": {
+    "eng": "ABOUT TREATMENTS",
+    "title": "CPCPCPCPCPCP",
+    "text": "bla bla bla bla bla bla bla bla bla bla ",
+    "go2CP": "go to CP"
+  },
+  "evaluate": {
+    "title": "evaluate's title",
+    "text1": "text1",
+    "text2": "text2",
+    "text3": "text3",
+    "go2Evaluate": "go 2 Evaluate"
+  },
   "xxxxx": "xxxxxxxx"
 }
