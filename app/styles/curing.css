@@ -64,6 +64,7 @@
 }
 
 .cp-short-content {
+  min-height: 300px;
   font-size: 22px;
   color: #a78f7e;
   padding: 10px;
