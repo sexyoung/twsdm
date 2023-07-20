@@ -1,5 +1,5 @@
 import type { LinksFunction, V2_MetaFunction } from "@remix-run/node";
-import { StarCheck, StarUnCheck } from "~/components/star";
+import { ArrowAltCircleDown, StarCheck, StarUnCheck } from "~/components/icons";
 import stylesheet from "~/styles/curing.css";
 
 export const links: LinksFunction = () => [
@@ -114,6 +114,8 @@ export default function () {
             </tr>
           </table>
         </div>
+        <ArrowAltCircleDown />
+        <i className="fa fa-arrow-circle-o-down" aria-hidden="true"></i>
       </div>
     </div>
   );
