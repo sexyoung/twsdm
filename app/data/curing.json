@@ -1,0 +1,42 @@
+[
+  {
+    "title": "症狀控制藥",
+    "subtitle": [
+      "Naproxen（能百鎮）",
+      "Tranexamic acid（斷血炎）",
+      "Ergonovine（縮水蘋果酸麥角新鹼片）"
+    ],
+    "shortComment": "這些藥物是平常我們最容易在藥局、國外代購入手的居家備品，通常以迅速止痛、止血為目標；然而事實上以止血來說，每種藥物平均只能減少30-50%出血量，因此偶而會有女性抱怨即使吃了止血藥仍然在流血。若無法改善症狀，仍應尋求專業醫師協助找出病因。",
+    "menstrualStar": 2,
+    "menstrualEffect": "當天",
+    "bleedingStar": 2,
+    "bleedingEffect": "當天",
+    "relapseStar": 0,
+    "relapseEffect": "",
+    "price": "健保給付",
+    "convenience": "月經期間每天服用2-3次。",
+    "sideEffect": [
+      "=5%：失眠、盗汗、熱潮紅、水腫",
+      "1-5%：骨質疏鬆、骨折、情緒障礙",
+      "<1%：肺部纖維化"
+    ]
+  },
+  {
+    "title": "異位寧",
+    "subtitle": ["Dienogest"],
+    "shortComment": "這些藥物是平常我們最容易在藥局、國外代購入手的居家備品，通常以迅速止痛、止血為目標；然而事實上以止血來說，每種藥物平均只能減少30-50%出血量，因此偶而會有女性抱怨即使吃了止血藥仍然在流血。若無法改善症狀，仍應尋求專業醫師協助找出病因。",
+    "menstrualStar": 2,
+    "menstrualEffect": "當天",
+    "bleedingStar": 2,
+    "bleedingEffect": "當天",
+    "relapseStar": 0,
+    "relapseEffect": "",
+    "price": "健保給付",
+    "convenience": "月經期間每天服用2-3次。",
+    "sideEffect": [
+      "=5%：失眠、盗汗、熱潮紅、水腫",
+      "1-5%：骨質疏鬆、骨折、情緒障礙",
+      "<1%：肺部纖維化"
+    ]
+  }
+]
