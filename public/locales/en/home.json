@@ -7,18 +7,15 @@
   "3stepArticle": [
     {
       "title": "tell me what you want",
-      "text": "bla bla bla bla bla bla bla bla bla bla ",
-      "eng": "We seek your participation, and help to explore options."
+      "text": "bla bla bla bla bla bla bla bla bla bla "
     },
     {
       "title": "title2",
-      "text": "bla bla bla bla bla bla bla bla bla bla ",
-      "eng": "We help to compare options, and assess value and preference."
+      "text": "bla bla bla bla bla bla bla bla bla bla "
     },
     {
       "title": "with Dr",
-      "text": "bla bla bla bla bla bla bla bla bla bla ",
-      "eng": "We reach a decision together, and evaluate the decision."
+      "text": "bla bla bla bla bla bla bla bla bla bla "
     }
   ],
   "go2freeChoose": "go to free Choose GO!",
@@ -30,7 +27,6 @@
     "goTo": "go to choice barrier"
   },
   "treatments": {
-    "eng": "ABOUT TREATMENTS",
     "title": "CPCPCPCPCPCP",
     "text": "bla bla bla bla bla bla bla bla bla bla ",
     "go2CP": "go to CP"

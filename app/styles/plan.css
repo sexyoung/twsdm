@@ -1,6 +1,6 @@
 .hero {
-  background-image: url(~/images/hero-2.png);
-  @apply flex h-[560px] flex-col items-center justify-center;
+  background-image: url(~/images/hero-plan.png);
+  @apply flex flex-col items-center justify-center;
 }
 
 .hero .text {

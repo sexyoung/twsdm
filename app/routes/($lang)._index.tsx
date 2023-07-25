@@ -27,7 +27,6 @@ export default function () {
             <div className="title">{t("3stepArticle.0.title")}</div>
             <ul className="desc">
               <li>{t("3stepArticle.0.text")}</li>
-              <li>{t("3stepArticle.0.eng")}</li>
             </ul>
           </div>
           <div className="mb-10 flex-1">
@@ -35,7 +34,6 @@ export default function () {
             <div className="title">{t("3stepArticle.1.title")}</div>
             <ul className="desc">
               <li>{t("3stepArticle.1.text")}</li>
-              <li>{t("3stepArticle.1.eng")}</li>
             </ul>
           </div>
           <div className="mb-10 flex-1">
@@ -43,7 +41,6 @@ export default function () {
             <div className="title">{t("3stepArticle.2.title")}</div>
             <ul className="desc">
               <li>{t("3stepArticle.2.text")}</li>
-              <li>{t("3stepArticle.2.eng")}</li>
             </ul>
           </div>
         </div>
@@ -71,7 +68,6 @@ export default function () {
       <div className="section container mx-auto">
         <div className="gap-10 md:flex">
           <div className="flex-[2]">
-            {t("treatments.eng")}
             <h2 className="my-2 text-2xl md:text-4xl">
               {t("treatments.title")}
             </h2>

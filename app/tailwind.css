@@ -13,7 +13,7 @@
       before:absolute
       before:inset-0
       before:bg-black
-      before:opacity-25
+      before:opacity-60
       before:content-['']
       md:h-[480px]
       lg:h-[655px];

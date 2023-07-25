@@ -14,7 +14,9 @@ export const meta: V2_MetaFunction = () => [{ title: "CP 值專區" }];
 export default function () {
   return (
     <div>
-      <div className="cp-banner" />
+      <div className="hero">
+        <div>@todo這邊要放些字</div>
+      </div>
       <div className="mx-auto mt-16 w-fit">
         {curingData.map((data: CuringDataType, index: number) => (
           <>
