@@ -17,9 +17,11 @@ import {
 /** @deprecated */
 import { getUser } from "~/session.server";
 // import i18next from "~/i18next.server";
+import formLink from "~/data/form.json";
 
 import stylesheet from "~/tailwind.css";
 
+import Modal from "./components/modal";
 import Header from "./components/header";
 import Footer from "./components/footer";
 
@@ -31,7 +33,7 @@ export const links: LinksFunction = () => [
 export const loader = async ({ request, params }: LoaderArgs) => {
   let locale = params.lang || "en"; //await i18next.getLocale(request);
   return json({
-    lang: params.lang || "",
+    lang: (params.lang || "") as keyof typeof formLink,
     locale,
     user: await getUser(request),
   });
@@ -45,6 +47,10 @@ export let handle = {
   i18n: "common",
 };
 
+const isAtBottom = (): boolean =>
+  document.documentElement.clientHeight + window.scrollY >=
+  document.documentElement.scrollHeight;
+
 export default function App() {
   // Get the locale from the loader
   let { locale, lang } = useLoaderData<typeof loader>();
@@ -57,18 +63,27 @@ export default function App() {
   // translation files
   useChangeLanguage(locale);
   const [goTop, setGoTop] = useState("hidden");
+  const [showModal, setShowModal] = useState(false);
   const bottomToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
   };
+
   const handleScroll = () => {
     if (window.scrollY > window.innerHeight / 3) {
       setGoTop("");
     } else {
       setGoTop("hidden");
     }
+
+    if (isAtBottom()) setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    document.body.classList.remove("overflow-hidden");
+    setShowModal(false);
   };
 
   useEffect(() => {
@@ -87,6 +102,13 @@ export default function App() {
         <Header lang={lang} />
         <Outlet />
         <Footer lang={lang} />
+        {showModal && (
+          <Modal
+            proLink={formLink[lang].pro}
+            personLink={formLink[lang].person}
+            onClose={handleCloseModal}
+          />
+        )}
         <div
           onClick={bottomToTop}
           className={`fixed bottom-7 right-7 flex h-[31px] w-[31px] cursor-pointer items-center justify-center bg-slate-400 opacity-80 ${goTop}`}

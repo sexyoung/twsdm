@@ -34,7 +34,6 @@ export default function () {
           alt="people"
           className="mx-auto w-full max-w-[800px]"
         />
-        <div className="text-center text-4xl">@todo 這邊放一個 google 表單</div>
       </div>
     </div>
   );
