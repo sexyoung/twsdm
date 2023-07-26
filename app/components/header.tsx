@@ -5,18 +5,23 @@ import Links from "./links";
 
 type HeaderProps = {
   lang: string;
+  isHeaderBG: boolean;
 };
 
-export default function Header({ lang }: HeaderProps) {
+export default function Header({ lang, isHeaderBG }: HeaderProps) {
+  const headerBG = isHeaderBG ? "bg-slate-100" : "";
+  const svgColor = isHeaderBG ? "text-red-200" : "";
   return (
-    <header className="fixed inset-x-0 top-0 z-50 md:absolute">
+    <header
+      className={`fixed inset-x-0 top-0 z-50 md:absolute ${headerBG} md:bg-transparent`}
+    >
       <nav className="container mx-auto flex flex-wrap items-start justify-between px-5 py-5 text-right md:block md:px-0">
         <Link to="/">
           <img src={logo} className="mr-5 inline-block w-[60px]" alt="Home" />
         </Link>
         <label htmlFor="menu-toggle" className="pointer-cursor block md:hidden">
           <svg
-            className="cursor-pointer fill-current text-white"
+            className={`cursor-pointer fill-current text-white ${svgColor}`}
             xmlns="http://www.w3.org/2000/svg"
             width="20"
             height="20"

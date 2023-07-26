@@ -3,6 +3,11 @@ import { Link } from "@remix-run/react";
 import { useTranslation } from "react-i18next";
 import stylesheet from "~/styles/home.css";
 
+import icon1 from "~/images/home-1.png";
+import icon2 from "~/images/home-2.png";
+import icon3 from "~/images/home-3.png";
+import icon4 from "~/images/home-4.png";
+
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
 ];
@@ -18,6 +23,7 @@ export default function () {
       </div>
       <div className="section container mx-auto max-w-[900px]">
         <h2 className="first-title">
+          <img src={icon1} className="mx-auto w-20" alt="icon" />
           <div className="lg:inline">{t("planFreeChoose")}</div>
           <div className="lg:inline">{t("3step")}</div>
         </h2>
@@ -51,6 +57,7 @@ export default function () {
         </div>
       </div>
       <div className="section flex flex-col items-center justify-center gap-1 bg-[#f6f8f5]">
+        <img src={icon2} className="mx-auto w-20" alt="icon" />
         <h2 className="text-center text-2xl md:text-4xl">
           {t("choiceBarrier.title1")}
           <br />
@@ -66,6 +73,7 @@ export default function () {
         </Link>
       </div>
       <div className="section container mx-auto">
+        <img src={icon3} className="mx-auto w-20" alt="icon" />
         <div className="gap-10 md:flex">
           <div className="flex-[2]">
             <h2 className="my-2 text-2xl md:text-4xl">
@@ -82,6 +90,7 @@ export default function () {
         </div>
       </div>
       <div className="section">
+        <img src={icon4} className="mx-auto w-20" alt="icon" />
         <h2 className="text-center text-2xl md:text-6xl">
           {t("evaluate.title")}
         </h2>

@@ -66,6 +66,7 @@ export default function App() {
   // translation files
   useChangeLanguage(locale);
   const [goTop, setGoTop] = useState("hidden");
+  const [isHeaderBG, setIsHeaderBG] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const bottomToTop = () => {
     window.scrollTo({
@@ -80,6 +81,8 @@ export default function App() {
     } else {
       setGoTop("hidden");
     }
+
+    setIsHeaderBG(window.scrollY > 414);
 
     if (isAtBottom()) setShowModal(true);
   };
@@ -102,7 +105,7 @@ export default function App() {
         <Links />
       </head>
       <body className="h-full">
-        <Header lang={lang} />
+        <Header isHeaderBG={isHeaderBG} lang={lang} />
         <Outlet />
         {
           <div className="text-center text-[#536942]">
