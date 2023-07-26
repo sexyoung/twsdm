@@ -5,6 +5,7 @@ import { cssBundleHref } from "@remix-run/css-bundle";
 import type { LinksFunction, LoaderArgs } from "@remix-run/node";
 import { json } from "@remix-run/node";
 import {
+  Link,
   Links,
   LiveReload,
   Meta,
@@ -50,6 +51,8 @@ export let handle = {
 const isAtBottom = (): boolean =>
   document.documentElement.clientHeight + window.scrollY >=
   document.documentElement.scrollHeight;
+
+const isToday = () => !!document.cookie.includes("status=stillToday");
 
 export default function App() {
   // Get the locale from the loader
@@ -101,8 +104,32 @@ export default function App() {
       <body className="h-full">
         <Header lang={lang} />
         <Outlet />
+        {
+          <div className="text-center text-[#536942]">
+            <h2 className="text-4xl">我們需要您寶貴的意見</h2>
+            <div className="my-4">
+              只要幾秒，表達您對醫療環境的看法！
+              <br />
+              完成這個簡單的調查並與我們分享您對整個醫療環境的評論！
+            </div>
+            <div className="flex justify-center gap-4">
+              <Link
+                to={formLink[lang].person}
+                className="rounded-full bg-[#4e81bd] px-4 py-2 font-bold text-white hover:bg-[#3e6796]"
+              >
+                個人表單
+              </Link>
+              <Link
+                to={formLink[lang].pro}
+                className="rounded-full bg-[#4e81bd] px-4 py-2 font-bold text-white hover:bg-[#3e6796]"
+              >
+                醫療人員表單
+              </Link>
+            </div>
+          </div>
+        }
         <Footer lang={lang} />
-        {showModal && (
+        {showModal && !isToday() && (
           <Modal
             proLink={formLink[lang].pro}
             personLink={formLink[lang].person}

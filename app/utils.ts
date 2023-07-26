@@ -69,3 +69,9 @@ export function useUser(): User {
 export function validateEmail(email: unknown): email is string {
   return typeof email === "string" && email.length > 3 && email.includes("@");
 }
+
+export const setToday = () => {
+  const tomorrow = new Date();
+  tomorrow.setHours(24, 0, 0, 0);
+  document.cookie = "status=stillToday; expires=" + tomorrow.toString();
+};

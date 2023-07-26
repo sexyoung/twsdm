@@ -1,5 +1,6 @@
 import { Link } from "@remix-run/react";
 import { useEffect } from "react";
+import { setToday } from "~/utils";
 
 type ModalProps = {
   personLink: string;
@@ -10,6 +11,7 @@ type ModalProps = {
 export default function Modal({ onClose, personLink, proLink }: ModalProps) {
   useEffect(() => {
     document.body.classList.add("overflow-hidden");
+    setToday();
   }, []);
   return (
     <div
