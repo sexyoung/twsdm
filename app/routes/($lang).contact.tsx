@@ -13,9 +13,9 @@ export default function () {
   return (
     <div>
       <div className="hero">
-        <h2 className="text-2xl md:text-7xl">我們正努力建立微專業社群網路</h2>
+        <div className="text">我們正努力建立微專業社群網路</div>
       </div>
-      <div className="container mx-auto max-w-[800px] px-10  text-[#4e81bd]">
+      <div className="container mx-auto max-w-3xl px-10  text-[#4e81bd]">
         <div className="mb-5 mt-10 border-b border-b-[#4e81bd] pb-5 text-2xl">
           子宮內膜異位症 | 多元主題、創新設計
         </div>
@@ -29,11 +29,7 @@ export default function () {
         在2022年，我們為了解決臨床溝通常見的問題，並且考量在多媒體時代運用有別於以往的知識平台，我們與國際接軌，透過教育心理研究，應用多媒體學習原則、溝通技巧及人工智慧設計全新的醫病溝通工具。
         <h2 className="title">產學建教合作</h2>
         感謝國立臺灣大學醫學教育暨生醫倫理學科暨硏究所、雲林科技大學提供技術指導、研究諮詢及合作。未來，我們將進一步透過智慧裝置進行互動及視覺化，並將我們的成果應用於台大醫院體系，並透過國內婦產科相關學會推廣，讓更多有需求的女性朋友可以自行打造專屬的治療套餐！
-        <img
-          src={people}
-          alt="people"
-          className="mx-auto w-full max-w-[800px]"
-        />
+        <img src={people} alt="people" className="mx-auto w-full max-w-3xl" />
       </div>
     </div>
   );

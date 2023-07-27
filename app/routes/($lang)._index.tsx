@@ -21,7 +21,7 @@ export default function () {
         <div className="text">{t("title2")}</div>
         <div className="text-lg md:text-lg lg:text-2xl">{t("title3")}</div>
       </div>
-      <div className="section container mx-auto max-w-[900px]">
+      <div className="section container mx-auto  max-w-4xl">
         <h2 className="first-title">
           <img src={icon1} className="mx-auto w-20" alt="icon" />
           <div className="lg:inline">{t("planFreeChoose")}</div>
@@ -72,17 +72,10 @@ export default function () {
           {t("choiceBarrier.goTo")}
         </Link>
       </div>
-      <div className="section container mx-auto">
+      <div className="section container mx-auto text-center">
         <img src={icon3} className="mx-auto w-20" alt="icon" />
-        <div className="gap-10 md:flex">
-          <div className="flex-[2]">
-            <h2 className="my-2 text-2xl md:text-4xl">
-              {t("treatments.title")}
-            </h2>
-            {t("treatments.text")}
-          </div>
-          <div className="emoji img flex-1" />
-        </div>
+        <h2 className="my-2 text-2xl md:text-4xl">{t("treatments.title")}</h2>
+        <div className="mx-auto mb-10 max-w-2xl">{t("treatments.text")}</div>
         <div className="text-center">
           <Link className="link-btn" to="/curing">
             {t("treatments.go2CP")}

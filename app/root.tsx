@@ -20,6 +20,9 @@ import { getUser } from "~/session.server";
 // import i18next from "~/i18next.server";
 import formLink from "~/data/form.json";
 
+import logo from "~/images/twsdm.gif";
+import icon5 from "~/images/home-5.png";
+
 import stylesheet from "~/tailwind.css";
 
 import Modal from "./components/modal";
@@ -68,6 +71,7 @@ export default function App() {
   const [goTop, setGoTop] = useState("hidden");
   const [isHeaderBG, setIsHeaderBG] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const [isPlayLogo, setIsPlayLogo] = useState<boolean | null>(null);
   const bottomToTop = () => {
     window.scrollTo({
       top: 0,
@@ -96,6 +100,14 @@ export default function App() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   });
+
+  useEffect(() => {
+    if (document.cookie.includes("twsdmlogo=1")) return setIsPlayLogo(false);
+    document.cookie = "twsdmlogo=1";
+    setIsPlayLogo(true);
+    setTimeout(() => setIsPlayLogo(false), 3000);
+  }, []);
+
   return (
     <html lang={locale} className="h-full" dir={i18n.dir()}>
       <head>
@@ -107,30 +119,29 @@ export default function App() {
       <body className="h-full">
         <Header isHeaderBG={isHeaderBG} lang={lang} />
         <Outlet />
-        {
-          <div className="text-center text-[#536942]">
-            <h2 className="text-4xl">我們需要您寶貴的意見</h2>
-            <div className="my-4">
-              只要幾秒，表達您對醫療環境的看法！
-              <br />
-              完成這個簡單的調查並與我們分享您對整個醫療環境的評論！
-            </div>
-            <div className="flex justify-center gap-4">
-              <Link
-                to={formLink[lang].person}
-                className="rounded-full bg-[#4e81bd] px-4 py-2 font-bold text-white hover:bg-[#3e6796]"
-              >
-                個人表單
-              </Link>
-              <Link
-                to={formLink[lang].pro}
-                className="rounded-full bg-[#4e81bd] px-4 py-2 font-bold text-white hover:bg-[#3e6796]"
-              >
-                醫療人員表單
-              </Link>
-            </div>
+        <div className="text-center text-[#536942]">
+          <img src={icon5} className="mx-auto w-20" alt="icon" />
+          <h2 className="text-4xl">我們需要您寶貴的意見</h2>
+          <div className="my-4">
+            只要幾秒，表達您對醫療環境的看法！
+            <br />
+            完成這個簡單的調查並與我們分享您對整個醫療環境的評論！
           </div>
-        }
+          <div className="flex justify-center gap-4">
+            <Link
+              to={formLink[lang].person}
+              className="rounded-full bg-[#4e81bd] px-4 py-2 font-bold text-white hover:bg-[#3e6796]"
+            >
+              個人表單
+            </Link>
+            <Link
+              to={formLink[lang].pro}
+              className="rounded-full bg-[#4e81bd] px-4 py-2 font-bold text-white hover:bg-[#3e6796]"
+            >
+              醫療人員表單
+            </Link>
+          </div>
+        </div>
         <Footer lang={lang} />
         {showModal && !isToday() && (
           <Modal
@@ -159,6 +170,14 @@ export default function App() {
             <path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z"></path>
           </svg>
         </div>
+        {isPlayLogo === null && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-white" />
+        )}
+        {isPlayLogo && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-white">
+            <img src={logo} alt="TWSDM" className="w-60" />
+          </div>
+        )}
         <ScrollRestoration />
         <Scripts />
         <LiveReload />

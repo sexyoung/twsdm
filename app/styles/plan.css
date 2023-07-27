@@ -1,10 +1,6 @@
 .hero {
   background-image: url(~/images/hero-plan.png);
-  @apply flex flex-col items-center justify-center;
-}
-
-.hero .text {
-  @apply text-3xl;
+  @apply bg-top;
 }
 
 .section {

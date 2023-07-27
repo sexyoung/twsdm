@@ -5,7 +5,12 @@
 @layer components {
   .hero {
     @apply relative
+      flex
       h-[414px]
+      flex-col
+      items-center
+      justify-center
+      gap-3
       bg-slate-400
       bg-cover
       bg-center
@@ -16,11 +21,12 @@
       before:opacity-60
       before:content-['']
       md:h-[480px]
-      lg:h-[655px];
+      lg:h-[500px]
+      lg:gap-9;
   }
 
   .hero > * {
-    @apply relative;
+    @apply relative text-2xl md:text-4xl lg:text-6xl;
   }
 
   .header-menu {

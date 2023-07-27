@@ -1,10 +1,5 @@
 .hero {
   background-image: url(~/images/hero-curing.png);
-  @apply flex flex-col items-center justify-center;
-}
-
-.hero .text {
-  @apply text-3xl;
 }
 
 .cp-banner {

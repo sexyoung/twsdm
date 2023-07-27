@@ -15,7 +15,7 @@ export default function () {
   return (
     <div>
       <div className="hero">
-        <div>@todo這邊要放些字</div>
+        <div>CP 值專區</div>
       </div>
       <div className="mx-auto mt-16 w-fit">
         {curingData.map((data: CuringDataType, index: number) => (
