@@ -4,11 +4,11 @@
 }
 
 .section {
-  @apply container mx-auto max-w-[900px] px-8 text-3xl text-[#536942];
+  @apply container mx-auto max-w-[900px] px-8 text-[#536942];
 }
 
 .section .title {
-  @apply mt-12 text-center font-bold;
+  @apply mt-12 text-center text-3xl font-bold;
 }
 
 .section .plan-block {
