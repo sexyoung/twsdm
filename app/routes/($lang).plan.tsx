@@ -2,10 +2,6 @@ import type { LinksFunction, V2_MetaFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
 import stylesheet from "~/styles/plan.css";
 
-import p1 from "~/images/1-2.webp";
-import p2 from "~/images/2-2.webp";
-import p3 from "~/images/3-2.webp";
-
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
 ];
