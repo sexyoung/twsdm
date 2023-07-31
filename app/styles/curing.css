@@ -38,6 +38,14 @@
   text-align: center;
 }
 
+.cp-title-content-m {
+  right: 0;
+  width: 400px;
+  font-size: 30px;
+  position: absolute;
+  text-align: center;
+}
+
 .cp-short {
   display: flex;
 }

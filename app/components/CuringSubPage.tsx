@@ -1,6 +1,6 @@
 import type { LinksFunction } from "@remix-run/node";
 import stylesheet from "~/styles/curing.css";
-import { StarCheck, StarUnCheck } from "./icons";
+// import { StarCheck, StarUnCheck } from "./icons";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
@@ -8,16 +8,18 @@ export const links: LinksFunction = () => [
 
 export type CuringDataType = {
   title: string;
-  subtitle: Array<string>;
+  titleS: string;
+  subtitleS: Array<string>;
+  subtitleM: Array<string>;
   shortComment: string;
-  menstrualStar: number;
-  menstrualEffect: string;
-  bleedingStar: number;
-  bleedingEffect: string;
-  relapseStar: number;
-  relapseEffect: string;
-  price: string;
-  convenience: string;
+  // menstrualStar: number;
+  // menstrualEffect: string;
+  // bleedingStar: number;
+  // bleedingEffect: string;
+  // relapseStar: number;
+  // relapseEffect: string;
+  // price: string;
+  // convenience: string;
   sideEffect: Array<string>;
 };
 
@@ -33,12 +35,21 @@ export const CuringSubPage = (props: CuringSubPageProps) => {
       <div className="mx-auto inline-block w-[600px] align-top">
         <div className="cp-title cp-title1">
           <div className="cp-title-text">
-            <div className="leading-[80px]">{data.title}</div>
+            <div className="text-[70px] leading-[80px]">{data.title}</div>
+            <div className="text-[60px] leading-[80px]">{data.titleS}</div>
             <div className="cp-title-content">
-              {data.subtitle.map((subtitle, index) => (
+              {data.subtitleS.map((subtitle, index) => (
                 <>
                   {subtitle}
-                  {index < data.subtitle.length - 1 && <br />}
+                  {index < data.subtitleS.length - 1 && <br />}
+                </>
+              ))}
+            </div>
+            <div className="cp-title-content-m">
+              {data.subtitleM.map((subtitle, index) => (
+                <>
+                  {subtitle}
+                  {index < data.subtitleM.length - 1 && <br />}
                 </>
               ))}
             </div>
@@ -51,7 +62,7 @@ export const CuringSubPage = (props: CuringSubPageProps) => {
         <div className="cp-short-content">{data.shortComment}</div>
       </div>
       <div className="mx-[30px] inline-block w-[330px] pt-[40px] text-[#857162]">
-        <table>
+        {/* <table>
           <tr>
             <th>藥效</th>
             <th></th>
@@ -120,7 +131,7 @@ export const CuringSubPage = (props: CuringSubPageProps) => {
               <div className="w-[123px]">{data.convenience}</div>
             </td>
           </tr>
-        </table>
+        </table> */}
         <div className="cp-effect-divider " />
         <table>
           <tr>
