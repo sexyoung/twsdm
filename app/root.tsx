@@ -28,6 +28,7 @@ import stylesheet from "~/tailwind.css";
 import Modal from "./components/modal";
 import Header from "./components/header";
 import Footer from "./components/footer";
+import LangModal from "./components/LangModal";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
@@ -71,6 +72,7 @@ export default function App() {
   const [goTop, setGoTop] = useState("hidden");
   const [isHeaderBG, setIsHeaderBG] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const [showLangModal, setShowLangModal] = useState(false);
   const [isPlayLogo, setIsPlayLogo] = useState<boolean | null>(null);
   const bottomToTop = () => {
     window.scrollTo({
@@ -94,6 +96,7 @@ export default function App() {
   const handleCloseModal = () => {
     document.body.classList.remove("overflow-hidden");
     setShowModal(false);
+    setShowLangModal(false);
   };
 
   useEffect(() => {
@@ -117,7 +120,11 @@ export default function App() {
         <Links />
       </head>
       <body className="h-full">
-        <Header isHeaderBG={isHeaderBG} lang={lang} />
+        <Header
+          isHeaderBG={isHeaderBG}
+          openLang={setShowLangModal.bind(null, true)}
+          lang={lang}
+        />
         <Outlet />
         <div className="mt-10 text-center text-[#9b8e8e]">
           <img src={icon5} className="mx-auto w-20" alt="icon" />
@@ -144,7 +151,7 @@ export default function App() {
             </Link>
           </div>
         </div>
-        <Footer lang={lang} />
+        <Footer lang={lang} openLang={setShowLangModal.bind(null, true)} />
         {showModal && !isToday() && (
           <Modal
             proLink={formLink[lang].pro}
@@ -152,6 +159,7 @@ export default function App() {
             onClose={handleCloseModal}
           />
         )}
+        {showLangModal && <LangModal lang={lang} onClose={handleCloseModal} />}
         <div
           onClick={bottomToTop}
           className={`fixed bottom-7 right-7 flex h-[31px] w-[31px] cursor-pointer items-center justify-center bg-slate-400 opacity-80 ${goTop}`}

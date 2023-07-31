@@ -68,13 +68,13 @@ export default function Modal({ onClose, personLink, proLink }: ModalProps) {
             <div className="justify-center gap-4 bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6">
               <Link
                 to={personLink}
-                className="rounded-full bg-[#4e81bd] px-4 py-2 font-bold text-white hover:bg-[#3e6796]"
+                className="rounded-full bg-[#9b8e8e] px-4 py-2 font-bold text-white hover:bg-[#3e6796]"
               >
                 個人表單
               </Link>
               <Link
                 to={proLink}
-                className="rounded-full bg-[#4e81bd] px-4 py-2 font-bold text-white hover:bg-[#3e6796]"
+                className="rounded-full bg-[#9b8e8e] px-4 py-2 font-bold text-white hover:bg-[#3e6796]"
               >
                 醫療人員表單
               </Link>

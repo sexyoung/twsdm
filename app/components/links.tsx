@@ -3,9 +3,10 @@ import { useTranslation } from "react-i18next";
 
 type HeaderProps = {
   lang: string;
+  openLang: () => void;
 };
 
-export default function Links({ lang }: HeaderProps) {
+export default function Links({ lang, openLang }: HeaderProps) {
   let { t } = useTranslation("common");
   const prefix = lang && `/${lang}`;
   const handleClick = () => {
@@ -47,6 +48,11 @@ export default function Links({ lang }: HeaderProps) {
         <Link onClick={handleClick} to={`${prefix}/contact`}>
           {t("menu.contact")}
         </Link>
+      </li>
+      <li className="relative">
+        <span className="cursor-pointer" onClick={openLang}>
+          {t(`menu.${lang}`)}
+        </span>
       </li>
     </>
   );
