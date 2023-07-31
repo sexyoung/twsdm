@@ -38,25 +38,25 @@ export default function () {
           <div className="icons-container">
             <Link className="icon-container" to="/curing">
               <div className="choice-icon">
-                <FontAwesomeIcon icon={faPills} color="#536942" />
+                <FontAwesomeIcon icon={faPills} color="#9b8e8e" />
               </div>
               <div className="choice-icon-text">症狀控制藥物</div>
             </Link>
             <Link className="icon-container" to="/curing">
               <div className="choice-icon">
-                <FontAwesomeIcon icon={faTablets} color="#536942" />
+                <FontAwesomeIcon icon={faTablets} color="#9b8e8e" />
               </div>
               <div className="choice-icon-text">口服賀爾蒙</div>
             </Link>
             <Link className="icon-container" to="/curing">
               <div className="choice-icon">
-                <FontAwesomeIcon icon={faSyringe} color="#536942" />
+                <FontAwesomeIcon icon={faSyringe} color="#9b8e8e" />
               </div>
               <div className="choice-icon-text">性腺激素釋放素促進劑</div>
             </Link>
             <Link className="icon-container" to="/curing">
               <div className="choice-icon">
-                <FontAwesomeIcon icon={faHospitalSymbol} color="#536942" />
+                <FontAwesomeIcon icon={faHospitalSymbol} color="#9b8e8e" />
               </div>
               <div className="choice-icon-text">手術</div>
             </Link>

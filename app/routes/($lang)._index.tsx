@@ -15,7 +15,7 @@ export const links: LinksFunction = () => [
 export default function () {
   let { t } = useTranslation("home");
   return (
-    <div className="text-[#536942]">
+    <div className="text-[#9b8e8e]">
       <div className="hero">
         <div className="text">{t("title1")}</div>
         <div className="text">{t("title2")}</div>
@@ -65,9 +65,7 @@ export default function () {
           <br />
           {t("choiceBarrier.title3")}
         </h2>
-        <div className="my-4 px-10 text-[#ff9900]">
-          {t("choiceBarrier.text")}
-        </div>
+        <div className="my-4 px-10">{t("choiceBarrier.text")}</div>
         <Link className="link-btn mt-4" to="/choice">
           {t("choiceBarrier.goTo")}
         </Link>
@@ -87,7 +85,7 @@ export default function () {
         <h2 className="text-center text-2xl md:text-6xl">
           {t("evaluate.title")}
         </h2>
-        <div className="my-10 text-center text-xl text-[#dab200] md:[&>*+*]:before:content-['、'] md:[&>*]:inline">
+        <div className="my-10 text-center text-xl text-[#dbc9c9] md:[&>*+*]:before:content-['、'] md:[&>*]:inline">
           <div>{t("evaluate.text1")}</div>
           <div>{t("evaluate.text2")}</div>
           <div>{t("evaluate.text3")}</div>

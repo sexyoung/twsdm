@@ -28,13 +28,13 @@
 }
 
 .choice-title {
-  color: #536942;
+  color: #9b8e8e;
   font-size: 2.25rem;
   padding-bottom: 30px;
 }
 
 .choice-text {
-  color: #536942;
+  color: #9b8e8e;
   font-size: 1.25rem;
   padding-bottom: 60px;
 }
@@ -182,7 +182,7 @@
 }
 
 .choice-icon-text {
-  color: #536942;
+  color: #9b8e8e;
   font-size: 1rem;
   text-align: center;
 }

@@ -8,7 +8,7 @@ type FooterProps = {
 export default function Footer({ lang }: FooterProps) {
   return (
     <div className="mt-10 bg-slate-100">
-      <footer className="container mx-auto py-5 text-center text-[#536942]">
+      <footer className="container mx-auto py-5 text-center text-[#9b8e8e]">
         {/* <img
           src={logo}
           className="mx-auto block h-[auto] w-[120px] lg:mr-5 lg:inline-block"

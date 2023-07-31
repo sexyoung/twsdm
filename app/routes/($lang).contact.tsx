@@ -15,8 +15,8 @@ export default function () {
       <div className="hero">
         <div className="text">我們正努力建立微專業社群網路</div>
       </div>
-      <div className="container mx-auto max-w-3xl px-10  text-[#4e81bd]">
-        <div className="mb-5 mt-10 border-b border-b-[#4e81bd] pb-5 text-2xl">
+      <div className="container mx-auto max-w-3xl px-10  text-[#9b8e8e]">
+        <div className="mb-5 mt-10 border-b border-b-[#9b8e8e] pb-5 text-2xl">
           子宮內膜異位症 | 多元主題、創新設計
         </div>
         『媽媽今天很兇！』、『老婆這幾天怪怪的』、『學妹怎麼又請假？』
