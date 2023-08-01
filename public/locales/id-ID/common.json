@@ -1,12 +1,12 @@
 {
   "greeting": "Hello",
   "menu": {
-    "home": "Layar utama",
-    "plan": "Garis bebas terencana",
-    "choice": "selén",
-    "curing": "Area Nilai CP",
-    "assessment": "penilaian ahli",
-    "contact": "Tentang kita.",
+    "home": "(未定)Layar utama",
+    "plan": "(未定)Garis bebas terencana",
+    "choice": "(未定)selén",
+    "curing": "(未定)Area Nilai CP",
+    "assessment": "(未定)penilaian ahli",
+    "contact": "(未定)Tentang kita.",
     "zh-TW": "中文",
     "": "English",
     "ja-JP": "日本語",
