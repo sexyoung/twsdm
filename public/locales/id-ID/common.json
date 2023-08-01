@@ -1,0 +1,16 @@
+{
+  "greeting": "Hello",
+  "menu": {
+    "home": "Layar utama",
+    "plan": "Garis bebas terencana",
+    "choice": "selén",
+    "curing": "Area Nilai CP",
+    "assessment": "penilaian ahli",
+    "contact": "Tentang kita.",
+    "zh-TW": "中文",
+    "": "English",
+    "ja-JP": "日本語",
+    "vi-VN": "Tiếng Việt",
+    "id-ID": "bahasa Indonésia"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "greeting": "Hello",
+  "menu": {
+    "home": "(未定)トップページ",
+    "plan": "(未定)自由選を計画する",
+    "choice": "(未定)バリアフリーゾーンの選択",
+    "curing": "(未定)CP 値専用ゾーン",
+    "assessment": "(未定)専門的評価",
+    "contact": "(未定)私たちについて",
+    "zh-TW": "中文",
+    "": "English",
+    "ja-JP": "日本語",
+    "vi-VN": "Tiếng Việt",
+    "id-ID": "bahasa Indonésia"
+  }
+}

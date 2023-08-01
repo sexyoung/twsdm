@@ -1,0 +1,16 @@
+{
+  "greeting": "Hello",
+  "menu": {
+    "home": "Trang đầu",
+    "plan": "Tự do lựa chọn kế hoạch",
+    "choice": "Chuyên khu rào cản lựa chọn",
+    "curing": "Chuyên khu trị số CP",
+    "assessment": "Đánh giá độ chuyên nghiệp",
+    "contact": "Về chúng tôi",
+    "zh-TW": "中文",
+    "": "English",
+    "ja-JP": "日本語",
+    "vi-VN": "Tiếng Việt",
+    "id-ID": "bahasa Indonésia"
+  }
+}
