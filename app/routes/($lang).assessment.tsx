@@ -1,6 +1,8 @@
 import type { LinksFunction, V2_MetaFunction } from "@remix-run/node";
 import stylesheet from "~/styles/assessment.css";
 
+import usCDC from "~/images/us-cdc.png";
+
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
 ];
@@ -13,25 +15,33 @@ export default function () {
       <div className="hero">
         <div>專業評估</div>
       </div>
-      <div className="container mx-auto max-w-3xl">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non libero
-        obcaecati, omnis consectetur, autem placeat rerum inventore repudiandae
-        veritatis optio ratione. Corrupti mollitia provident alias dolore
-        facilis consequuntur asperiores blanditiis! Distinctio fugiat modi
-        expedita ex consectetur delectus rem! Dicta quisquam odio et quae
-        commodi, doloribus nesciunt autem totam eos iusto, numquam sit sed?
-        Eveniet assumenda quibusdam cumque, consectetur labore minima? Ipsum
-        facilis dignissimos libero accusantium tempora commodi vel omnis sed,
-        quibusdam atque magni impedit ex saepe, amet voluptatum quasi!
-        Aspernatur sunt quaerat debitis repellendus dolore laboriosam fugiat
-        vero veritatis eligendi? Dicta laborum quasi excepturi facilis optio
-        recusandae minus asperiores quo molestias, cumque repellat reiciendis
-        dolorum dolores necessitatibus, est vitae neque nobis dolor voluptatibus
-        ducimus officia quaerat a amet? Expedita, suscipit. Nostrum quis
-        voluptates praesentium sapiente incidunt sunt officia magnam distinctio
-        nemo animi repudiandae rem dicta sint modi, unde laboriosam? Ullam
-        corrupti atque dolores quibusdam repellendus, provident adipisci
-        doloremque a accusantium.
+      <div className="container mx-auto max-w-3xl px-10 text-center text-[#7a6f6f]">
+        <div className="title">
+          賀爾蒙禁忌症評估請參考
+          <span className="block md:inline md:after:content-['：']" />
+          美國疾管局口服避孕藥適用性彙整表
+        </div>
+        <img src={usCDC} className="mx-auto w-40" alt="us-cdc" />
+        <a
+          target="_blank"
+          className="mt-10 inline-block rounded-full bg-[#9b8e8e] px-4 py-2 font-bold text-white hover:bg-[#7a6f6f]"
+          href="https://www.cdc.gov/reproductivehealth/contraception/pdf/summary-chart-us-medical-eligibility-criteria_508tagged.pdf"
+          rel="noreferrer"
+        >
+          點即前往（英文版）
+        </a>
+
+        <div className="title">治療期間建議監測項目</div>
+        <ul className="text-left [&>*+*]:mt-4">
+          <li>育齡女性：懷孕計畫、超音波、CA-125、肝功能（依臨床考量）</li>
+          <li>
+            更年前期：超音波、CA-125、FSH、Estradiol、AMH（依臨床考量／自費）、TSH、Free
+            T4
+          </li>
+          <li>
+            更年期：超音波、每2年一次乳癌篩檢（年滿40歲及二等親乳癌病史、年滿45歲）、骨密度檢查（自費）
+          </li>
+        </ul>
       </div>
     </div>
   );

@@ -2,3 +2,7 @@
   background-image: url(~/images/hero-assessment.png);
   @apply bg-bottom;
 }
+
+.title {
+  @apply mb-4 mt-12 text-lg lg:text-2xl;
+}

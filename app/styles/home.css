@@ -16,10 +16,6 @@
     md:text-4xl;
 }
 
-.link-btn {
-  @apply rounded bg-[#dbc9c9] px-4 py-2;
-}
-
 .section {
   @apply px-10 py-24;
 }

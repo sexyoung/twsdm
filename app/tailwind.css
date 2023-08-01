@@ -45,4 +45,8 @@
     md:[&>*]:inline
     md:[&>*]:text-white;
   }
+
+  .link-btn {
+    @apply rounded-full bg-[#9b8e8e] px-4 py-2 text-white hover:bg-[#7a6f6f];
+  }
 }

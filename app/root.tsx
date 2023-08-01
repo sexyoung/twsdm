@@ -137,16 +137,10 @@ export default function App() {
             您對整個醫療環境的評論！
           </div>
           <div className="flex justify-center gap-4">
-            <Link
-              to={formLink[lang].person}
-              className="rounded-full bg-[#9b8e8e] px-4 py-2 font-bold text-white hover:bg-[#3e6796]"
-            >
+            <Link to={formLink[lang].person} className="link-btn">
               個人表單
             </Link>
-            <Link
-              to={formLink[lang].pro}
-              className="rounded-full bg-[#9b8e8e] px-4 py-2 font-bold text-white hover:bg-[#3e6796]"
-            >
+            <Link to={formLink[lang].pro} className="link-btn">
               醫療人員表單
             </Link>
           </div>

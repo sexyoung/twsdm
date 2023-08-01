@@ -22,8 +22,10 @@ export default function () {
         <div className="text">超簡單三步驟</div>
         <div className="text">自我打造專屬治療方案</div>
       </div>
-
       <div className="section">
+        <div className="my-10 text-center text-4xl font-bold text-red-500">
+          @todo 子宮內膜異位症
+        </div>
         <div className="title">步驟一：告訴我們您的主要困擾吧！</div>
         <div className="desc my-6 text-xl">
           在決定任何的治療前，我們須先了解您在3-6個月內是否有懷孕計畫，再考慮針對不同目的將治療分成3大類：
@@ -417,7 +419,7 @@ export default function () {
           </div>
         </div>
 
-        <h1 className="my-20 text-center text-4xl font-bold">
+        <h1 className="my-20 text-center text-4xl font-bold text-red-500">
           @todo 這邊要放懷孕的資訊
         </h1>
       </div>
