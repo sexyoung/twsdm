@@ -1,7 +1,21 @@
 import type { LinksFunction } from "@remix-run/node";
 import stylesheet from "~/styles/curing.css";
 // import { StarCheck, StarUnCheck } from "./icons";
+import cp1 from "~/images/cp1.png";
+import cp5 from "~/images/cp5.png";
+import cp6 from "~/images/cp6.png";
+import cp7 from "~/images/cp7.png";
+import cp8 from "~/images/cp8.png";
+import cp9 from "~/images/cp9.png";
 
+const image = {
+  cp1,
+  cp5,
+  cp6,
+  cp7,
+  cp8,
+  cp9,
+};
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
 ];
@@ -21,6 +35,7 @@ export type CuringDataType = {
   // price: string;
   // convenience: string;
   sideEffect: Array<string>;
+  image: keyof typeof image;
 };
 
 type CuringSubPageProps = {
@@ -33,7 +48,12 @@ export const CuringSubPage = (props: CuringSubPageProps) => {
   return (
     <div className="my-[100px]">
       <div className="mx-auto inline-block w-[600px] align-top">
-        <div className="cp-title cp-title1">
+        <div
+          className="cp-title"
+          style={{
+            backgroundImage: `url(${image[data.image]})`,
+          }}
+        >
           <div className="cp-title-text">
             <div className="text-[70px] leading-[80px]">{data.title}</div>
             <div className="text-[60px] leading-[80px]">{data.titleS}</div>
@@ -59,7 +79,10 @@ export const CuringSubPage = (props: CuringSubPageProps) => {
           <div className="cp-short-text">微專業短評</div>
           <div className="cp-short-divider" />
         </div>
-        <div className="cp-short-content">{data.shortComment}</div>
+        <div
+          className="cp-short-content"
+          dangerouslySetInnerHTML={{ __html: data.shortComment }}
+        />
       </div>
       <div className="mx-[30px] inline-block w-[330px] pt-[40px] text-[#857162]">
         {/* <table>
