@@ -13,6 +13,7 @@ import {
   Scripts,
   ScrollRestoration,
   useLoaderData,
+  useNavigate,
 } from "@remix-run/react";
 
 /** @deprecated */
@@ -37,6 +38,9 @@ export const links: LinksFunction = () => [
 
 export const loader = async ({ request, params }: LoaderArgs) => {
   let locale = params.lang || "en"; //await i18next.getLocale(request);
+
+  console.log("靠北=======");
+
   return json({
     lang: (params.lang || "") as keyof typeof formLink,
     locale,
@@ -59,6 +63,8 @@ const isAtBottom = (): boolean =>
 const isToday = () => !!document.cookie.includes("status=stillToday");
 
 export default function App() {
+  const navigate = useNavigate();
+  // const location = useLocation();
   // Get the locale from the loader
   let { locale, lang } = useLoaderData<typeof loader>();
 
@@ -105,6 +111,17 @@ export default function App() {
   });
 
   useEffect(() => {
+    // 如果沒有 prefix lang, 需判斷導頁 (only first)
+    console.log("進來否?");
+    if (!lang && !document.cookie.includes("save-user-locale=1")) {
+      document.cookie = "save-user-locale=1";
+      console.log(navigator.language);
+      console.log(location);
+
+      if (navigator.language !== "en-US") {
+        navigate(`/${navigator.language}`); // 沒有用.... 網址會變 但不會真的導頁，還是要在 server 端處理
+      }
+    }
     if (document.cookie.includes("twsdmlogo=1")) return setIsPlayLogo(false);
     document.cookie = "twsdmlogo=1";
     setIsPlayLogo(true);

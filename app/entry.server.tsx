@@ -27,7 +27,7 @@ export default async function handleRequest(
 
   let lng =
     JSON.parse(remixContext.serverHandoffString || "").state.loaderData.root
-      .locale || "en";
+      ?.locale || "en";
   // await i18next.getLocale(request);
   let ns = i18next.getRouteNamespaces(remixContext);
 

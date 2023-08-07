@@ -21,6 +21,9 @@ export default function () {
         <div className="text">{t("title2")}</div>
         <div className="text-lg md:text-lg lg:text-2xl">{t("title3")}</div>
       </div>
+      <div className="my-10 text-center text-4xl font-bold text-red-500">
+        @todo 子宮內膜異位症
+      </div>
       <div className="section container mx-auto  max-w-4xl">
         <h2 className="first-title">
           <img src={icon1} className="mx-auto w-20" alt="icon" />
@@ -80,7 +83,7 @@ export default function () {
           </Link>
         </div>
       </div>
-      <div className="section">
+      <div className="section bg-[#f6f8f5]">
         <img src={icon4} className="mx-auto w-20" alt="icon" />
         <h2 className="text-center text-2xl md:text-6xl">
           {t("evaluate.title")}

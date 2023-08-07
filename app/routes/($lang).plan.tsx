@@ -1,6 +1,8 @@
 import type { LinksFunction, V2_MetaFunction } from "@remix-run/node";
-import { Link } from "@remix-run/react";
+
 import stylesheet from "~/styles/plan.css";
+
+import todo1 from "~/images/1.png";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
@@ -9,13 +11,6 @@ export const links: LinksFunction = () => [
 export const meta: V2_MetaFunction = () => [{ title: "計畫自由選" }];
 
 export default function () {
-  const smoothTo = (targetId: string, e: { preventDefault: () => void }) => {
-    e.preventDefault();
-    const target = document.getElementById(targetId);
-    console.log(target);
-
-    target?.scrollIntoView({ behavior: "smooth", block: "start" });
-  };
   return (
     <div>
       <div className="hero">
@@ -23,26 +18,20 @@ export default function () {
         <div className="text">自我打造專屬治療方案</div>
       </div>
       <div className="section">
-        <div className="my-10 text-center text-4xl font-bold text-red-500">
-          @todo 子宮內膜異位症
-        </div>
         <div className="title">步驟一：告訴我們您的主要困擾吧！</div>
         <div className="desc my-6 text-xl">
           在決定任何的治療前，我們須先了解您在3-6個月內是否有懷孕計畫，再考慮針對不同目的將治療分成3大類：
         </div>
-        <div className="plan-block">
-          <Link to="#table1" onClick={smoothTo.bind(null, "table1")}>
-            <div />
-          </Link>
-          <Link to="#table2" onClick={smoothTo.bind(null, "table2")}>
-            <div />
-          </Link>
-          <Link to="#table3" onClick={smoothTo.bind(null, "table3")}>
-            <div />
-          </Link>
-          <div />
-        </div>
-        <h1 className="mb-10 mt-20 text-center text-2xl font-bold">經痛</h1>
+        <h1 className="title-block">
+          <div className="title">經痛</div>
+          <div className="sub-title">
+            睡得開心
+            <span>|</span>
+            快樂上班
+            <span>|</span>
+            家庭和諧
+          </div>
+        </h1>
         <div
           className="flex items-start whitespace-nowrap rounded-lg border border-red-200"
           id="table1"
@@ -167,7 +156,16 @@ export default function () {
           </div>
         </div>
 
-        <h1 className="mb-10 mt-20 text-center text-2xl font-bold">異常出血</h1>
+        <h1 className="title-block">
+          <div className="title">異常出血</div>
+          <div className="sub-title">
+            兼顧生活
+            <span>|</span>
+            增加舒適
+            <span>|</span>
+            活動自如
+          </div>
+        </h1>
         <div
           className="flex items-start whitespace-nowrap rounded-lg border border-red-200"
           id="table2"
@@ -292,8 +290,15 @@ export default function () {
           </div>
         </div>
 
-        <h1 className="mb-10 mt-20 text-center text-2xl font-bold">
-          巧克力囊腫
+        <h1 className="title-block">
+          <div className="title">巧克力囊腫</div>
+          <div className="sub-title">
+            預防復發
+            <span>|</span>
+            減少手術
+            <span>|</span>
+            降低癌症
+          </div>
         </h1>
         <div
           className="flex items-start whitespace-nowrap rounded-lg border border-red-200"
@@ -419,9 +424,20 @@ export default function () {
           </div>
         </div>
 
-        <h1 className="my-20 text-center text-4xl font-bold text-red-500">
-          @todo 這邊要放懷孕的資訊
+        <h1 className="title-block">
+          <div className="title">計畫懷孕</div>
+          <div className="sub-title">
+            卵巢功能
+            <span>|</span>
+            受孕能力
+            <span>|</span>
+            備孕計畫
+          </div>
         </h1>
+        <div className="my-10 text-center text-4xl font-bold text-red-500">
+          @todo ↓ 這邊要用字取代圖
+        </div>
+        <img src={todo1} alt="todo" />
       </div>
     </div>
   );

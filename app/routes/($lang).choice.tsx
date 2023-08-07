@@ -19,7 +19,7 @@ export const meta: V2_MetaFunction = () => [{ title: "選擇障礙專區" }];
 export default function () {
   return (
     <div>
-      <div className="choice-banner bg-slate-400">
+      <div className="hero choice-banner bg-slate-400">
         <div className="banner-text">有選擇障礙嗎？</div>
       </div>
       <div className="bg-[#f6f8f5]">
@@ -92,7 +92,7 @@ export default function () {
         <div className="choice-img img3">
           <div className="img-box img3-box">
             <div className="img-title img3-title">長期預防復發</div>
-            <div className="img-text img3-text">
+            <div className="img-text img3-text bg-[#a7c5cc]">
               為保存卵巢品質、預防反覆復發及手術，目前建議針對卵巢巧克力囊腫應採取長期控制。適合長期使用的藥物治療包含：
               <span className="underline">異位寧、黛麗安</span>等口服賀爾蒙。
             </div>

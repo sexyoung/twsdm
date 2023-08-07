@@ -7,31 +7,28 @@
   @apply container mx-auto max-w-[900px] px-8 text-[#9b8e8e];
 }
 
-.section .title {
+.section > .title {
   @apply mt-12 text-center text-3xl font-bold;
 }
 
-.section .plan-block {
-  @apply inline-grid w-full grid-cols-1 gap-4 md:grid-cols-2;
+.section .title-block {
+  background-image: url(~/images/bg-flower.png);
+  @apply mx-auto mb-10 mt-20 max-w-md bg-cover bg-center p-10 text-center text-2xl font-bold;
 }
 
-.plan-block > * {
-  aspect-ratio: 16 / 9;
-  @apply bg-cover bg-center bg-no-repeat;
+.section .title-block:before,
+.section .title-block:after {
+  @apply block h-0.5 border-y-0 bg-[#ff914d] content-[''];
 }
 
-.plan-block > *:nth-of-type(1) {
-  background-image: url(~/images/plan-1.png);
+.section .title-block > .title {
+  @apply mt-4 rounded-lg bg-[#ff914d] py-2 text-white;
 }
 
-.plan-block > *:nth-of-type(2) {
-  background-image: url(~/images/plan-2.png);
+.section .title-block > .sub-title {
+  @apply py-2 text-xs text-[#ff914d];
 }
 
-.plan-block > *:nth-of-type(3) {
-  background-image: url(~/images/plan-3.png);
-}
-
-.plan-block > *:nth-of-type(4) {
-  background-image: url(~/images/plan-4.png);
+.section .title-block > .sub-title > span {
+  @apply mx-2 inline-block;
 }

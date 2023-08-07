@@ -1,5 +1,6 @@
 .hero {
   background-image: url(~/images/home-hero.png);
+  @apply bg-center;
 }
 
 .first-title {
