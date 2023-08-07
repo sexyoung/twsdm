@@ -50,15 +50,19 @@ export const loader = async ({ request, params }: LoaderArgs) => {
       }
     : {};
 
-  // 如果 params.lang 為空，判斷語系是否為英文，否則轉頁
-  if (!params.lang && !cookie?.keepLang) {
-    const browserLang =
-      request.headers
-        .get("accept-language")
-        ?.split(",")
-        .map((l) => l.split(";").shift())
-        .shift() || "";
+  const browserLang =
+    request.headers
+      .get("accept-language")
+      ?.split(",")
+      .map((l) => l.split(";").shift())
+      .shift() || "";
 
+  // 如果 params.lang 為空，判斷語系是否為英文，否則轉頁
+  if (
+    !params.lang &&
+    !cookie?.keepLang &&
+    request.headers.get("accept-language")
+  ) {
     if (!["en-US", "en"].includes(browserLang)) {
       return redirect(`/${browserLang}`, init);
     }
