@@ -9,8 +9,6 @@ type HeaderProps = {
 export default function Links({ lang, openLang }: HeaderProps) {
   let { t } = useTranslation("common");
   const prefix = lang && `/${lang}`;
-  console.log({ prefix });
-
   const handleClick = () => {
     if ((document.getElementById("menu-toggle") as HTMLInputElement).checked) {
       document.getElementById("menu-toggle")?.click();

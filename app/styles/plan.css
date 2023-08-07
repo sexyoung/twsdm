@@ -1,6 +1,6 @@
 .hero {
   background-image: url(~/images/hero-plan.png);
-  @apply bg-top;
+  @apply bg-cover bg-top;
 }
 
 .section {

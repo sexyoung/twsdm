@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 import { cssBundleHref } from "@remix-run/css-bundle";
 import type { LinksFunction, LoaderArgs } from "@remix-run/node";
-import { json } from "@remix-run/node";
+import { json, redirect } from "@remix-run/node";
 import {
   Link,
   Links,
@@ -13,7 +13,6 @@ import {
   Scripts,
   ScrollRestoration,
   useLoaderData,
-  useNavigate,
 } from "@remix-run/react";
 
 /** @deprecated */
@@ -30,6 +29,7 @@ import Modal from "./components/modal";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import LangModal from "./components/LangModal";
+import { userPrefs } from "./cookie.server";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
@@ -39,13 +39,39 @@ export const links: LinksFunction = () => [
 export const loader = async ({ request, params }: LoaderArgs) => {
   let locale = params.lang || "en"; //await i18next.getLocale(request);
 
-  console.log("靠北=======");
+  const cookie = await userPrefs.parse(request.headers.get("Cookie"));
 
-  return json({
-    lang: (params.lang || "") as keyof typeof formLink,
-    locale,
-    user: await getUser(request),
-  });
+  // 如果 cookie.keepLang 沒東西，就要記下來
+  const init = !cookie?.keepLang
+    ? {
+        headers: {
+          "Set-Cookie": await userPrefs.serialize({ keepLang: true }),
+        },
+      }
+    : {};
+
+  // 如果 params.lang 為空，判斷語系是否為英文，否則轉頁
+  if (!params.lang && !cookie?.keepLang) {
+    const browserLang =
+      request.headers
+        .get("accept-language")
+        ?.split(",")
+        .map((l) => l.split(";").shift())
+        .shift() || "";
+
+    if (!["en-US", "en"].includes(browserLang)) {
+      return redirect(`/${browserLang}`, init);
+    }
+  }
+
+  return json(
+    {
+      lang: (params.lang || "") as keyof typeof formLink,
+      locale,
+      user: await getUser(request),
+    },
+    init
+  );
 };
 
 export let handle = {
@@ -63,7 +89,6 @@ const isAtBottom = (): boolean =>
 const isToday = () => !!document.cookie.includes("status=stillToday");
 
 export default function App() {
-  const navigate = useNavigate();
   // const location = useLocation();
   // Get the locale from the loader
   let { locale, lang } = useLoaderData<typeof loader>();
@@ -111,17 +136,6 @@ export default function App() {
   });
 
   useEffect(() => {
-    // 如果沒有 prefix lang, 需判斷導頁 (only first)
-    console.log("進來否?");
-    if (!lang && !document.cookie.includes("save-user-locale=1")) {
-      document.cookie = "save-user-locale=1";
-      console.log(navigator.language);
-      console.log(location);
-
-      if (navigator.language !== "en-US") {
-        navigate(`/${navigator.language}`); // 沒有用.... 網址會變 但不會真的導頁，還是要在 server 端處理
-      }
-    }
     if (document.cookie.includes("twsdmlogo=1")) return setIsPlayLogo(false);
     document.cookie = "twsdmlogo=1";
     setIsPlayLogo(true);

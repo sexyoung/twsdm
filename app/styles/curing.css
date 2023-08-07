@@ -1,6 +1,6 @@
 .hero {
   background-image: url("~/images/hero-curing.png");
-  @apply bg-center;
+  @apply bg-cover bg-center;
 }
 
 .cp-banner {

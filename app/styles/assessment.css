@@ -1,6 +1,6 @@
 .hero {
   background-image: url(~/images/hero-assessment.png);
-  @apply flex bg-bottom;
+  @apply flex bg-cover bg-bottom;
 }
 
 .title {

@@ -12,7 +12,8 @@ export default function LangModal({ onClose, lang }: ModalProps) {
   let { t } = useTranslation("common");
   useEffect(() => {
     document.body.classList.add("overflow-hidden");
-    path = location.pathname.split("/").at(-1) || "";
+    path = location.pathname.replace(/\/(zh-TW|id-ID|ja-JP|vi-VN)/g, "");
+    if (path === "/") path = "";
   }, [lang]);
 
   return (
@@ -52,7 +53,7 @@ export default function LangModal({ onClose, lang }: ModalProps) {
                   <div className="mt-2 text-sm text-gray-500">
                     <ul className="whitespace-nowrap bg-white py-2 text-black [&>*]:py-0.5">
                       <li>
-                        <a href={[`/zh-TW`, path].join("/")}>
+                        <a href={[`/zh-TW`, path].join("")}>
                           {t("menu.zh-TW")}
                         </a>
                       </li>
@@ -60,17 +61,17 @@ export default function LangModal({ onClose, lang }: ModalProps) {
                         <a href={`/${path}`}>{t("menu.")}</a>
                       </li>
                       <li>
-                        <a href={["/ja-JP", path].join("/")}>
+                        <a href={["/ja-JP", path].join("")}>
                           {t("menu.ja-JP")}
                         </a>
                       </li>
                       <li>
-                        <a href={["/vi-VN", path].join("/")}>
+                        <a href={["/vi-VN", path].join("")}>
                           {t("menu.vi-VN")}
                         </a>
                       </li>
                       <li>
-                        <a href={["/id-ID", path].join("/")}>
+                        <a href={["/id-ID", path].join("")}>
                           {t("menu.id-ID")}
                         </a>
                       </li>
