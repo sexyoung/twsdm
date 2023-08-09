@@ -15,6 +15,8 @@ import {
   useLoaderData,
 } from "@remix-run/react";
 
+import * as gtag from "~/utils/gtags.client";
+
 /** @deprecated */
 import { getUser } from "~/session.server";
 // import i18next from "~/i18next.server";
@@ -73,6 +75,7 @@ export const loader = async ({ request, params }: LoaderArgs) => {
       lang: (params.lang || "") as keyof typeof formLink,
       locale,
       user: await getUser(request),
+      gaTrackingId: process.env.GA_TRACKING_ID,
     },
     init
   );
@@ -95,7 +98,7 @@ const isToday = () => !!document.cookie.includes("status=stillToday");
 export default function App() {
   // const location = useLocation();
   // Get the locale from the loader
-  let { locale, lang } = useLoaderData<typeof loader>();
+  let { locale, lang, gaTrackingId } = useLoaderData<typeof loader>();
 
   let { i18n } = useTranslation();
 
@@ -146,6 +149,12 @@ export default function App() {
     setTimeout(() => setIsPlayLogo(false), 3000);
   }, []);
 
+  useEffect(() => {
+    if (gaTrackingId?.length) {
+      gtag.pageview(location.pathname, gaTrackingId);
+    }
+  }, [gaTrackingId]);
+
   return (
     <html lang={locale} className="h-full" dir={i18n.dir()}>
       <head>
@@ -155,6 +164,29 @@ export default function App() {
         <Links />
       </head>
       <body className="h-full">
+        {!gaTrackingId ? null : (
+          <>
+            <script
+              async
+              src={`https://www.googletagmanager.com/gtag/js?id=${gaTrackingId}`}
+            />
+            <script
+              async
+              id="gtag-init"
+              dangerouslySetInnerHTML={{
+                __html: `
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+
+                  gtag('config', '${gaTrackingId}', {
+                    page_path: window.location.pathname,
+                  });
+                `,
+              }}
+            />
+          </>
+        )}
         <Header
           isHeaderBG={isHeaderBG}
           openLang={setShowLangModal.bind(null, true)}
