@@ -1,42 +1,42 @@
 {
-  "title1": "Hello Welcome",
-  "title2": "Endometriosis big and small",
-  "title3": "Your online micro-professional consultation",
-  "planFreeChoose": "Plan Free Choose:",
-  "3step": "3 step",
+  "title1": "Hello! Welcome to",
+  "title2": "Endometriosis A to Z",
+  "title3": "Your Online Specialty Consultation on Minor Professionalism Platform",
+  "planFreeChoose": "Mix-and-Match Plans:",
+  "3step": "Have an individualized treatment plan in only three steps",
   "3stepArticle": [
     {
-      "title": "tell me what you want",
-      "text": "bla bla bla bla bla bla bla bla bla bla "
+      "title": "Tell Us about Your Chief Complaints!",
+      "text": "You may have more than one treatment goal. Let’s fight against the primary enemy first and then pick up the pieces one-by-one later."
     },
     {
-      "title": "title2",
-      "text": "bla bla bla bla bla bla bla bla bla bla "
+      "title": "Consider the Demands",
+      "text": "Explore your best intervention protocols by analyzing the advantages/disadvantages and the outcomes of treatments!"
     },
     {
-      "title": "with Dr",
-      "text": "bla bla bla bla bla bla bla bla bla bla "
+      "title": "Discuss with Your Doctor",
+      "text": "Show self-value and your wisdom."
     }
   ],
-  "go2freeChoose": "go to free Choose GO!",
+  "go2freeChoose": "Go to “Mix-and-Match Plan”",
   "choiceBarrier": {
-    "title1": "choice barrier?",
-    "title2": "bla bla bla",
-    "title3": "plan",
-    "text": "bla bla bla bla bla bla bla bla bla bla ",
-    "goTo": "go to choice barrier"
+    "title1": "Suffer from Choice Paralysis?",
+    "title2": "Refer to the “Preference Options” Created by Our Specialists on the Minor Professionalism Platform",
+    "title3": "",
+    "text": "Beat the Endometriosis Easily via Learning through Multimedia!",
+    "goTo": "Go to “Options for Choice Paralysis”"
   },
   "treatments": {
-    "title": "CPCPCPCPCPCP",
-    "text": "bla bla bla bla bla bla bla bla bla bla ",
-    "go2CP": "go to CP"
+    "title": "Know the “Affordable Options”",
+    "text": "Our interventions are helpful to ameliorate medical conditions. However, each intervention protocol has its own advantages/disadvantages, timeliness, side effects and costs. In the long term, learning from the specialists and from women with childbearing potentials’ (WCBP’s) perspectives on the Minor Professionalism Platform can add some more possibilities on disease control!",
+    "go2CP": "Go to “Affordable Options”"
   },
   "evaluate": {
-    "title": "evaluate's title",
-    "text1": "text1",
-    "text2": "text2",
-    "text3": "text3",
-    "go2Evaluate": "go 2 Evaluate"
+    "title": "Assessment Tools for Advanced Specialists",
+    "text1": "Assessment of HRT Side Effects",
+    "text2": "Risk Assessment for Ovarian Cancer",
+    "text3": "Items to be Monitored during Treatment",
+    "go2Evaluate": "Go to “Professional Evaluation”"
   },
   "xxxxx": "xxxxxxxx"
 }
