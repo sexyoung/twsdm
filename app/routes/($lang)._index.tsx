@@ -26,6 +26,8 @@ export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
 ];
 
+// export let handle = { i18n: "home" };
+
 export default function () {
   let { t } = useTranslation("home");
   return (
@@ -37,7 +39,7 @@ export default function () {
       </div>
       <div className="section container mx-auto  max-w-4xl">
         <div className="my-2 text-center text-2xl font-medium md:text-4xl">
-          子宮內膜異位症？
+          {t("whatIsEndometriosis")}
         </div>
         <div className="mt-10 flex flex-wrap gap-x-4">
           {[...Array(5).keys()].map((index) => (
