@@ -9,8 +9,13 @@
   background-color: #f6f8f5;
 }
 
+.cp-left-block {
+  @apply mx-auto inline-block w-[600px] align-top;
+}
+
 .cp-title {
   height: 200px;
+  max-width: 100%;
   color: #857162;
   position: relative;
   margin-bottom: 40px;
@@ -123,4 +128,70 @@ td {
 .pink-bg {
   background-color: #e8b994;
   border-radius: 90% 15px 20px 60%;
+}
+
+.cp-main-title {
+  @apply text-[70px] leading-[80px];
+}
+
+.cp-main-titleS {
+  @apply text-[60px] leading-[80px];
+}
+
+@media (max-width: 640px) {
+  .cp-title {
+    height: 140px;
+  }
+  .cp-title-text {
+    right: 0;
+    left: 50px;
+  }
+  .cp-left-block {
+    width: 100%;
+  }
+  .cp-main-title {
+    @apply text-[50px] leading-[60px];
+  }
+  .cp-main-titleS {
+    @apply text-[40px] leading-[50px];
+  }
+  .cp-title-content {
+    font-size: 16px;
+  }
+  .cp-title-content-m {
+    font-size: 20px;
+  }
+  .cp-short-text {
+    font-size: 30px;
+  }
+  .cp-short-content {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cp-main-title {
+    @apply text-[40px] leading-[50px];
+  }
+  .cp-main-titleS {
+    @apply text-[30px] leading-[40px];
+  }
+  .cp-short-text {
+    font-size: 22px;
+  }
+  .cp-short-content {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .cp-title-text {
+    left: 0;
+    width: 300px;
+  }
+  .cp-title-content {
+    width: 300px;
+  }
+  .cp-title-content-m {
+    width: 300px;
+  }
 }

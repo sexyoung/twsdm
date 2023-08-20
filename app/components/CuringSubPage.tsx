@@ -46,8 +46,8 @@ export const CuringSubPage = (props: CuringSubPageProps) => {
   const { data } = props;
 
   return (
-    <div className="my-[100px]">
-      <div className="mx-auto inline-block w-[600px] align-top">
+    <div className="mx-5 my-[100px]">
+      <div className="cp-left-block">
         <div
           className="cp-title"
           style={{
@@ -55,8 +55,8 @@ export const CuringSubPage = (props: CuringSubPageProps) => {
           }}
         >
           <div className="cp-title-text">
-            <div className="text-[70px] leading-[80px]">{data.title}</div>
-            <div className="text-[60px] leading-[80px]">{data.titleS}</div>
+            <div className="cp-main-title">{data.title}</div>
+            <div className="cp-main-titleS">{data.titleS}</div>
             <div className="cp-title-content">
               {data.subtitleS.map((subtitle, index) => (
                 <>
@@ -84,7 +84,7 @@ export const CuringSubPage = (props: CuringSubPageProps) => {
           dangerouslySetInnerHTML={{ __html: data.shortComment }}
         />
       </div>
-      <div className="mx-[30px] inline-block w-[330px] pt-[40px] text-[#857162]">
+      <div className="mx-[30px] inline-block w-fit pt-[40px] text-[#857162]">
         {/* <table>
           <tr>
             <th>藥效</th>

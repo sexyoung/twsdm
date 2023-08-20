@@ -17,7 +17,7 @@ export default function () {
       <div className="hero">
         <div>CP 值專區</div>
       </div>
-      <div className="mx-auto mt-16 w-fit">
+      <div className="mx-auto mt-16">
         {(curingData as CuringDataType[]).map((data, index: number) => (
           <>
             <CuringSubPage key={index} data={data} />
