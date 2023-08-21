@@ -33,9 +33,11 @@ export default function () {
   return (
     <div className="text-[#9b8e8e]">
       <div className="hero">
-        <div className="text">{t("title1")}</div>
-        <div className="text">{t("title2")}</div>
-        <div className="text-lg md:text-lg lg:text-2xl">{t("title3")}</div>
+        <div className="text container mx-auto text-center">{t("title1")}</div>
+        <div className="text container mx-auto text-center">{t("title2")}</div>
+        <div className="container mx-auto text-center text-lg md:text-lg lg:text-2xl">
+          {t("title3")}
+        </div>
       </div>
       <div className="section container mx-auto  max-w-4xl">
         <div className="my-2 text-center text-2xl font-medium md:text-4xl">
