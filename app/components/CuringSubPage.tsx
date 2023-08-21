@@ -42,11 +42,11 @@ type CuringSubPageProps = {
   data: CuringDataType;
 };
 
-export const CuringSubPage = (props: CuringSubPageProps) => {
+const CuringSubPage = (props: CuringSubPageProps) => {
   const { data } = props;
 
   return (
-    <div className="mx-5 my-[100px]">
+    <div className="cp-container">
       <div className="cp-left-block">
         <div
           className="cp-title"
@@ -59,18 +59,18 @@ export const CuringSubPage = (props: CuringSubPageProps) => {
             <div className="cp-main-titleS">{data.titleS}</div>
             <div className="cp-title-content">
               {data.subtitleS.map((subtitle, index) => (
-                <>
+                <div key={index}>
                   {subtitle}
                   {index < data.subtitleS.length - 1 && <br />}
-                </>
+                </div>
               ))}
             </div>
             <div className="cp-title-content-m">
               {data.subtitleM.map((subtitle, index) => (
-                <>
+                <div key={index}>
                   {subtitle}
                   {index < data.subtitleM.length - 1 && <br />}
-                </>
+                </div>
               ))}
             </div>
           </div>
@@ -84,7 +84,7 @@ export const CuringSubPage = (props: CuringSubPageProps) => {
           dangerouslySetInnerHTML={{ __html: data.shortComment }}
         />
       </div>
-      <div className="mx-[30px] inline-block w-fit pt-[40px] text-[#857162]">
+      <div className="cp-right-block">
         {/* <table>
           <tr>
             <th>藥效</th>
@@ -155,21 +155,23 @@ export const CuringSubPage = (props: CuringSubPageProps) => {
             </td>
           </tr>
         </table> */}
-        <div className="cp-effect-divider " />
+        <div className="cp-effect-divider" />
         <table>
-          <tr>
-            <th>副作用</th>
-          </tr>
-          <tr>
-            <td>
-              {data.sideEffect.map((sideEffect, index) => (
-                <div key={index}>
-                  {sideEffect}
-                  {index < data.sideEffect.length - 1 && <br />}
-                </div>
-              ))}
-            </td>
-          </tr>
+          <tbody>
+            <tr>
+              <th>副作用</th>
+            </tr>
+            <tr>
+              <td>
+                {data.sideEffect.map((sideEffect, index) => (
+                  <div key={index}>
+                    {sideEffect}
+                    {index < data.sideEffect.length - 1 && <br />}
+                  </div>
+                ))}
+              </td>
+            </tr>
+          </tbody>
         </table>
       </div>
     </div>
