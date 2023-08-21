@@ -1,0 +1,90 @@
+{
+  "hero": [
+    "超簡單三步驟",
+    "自我打造專屬治療方案"
+  ],
+  "step1": {
+    "title": "步驟一：告訴我們您的主要困擾吧！",
+    "text": "在決定任何的治療前，我們須先了解您在3-6個月內是否有懷孕計畫，再考慮針對不同目的將治療分成3大類："
+  },
+  "objectives": [
+    {
+      "title": "經痛",
+      "text": [
+        "睡得開心",
+        "快樂上班",
+        "家庭和諧"
+      ]
+    },
+    {
+      "title": "異常出血",
+      "text": [
+        "兼顧生活",
+        "增加舒適",
+        "活動自如"
+      ]
+    },
+    {
+      "title": "巧克力囊腫",
+      "text": [
+        "預防復發",
+        "減少手術",
+        "降低癌症"
+      ]
+    },
+    {
+      "title": "計劃懷孕",
+      "text": [
+        "卵巢功能",
+        "受孕能力",
+        "備孕計畫"
+      ]
+    }
+  ],
+  "table": {
+    "symptomControllingDrugs": "症狀控制藥",
+    "4thGenerationProgesterone": "第四代黃體素",
+    "birthControlPills": "避孕藥",
+    "IUD": "子宮內投藥避孕器",
+    "gnRHAgonists": "性腺激素釋放素促進劑",
+    "androgen": "(類)雄性素",
+    "conservativeSurgery": "保守性手術",
+    "radicalSurgery": "根除性手術",
+    "medicine": "代表藥物",
+    "timeliness": "奏效速度",
+    "potency": "效力",
+    "sideEffects": "副作用",
+    "administration": "使用方式",
+    "cost": "價錢",
+    "preference": "推薦順序",
+    "naproxen": "Naproxen (能百鎮)",
+    "dienogest": "Dienogest (異位寧)",
+    "diane": "Diane (黛麗安)",
+    "mirena": "Mirena (蜜蕊娜)",
+    "leuprolide": "Leuprolide (柳培林)",
+    "gestrinone": "Gestrinone (佑汝)",
+    "adenomyomectomyNerveBlockEtc": "肌腺瘤切除、神經阻斷等",
+    "hysterectomy": "子宮切除",
+    "severalDays": "數天",
+    "moderate": "一般",
+    "potent": "有效",
+    "extremelyPotent": "極有效",
+    "coveredByHealthInsurance": "健保",
+    "moderateToSevere": "稍強",
+    "usuallyNT10KandMore": "通常萬元起跳",
+    "microsurgeryOrConventionalSurgery": "微創或傳統手術",
+    "oralIntakeDailyDuringPeriod": "經期每天口服",
+    "oralIntakeDaily": "每天口服",
+    "injectionMonthTotalOf3-6Injections": "每月一針共3-6針",
+    "NT6000AndMorePerInjection": "每針6000元以上",
+    "oneDeviceFor5Years": "放置一支持續5年",
+    "minor": "輕微",
+    "fastActing": "快",
+    "3weeks": "3週",
+    "2weeks": "2週",
+    "6-9MonthsAndLonger": "6-9個月以上",
+    "transamine": "Transamine (斷血炎)",
+    "adenomyomectomy": "肌腺瘤切除",
+    "coveredByHealthInsuranceIfHbLess10": "血紅素<10可健保"
+  }
+}
