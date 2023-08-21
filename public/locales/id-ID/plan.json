@@ -1,0 +1,89 @@
+{
+  "hero": [
+    "Tiga langkah simpel menciptakan program pengobatan eksklusif"
+  ],
+  "step1": {
+    "title": "Langkah 1: Beritahukan kami masalah utama Anda!",
+    "text": "Sebelum memutuskan program pengobatan apapun, kami harus terlebih dulu memahami apakah Anda ada rencana hamil dalam waktu 3-6 bulan ini, setelah itu baru menimbang tujuan pengobatan yang berbeda terbagi atas 3 kategori:"
+  },
+  "objectives": [
+    {
+      "title": "Sakit haid",
+      "text": [
+        "Tidur nyenyak",
+        "Bekerja dengan gembira",
+        "Keluarga yang harmonis"
+      ]
+    },
+    {
+      "title": "Pendarahan abnormal",
+      "text": [
+        "Gaya hidup dapat sekaligus terjaga",
+        "Meningkatkan kenyamanan",
+        "Bergerak dengan bebas"
+      ]
+    },
+    {
+      "title": "Kista cokelat",
+      "text": [
+        "Mencegah kekambuhan",
+        "Mengurangi operasi",
+        "Merendahkan kanker"
+      ]
+    },
+    {
+      "title": "?????",
+      "text": [
+        "Berencana hamil",
+        "Fungsi ovarium",
+        "Kemampuan pembuahan"
+      ]
+    }
+  ],
+  "table": {
+    "symptomControllingDrugs": "Obat Pengontrol Gejala",
+    "4thGenerationProgesterone": "Progesteron IV",
+    "birthControlPills": "Obat Pencegah Hamil",
+    "IUD": "Alat kontrasepsi di dalam rahim",
+    "gnRHAgonists": "Obat Perilisan Gonadotropin",
+    "androgen": "(semacam) Androgen",
+    "conservativeSurgery": "Operasi Konservatif",
+    "radicalSurgery": "Operasi Radikal",
+    "medicine": "Obat Representatif",
+    "timeliness": "Hasil Mujarab",
+    "potency": "Kemanjuran",
+    "sideEffects": "Efek Samping",
+    "administration": "Metode Penggunaan",
+    "cost": "Harga",
+    "preference": "Urutan yang disarankan",
+    "naproxen": "Naproxen",
+    "dienogest": "Dienogest",
+    "diane": "Diane",
+    "mirena": "Mirena",
+    "leuprolide": "Leuprolide",
+    "gestrinone": "Gestrinone",
+    "adenomyomectomyNerveBlockEtc": "Myadenomektomi, pemutusan saraf, dsb",
+    "hysterectomy": "Histerektomi",
+    "severalDays": "Beberapa hari",
+    "moderate": "Biasa",
+    "potent": "Manjur",
+    "extremelyPotent": "Sangat manjur",
+    "coveredByHealthInsurance": "Asuransi Kesehatan",
+    "moderateToSevere": "Agak kuat",
+    "usuallyNT10KandMore": "Biasanya NTD 10 ribu ke atas",
+    "microsurgeryOrConventionalSurgery": "Operasi invasif mikro atau tradisional",
+    "oralIntakeDailyDuringPeriod": "Oral per hari selama haid",
+    "oralIntakeDaily": "Oral per hari",
+    "injectionMonthTotalOf3-6Injections": "1 injeksi/bulan, total 3-6 injeksi",
+    "NT6000AndMorePerInjection": "Lebih dari NTD 6000/buah",
+    "oneDeviceFor5Years": "Pasang satu selama 5 tahun",
+    "minor": "Ringan",
+    "fastActing": "Cepat",
+    "3weeks": "3 minggu",
+    "2weeks": "2 minggu",
+    "6-9MonthsAndLonger": "6-9 bulan ke atas",
+    "transamine": "Transamine",
+    "adenomyomectomy": "Myadenomektomi",
+    "coveredByHealthInsuranceIfHbLess10": "Hemoglobin <10 boleh pakai Asuransi Kesehatan"
+  }
+}

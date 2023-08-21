@@ -58,7 +58,7 @@ export default function LangModal({ onClose, lang }: ModalProps) {
                         </a>
                       </li>
                       <li>
-                        <a href={`/${path}`}>{t("menu.")}</a>
+                        <a href={`/${path}`.replace("//", "/")}>{t("menu.")}</a>
                       </li>
                       <li>
                         <a href={["/ja-JP", path].join("")}>
