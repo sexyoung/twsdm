@@ -16,8 +16,8 @@ export default function () {
   return (
     <div>
       <div className="hero">
-        <div className="text">{t("hero.0")}</div>
-        <div className="text">{t("hero.1")}</div>
+        <div className="text container mx-auto">{t("hero.0")}</div>
+        <div className="text container mx-auto">{t("hero.1")}</div>
       </div>
       <div className="section">
         <div className="title">{t("step1.title")}</div>

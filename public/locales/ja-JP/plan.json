@@ -1,0 +1,90 @@
+{
+  "hero": [
+    "自分だけの治療を見つける",
+    "簡単な3つのステップ"
+  ],
+  "step1": {
+    "title": "ステップ1：主なお悩みを教えてください",
+    "text": "治療の前に、3-6か月以内に妊娠の計画があるかをお知らせください。これに基づき、目的に合わせて治療を3つの分野に分けます。"
+  },
+  "objectives": [
+    {
+      "title": "生理痛",
+      "text": [
+        "快適な睡眠",
+        "仕事も順調",
+        "幸福な家庭"
+      ]
+    },
+    {
+      "title": "異常な出血",
+      "text": [
+        "生活への影響",
+        "快適性の向上",
+        "自由自在"
+      ]
+    },
+    {
+      "title": "チョコレート嚢胞",
+      "text": [
+        "再発の予防",
+        "手術の回避",
+        "がん予防"
+      ]
+    },
+    {
+      "title": "計画妊娠",
+      "text": [
+        "卵巣機能",
+        "妊娠能力",
+        "妊娠計画"
+      ]
+    }
+  ],
+  "table": {
+    "symptomControllingDrugs": "対症療法薬",
+    "4thGenerationProgesterone": "第4世代黄体ホルモン製剤",
+    "birthControlPills": "避妊薬",
+    "IUD": "子宮内避妊器具",
+    "gnRHAgonists": "性腺刺激ホルモン放出ホルモン",
+    "androgen": "テストステロン系",
+    "conservativeSurgery": "温存手術",
+    "radicalSurgery": "摘出手術",
+    "medicine": "代表的薬剤",
+    "timeliness": "治療の速さ",
+    "potency": "効果",
+    "sideEffects": "副作用",
+    "administration": "使用方法",
+    "cost": "価格",
+    "preference": "おすすめ順",
+    "naproxen": "Naproxen",
+    "dienogest": "Dienogest ",
+    "diane": "Diane ",
+    "mirena": "Mirena ",
+    "leuprolide": "Leuprolide",
+    "gestrinone": "Gestrinone ",
+    "adenomyomectomyNerveBlockEtc": "腺筋腫切除、神経ブロックなど",
+    "hysterectomy": "子宮切除",
+    "severalDays": "数日",
+    "moderate": "普通",
+    "potent": "有効",
+    "extremelyPotent": "非常に有効",
+    "coveredByHealthInsurance": "健康保険",
+    "moderateToSevere": "一定程度存在",
+    "usuallyNT10KandMore": "通常1万元以上",
+    "microsurgeryOrConventionalSurgery": "MISまたは従来の手術",
+    "oralIntakeDailyDuringPeriod": "月経中に毎日経口投与",
+    "oralIntakeDaily": "毎日経口投与",
+    "injectionMonthTotalOf3-6Injections": "毎月1回注射（合計3-6回）",
+    "NT6000AndMorePerInjection": "１個6000元以上",
+    "oneDeviceFor5Years": "5年間装着",
+    "minor": "軽微",
+    "fastActing": "速い",
+    "3weeks": "3週間",
+    "2weeks": "2週間",
+    "6-9MonthsAndLonger": "6-9か月以上",
+    "transamine": "Transamine",
+    "adenomyomectomy": "腺筋腫切除",
+    "coveredByHealthInsuranceIfHbLess10": "ヘモグロビン<10健康保険適用可"
+  }
+}
