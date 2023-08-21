@@ -1,0 +1,90 @@
+{
+  "hero": [
+    "3 bước siêu đơn giản tự xây dựng phương án trị liệu cá nhân",
+    ""
+  ],
+  "step1": {
+    "title": "Bước 1: Nói cho chúng tôi biết nỗi lo chính của bạn nhé!",
+    "text": "Trước khi quyết định bất cứ trị liệu nào, chúng tôi cần phải được biết trong vòng 3-6 tháng bạn có kế hoạch mang thai không, mới cân nhắc dựa theo mục đích khác nhau rồi chia trị liệu thành 3 loại lớn:"
+  },
+  "objectives": [
+    {
+      "title": "Thống kinh",
+      "text": [
+        "Ngủ rất vui vẻ",
+        "Vui vẻ làm việc",
+        "Gia đình hòa thuận"
+      ]
+    },
+    {
+      "title": "Ra huyết bất thường",
+      "text": [
+        "Chăm lo cuộc sống",
+        "Tăng sự thoải mái",
+        "Hoạt động thoải mái"
+      ]
+    },
+    {
+      "title": "U nang sô-cô-la",
+      "text": [
+        "Ngăn ngừa tái phát",
+        "Giảm thiểu phẫu thuật",
+        "Giảm bớt ung thư"
+      ]
+    },
+    {
+      "title": "Kế hoạch mang thai",
+      "text": [
+        "Chức năng buồng trứng",
+        "Khả năng thụ thai",
+        "Kế hoạch chuẩn bị mang thai"
+      ]
+    }
+  ],
+  "table": {
+    "symptomControllingDrugs": "Thuốc kiểm soát triệu chứng",
+    "4thGenerationProgesterone": "Progesterone thế hệ 4",
+    "birthControlPills": "Thuốc tránh thai",
+    "IUD": "Vòng tránh thai nội tiết",
+    "gnRHAgonists": "Thuốc tăng cường giải phóng nội tiết tố sinh dục",
+    "androgen": "Nội tiết tố nam",
+    "conservativeSurgery": "Phẫu thuật bảo tồn",
+    "radicalSurgery": "Phẫu thuật tận gốc",
+    "medicine": "Thuốc đại diện",
+    "timeliness": "Tốc độ đạt hiệu lực",
+    "potency": "Hiệu lực",
+    "sideEffects": "Tác dụng phụ",
+    "administration": "Cách sử dụng",
+    "cost": "Giá tiền",
+    "preference": "Thứ tự khuyến cáo",
+    "naproxen": "Naproxen",
+    "dienogest": "Dienogest",
+    "diane": "Diane",
+    "mirena": "Mirena",
+    "leuprolide": "Leuprolide",
+    "gestrinone": "Gestrinone",
+    "adenomyomectomyNerveBlockEtc": "Cắt bỏ u tuyến cơ, phong bế thần kinh v.v…",
+    "hysterectomy": "Cắt bỏ tử cung",
+    "severalDays": "Vài ngày",
+    "moderate": "Thông thường",
+    "potent": "Tốt",
+    "extremelyPotent": "Rất tốt",
+    "coveredByHealthInsurance": "BHYT",
+    "moderateToSevere": "Khá mạnh",
+    "usuallyNT10KandMore": "Thông thường trên 10.000 tệ",
+    "microsurgeryOrConventionalSurgery": "Mổ nội soi hoặc mổ hở",
+    "oralIntakeDailyDuringPeriod": "Uống mỗi ngày hành kinh",
+    "oralIntakeDaily": "Uống mỗi ngày",
+    "injectionMonthTotalOf3-6Injections": "Mỗi tháng 1 mũi, tổng 3-6 mũi",
+    "NT6000AndMorePerInjection": ">6000 tệ /vòng",
+    "oneDeviceFor5Years": "Đặt 1 vòng duy trì 5 năm",
+    "minor": "Nhẹ",
+    "fastActing": "Nhanh",
+    "3weeks": "3 tuần",
+    "2weeks": "2 tuần",
+    "6-9MonthsAndLonger": "> 6-9 tháng",
+    "transamine": "Transamine",
+    "adenomyomectomy": "Cắt bỏ u cơ tuyến",
+    "coveredByHealthInsuranceIfHbLess10": "BHYT khi huyết sắc tố <10"
+  }
+}
