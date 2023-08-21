@@ -1,4 +1,5 @@
 import type { LinksFunction, V2_MetaFunction } from "@remix-run/node";
+import { useTranslation } from "react-i18next";
 import stylesheet from "~/styles/assessment.css";
 
 import usCDC from "~/images/us-cdc.png";
@@ -10,16 +11,17 @@ export const links: LinksFunction = () => [
 export const meta: V2_MetaFunction = () => [{ title: "專業評估" }];
 
 export default function () {
+  let { t } = useTranslation("assessment");
   return (
     <div>
       <div className="hero">
-        <div>專業評估</div>
+        <div>{t("hero")}</div>
       </div>
       <div className="container mx-auto max-w-3xl px-10 text-center text-[#7a6f6f]">
         <div className="title">
-          賀爾蒙禁忌症評估請參考
+          {t("refer")}
           <span className="block md:inline md:after:content-['：']" />
-          美國疾管局口服避孕藥適用性彙整表
+          {t("cdc")}
         </div>
         <img src={usCDC} className="mx-auto w-40" alt="us-cdc" />
         <a
@@ -28,19 +30,14 @@ export default function () {
           href="https://www.cdc.gov/reproductivehealth/contraception/pdf/summary-chart-us-medical-eligibility-criteria_508tagged.pdf"
           rel="noreferrer"
         >
-          點即前往（英文版）
+          {t("click2Eng")}
         </a>
 
-        <div className="title">治療期間建議監測項目</div>
+        <div className="title">{t("recommended")}</div>
         <ul className="text-left [&>*+*]:mt-4">
-          <li>育齡女性：懷孕計畫、超音波、CA-125、肝功能（依臨床考量）</li>
-          <li>
-            更年前期：超音波、CA-125、FSH、Estradiol、AMH（依臨床考量／自費）、TSH、Free
-            T4
-          </li>
-          <li>
-            更年期：超音波、每2年一次乳癌篩檢（年滿40歲及二等親乳癌病史、年滿45歲）、骨密度檢查（自費）
-          </li>
+          <li>{t("WCBPs")}</li>
+          <li>{t("Premenopause")}</li>
+          <li>{t("Postmenopause")}</li>
         </ul>
       </div>
     </div>
