@@ -1,4 +1,5 @@
 import type { LinksFunction, V2_MetaFunction } from "@remix-run/node";
+import { useTranslation } from "react-i18next";
 
 import stylesheet from "~/styles/plan.css";
 
@@ -11,25 +12,24 @@ export const links: LinksFunction = () => [
 export const meta: V2_MetaFunction = () => [{ title: "計畫自由選" }];
 
 export default function () {
+  let { t } = useTranslation("plan");
   return (
     <div>
       <div className="hero">
-        <div className="text">超簡單三步驟</div>
-        <div className="text">自我打造專屬治療方案</div>
+        <div className="text">{t("hero.0")}</div>
+        <div className="text">{t("hero.1")}</div>
       </div>
       <div className="section">
-        <div className="title">步驟一：告訴我們您的主要困擾吧！</div>
-        <div className="desc my-6 text-xl">
-          在決定任何的治療前，我們須先了解您在3-6個月內是否有懷孕計畫，再考慮針對不同目的將治療分成3大類：
-        </div>
+        <div className="title">{t("step1.title")}</div>
+        <div className="desc my-6 text-xl">{t("step1.text")}</div>
         <h1 className="title-block">
-          <div className="title">經痛</div>
+          <div className="title">{t("objectives.0.title")}</div>
           <div className="sub-title">
-            睡得開心
+            {t("objectives.0.text.0")}
             <span>|</span>
-            快樂上班
+            {t("objectives.0.text.1")}
             <span>|</span>
-            家庭和諧
+            {t("objectives.0.text.2")}
           </div>
         </h1>
         <div
@@ -44,25 +44,25 @@ export default function () {
             </thead>
             <tbody>
               <tr>
-                <td className="px-4">代表藥物</td>
+                <td className="px-4">{t("table.medicine")}</td>
               </tr>
               <tr>
-                <td className="px-4">奏效速度</td>
+                <td className="px-4">{t("table.timeliness")}</td>
               </tr>
               <tr>
-                <td className="px-4">效力</td>
+                <td className="px-4">{t("table.potency")}</td>
               </tr>
               <tr>
-                <td className="px-4">副作用</td>
+                <td className="px-4">{t("table.sideEffects")}</td>
               </tr>
               <tr>
-                <td className="px-4">使用方式</td>
+                <td className="px-4">{t("table.administration")}</td>
               </tr>
               <tr>
-                <td className="px-4">價錢</td>
+                <td className="px-4">{t("table.cost")}</td>
               </tr>
               <tr>
-                <td className="px-4">推薦順序</td>
+                <td className="px-4">{t("table.preference")}</td>
               </tr>
             </tbody>
           </table>
@@ -70,76 +70,76 @@ export default function () {
             <table cellPadding={4} className="w-full text-center">
               <thead>
                 <tr className="bg-red-50">
-                  <th>症狀控制藥</th>
-                  <th>第四代黃體素</th>
-                  <th>避孕藥</th>
-                  <th>子宮內投藥避孕器</th>
-                  <th>性腺激素釋放素促進劑</th>
-                  <th>(類)雄性素</th>
-                  <th>保守性手術</th>
-                  <th>根除性手術</th>
+                  <th>{t("table.symptomControllingDrugs")}</th>
+                  <th>{t("table.4thGenerationProgesterone")}</th>
+                  <th>{t("table.birthControlPills")}</th>
+                  <th>{t("table.IUD")}</th>
+                  <th>{t("table.gnRHAgonists")}</th>
+                  <th>{t("table.androgen")}</th>
+                  <th>{t("table.conservativeSurgery")}</th>
+                  <th>{t("table.radicalSurgery")}</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Naproxen (能百鎮)</td>
-                  <td>Dienogest (異位寧)</td>
-                  <td>Diane (黛麗安)</td>
-                  <td>Mirena (蜜蕊娜)</td>
-                  <td>Leuprolide (柳培林)</td>
-                  <td>Gestrinone (佑汝)</td>
-                  <td>肌腺瘤切除、神經阻斷等</td>
-                  <td>子宮切除</td>
+                  <td>{t("table.naproxen")}</td>
+                  <td>{t("table.dienogest")}</td>
+                  <td>{t("table.diane")}</td>
+                  <td>{t("table.mirena")}</td>
+                  <td>{t("table.leuprolide")}</td>
+                  <td>{t("table.gestrinone")}</td>
+                  <td>{t("table.adenomyomectomyNerveBlockEtc")}</td>
+                  <td>{t("table.hysterectomy")}</td>
                 </tr>
                 <tr>
-                  <td>快</td>
-                  <td>快</td>
-                  <td>數天</td>
-                  <td>數天</td>
-                  <td>3週</td>
-                  <td>2週</td>
-                  <td>快</td>
-                  <td>快</td>
+                  <td>{t("table.fastActing")}</td>
+                  <td>{t("table.fastActing")}</td>
+                  <td>{t("table.severalDays")}</td>
+                  <td>{t("table.severalDays")}</td>
+                  <td>{t("table.3weeks")}</td>
+                  <td>{t("table.2weeks")}</td>
+                  <td>{t("table.fastActing")}</td>
+                  <td>{t("table.fastActing")}</td>
                 </tr>
                 <tr>
-                  <td>有效</td>
-                  <td>極有效</td>
-                  <td>極有效</td>
-                  <td>極有效</td>
-                  <td>極有效</td>
-                  <td>極有效</td>
-                  <td>有效</td>
-                  <td>極有效</td>
+                  <td>{t("table.potent")}</td>
+                  <td>{t("table.extremelyPotent")}</td>
+                  <td>{t("table.extremelyPotent")}</td>
+                  <td>{t("table.extremelyPotent")}</td>
+                  <td>{t("table.extremelyPotent")}</td>
+                  <td>{t("table.extremelyPotent")}</td>
+                  <td>{t("table.potent")}</td>
+                  <td>{t("table.extremelyPotent")}</td>
                 </tr>
                 <tr>
-                  <td>輕微</td>
-                  <td>一般</td>
-                  <td>一般</td>
-                  <td>一般</td>
-                  <td>一般</td>
-                  <td>稍強</td>
-                  <td>稍強</td>
-                  <td>稍強</td>
+                  <td>{t("table.minor")}</td>
+                  <td>{t("table.moderate")}</td>
+                  <td>{t("table.moderate")}</td>
+                  <td>{t("table.moderate")}</td>
+                  <td>{t("table.moderate")}</td>
+                  <td>{t("table.moderateToSevere")}</td>
+                  <td>{t("table.moderateToSevere")}</td>
+                  <td>{t("table.moderateToSevere")}</td>
                 </tr>
                 <tr>
-                  <td>經期每天口服</td>
-                  <td>每天口服</td>
-                  <td>每天口服</td>
-                  <td>放置一支持續5年</td>
-                  <td>每月一針共3-6針</td>
-                  <td>每天口服</td>
-                  <td>微創或傳統手術</td>
-                  <td>微創或傳統手術</td>
+                  <td>{t("table.oralIntakeDailyDuringPeriod")}</td>
+                  <td>{t("table.oralIntakeDaily")}</td>
+                  <td>{t("table.oralIntakeDaily")}</td>
+                  <td>{t("table.oneDeviceFor5Years")}</td>
+                  <td>{t("table.injectionMonthTotalOf3-6Injections")}</td>
+                  <td>{t("table.oralIntakeDaily")}</td>
+                  <td>{t("table.microsurgeryOrConventionalSurgery")}</td>
+                  <td>{t("table.microsurgeryOrConventionalSurgery")}</td>
                 </tr>
                 <tr>
-                  <td>健保</td>
-                  <td>健保</td>
-                  <td>健保</td>
-                  <td>每支6000元以上</td>
-                  <td>每針6000元以上</td>
-                  <td>健保</td>
-                  <td>通常萬元起跳</td>
-                  <td>通常萬元起跳</td>
+                  <td>{t("table.coveredByHealthInsurance")}</td>
+                  <td>{t("table.coveredByHealthInsurance")}</td>
+                  <td>{t("table.coveredByHealthInsurance")}</td>
+                  <td>{t("table.NT6000AndMorePerInjection")}</td>
+                  <td>{t("table.NT6000AndMorePerInjection")}</td>
+                  <td>{t("table.coveredByHealthInsurance")}</td>
+                  <td>{t("table.usuallyNT10KandMore")}</td>
+                  <td>{t("table.usuallyNT10KandMore")}</td>
                 </tr>
                 <tr>
                   <td>1</td>
@@ -157,13 +157,13 @@ export default function () {
         </div>
 
         <h1 className="title-block">
-          <div className="title">異常出血</div>
+          <div className="title">{t("objectives.1.title")}</div>
           <div className="sub-title">
-            兼顧生活
+            {t("objectives.1.text.0")}
             <span>|</span>
-            增加舒適
+            {t("objectives.1.text.1")}
             <span>|</span>
-            活動自如
+            {t("objectives.1.text.2")}
           </div>
         </h1>
         <div
@@ -178,25 +178,25 @@ export default function () {
             </thead>
             <tbody>
               <tr>
-                <td className="px-4">代表藥物</td>
+                <td className="px-4">{t("table.medicine")}</td>
               </tr>
               <tr>
-                <td className="px-4">奏效速度</td>
+                <td className="px-4">{t("table.timeliness")}</td>
               </tr>
               <tr>
-                <td className="px-4">效力</td>
+                <td className="px-4">{t("table.potency")}</td>
               </tr>
               <tr>
-                <td className="px-4">副作用</td>
+                <td className="px-4">{t("table.sideEffects")}</td>
               </tr>
               <tr>
-                <td className="px-4">使用方式</td>
+                <td className="px-4">{t("table.administration")}</td>
               </tr>
               <tr>
-                <td className="px-4">價錢</td>
+                <td className="px-4">{t("table.cost")}</td>
               </tr>
               <tr>
-                <td className="px-4">推薦順序</td>
+                <td className="px-4">{t("table.preference")}</td>
               </tr>
             </tbody>
           </table>
@@ -204,76 +204,76 @@ export default function () {
             <table cellPadding={4} className="w-full text-center">
               <thead>
                 <tr className="bg-red-50">
-                  <th>症狀控制藥</th>
-                  <th>第四代黃體素</th>
-                  <th>避孕藥</th>
-                  <th>子宮內投藥避孕器</th>
-                  <th>性腺激素釋放素促進劑</th>
-                  <th>(類)雄性素</th>
-                  <th>保守性手術</th>
-                  <th>根除性手術</th>
+                  <th>{t("table.symptomControllingDrugs")}</th>
+                  <th>{t("table.4thGenerationProgesterone")}</th>
+                  <th>{t("table.birthControlPills")}</th>
+                  <th>{t("table.IUD")}</th>
+                  <th>{t("table.gnRHAgonists")}</th>
+                  <th>{t("table.androgen")}</th>
+                  <th>{t("table.conservativeSurgery")}</th>
+                  <th>{t("table.radicalSurgery")}</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Transamine (斷血炎)</td>
-                  <td>Dienogest (異位寧)</td>
-                  <td>Diane (黛麗安)</td>
-                  <td>Mirena (蜜蕊娜)</td>
-                  <td>Leuprolide (柳培林)</td>
-                  <td>Gestrinone (佑汝)</td>
-                  <td>肌腺瘤切除</td>
-                  <td>子宮切除</td>
+                  <td>{t("table.transamine")}</td>
+                  <td>{t("table.dienogest")}</td>
+                  <td>{t("table.diane")}</td>
+                  <td>{t("table.mirena")}</td>
+                  <td>{t("table.leuprolide")}</td>
+                  <td>{t("table.gestrinone")}</td>
+                  <td>{t("table.adenomyomectomy")}</td>
+                  <td>{t("table.hysterectomy")}</td>
                 </tr>
                 <tr>
-                  <td>快</td>
-                  <td>6-9個月以上</td>
-                  <td>數天</td>
-                  <td>6-9個月以上</td>
-                  <td>3週</td>
-                  <td>2週</td>
-                  <td>快</td>
-                  <td>快</td>
+                  <td>{t("table.fastActing")}</td>
+                  <td>{t("table.6-9MonthsAndLonger")}</td>
+                  <td>{t("table.severalDays")}</td>
+                  <td>{t("table.6-9MonthsAndLonger")}</td>
+                  <td>{t("table.3weeks")}</td>
+                  <td>{t("table.2weeks")}</td>
+                  <td>{t("table.fastActing")}</td>
+                  <td>{t("table.fastActing")}</td>
                 </tr>
                 <tr>
-                  <td>有效</td>
-                  <td>有效</td>
-                  <td>極有效</td>
-                  <td>極有效</td>
-                  <td>極有效</td>
-                  <td>有效</td>
-                  <td>有效</td>
-                  <td>極有效</td>
+                  <td>{t("table.potent")}</td>
+                  <td>{t("table.potent")}</td>
+                  <td>{t("table.extremelyPotent")}</td>
+                  <td>{t("table.extremelyPotent")}</td>
+                  <td>{t("table.extremelyPotent")}</td>
+                  <td>{t("table.potent")}</td>
+                  <td>{t("table.potent")}</td>
+                  <td>{t("table.extremelyPotent")}</td>
                 </tr>
                 <tr>
-                  <td>輕微</td>
-                  <td>一般</td>
-                  <td>一般</td>
-                  <td>一般</td>
-                  <td>一般</td>
-                  <td>稍強</td>
-                  <td>稍強</td>
-                  <td>稍強</td>
+                  <td>{t("table.minor")}</td>
+                  <td>{t("table.moderate")}</td>
+                  <td>{t("table.moderate")}</td>
+                  <td>{t("table.moderate")}</td>
+                  <td>{t("table.moderate")}</td>
+                  <td>{t("table.moderateToSevere")}</td>
+                  <td>{t("table.moderateToSevere")}</td>
+                  <td>{t("table.moderateToSevere")}</td>
                 </tr>
                 <tr>
-                  <td>經期每天口服</td>
-                  <td>每天口服</td>
-                  <td>每天口服</td>
-                  <td>放置一支持續5年</td>
-                  <td>每月一針共3-6針</td>
-                  <td>每天口服</td>
-                  <td>微創或傳統手術</td>
-                  <td>微創或傳統手術</td>
+                  <td>{t("table.oralIntakeDailyDuringPeriod")}</td>
+                  <td>{t("table.oralIntakeDaily")}</td>
+                  <td>{t("table.oralIntakeDaily")}</td>
+                  <td>{t("table.oneDeviceFor5Years")}</td>
+                  <td>{t("table.injectionMonthTotalOf3-6Injections")}</td>
+                  <td>{t("table.oralIntakeDaily")}</td>
+                  <td>{t("table.microsurgeryOrConventionalSurgery")}</td>
+                  <td>{t("table.microsurgeryOrConventionalSurgery")}</td>
                 </tr>
                 <tr>
-                  <td>健保</td>
-                  <td>健保</td>
-                  <td>健保</td>
-                  <td>血紅素&lt;10可健保</td>
-                  <td>每針6000元以上</td>
-                  <td>健保</td>
-                  <td>通常萬元起跳</td>
-                  <td>通常萬元起跳</td>
+                  <td>{t("table.coveredByHealthInsurance")}</td>
+                  <td>{t("table.coveredByHealthInsurance")}</td>
+                  <td>{t("table.coveredByHealthInsurance")}</td>
+                  <td>{t("table.coveredByHealthInsuranceIfHbLess10")}</td>
+                  <td>{t("table.NT6000AndMorePerInjection")}</td>
+                  <td>{t("table.coveredByHealthInsurance")}</td>
+                  <td>{t("table.usuallyNT10KandMore")}</td>
+                  <td>{t("table.usuallyNT10KandMore")}</td>
                 </tr>
                 <tr>
                   <td>1</td>
@@ -291,13 +291,13 @@ export default function () {
         </div>
 
         <h1 className="title-block">
-          <div className="title">巧克力囊腫</div>
+          <div className="title">{t("objectives.2.title")}</div>
           <div className="sub-title">
-            預防復發
+            {t("objectives.2.text.0")}
             <span>|</span>
-            減少手術
+            {t("objectives.2.text.1")}
             <span>|</span>
-            降低癌症
+            {t("objectives.2.text.2")}
           </div>
         </h1>
         <div
@@ -312,25 +312,25 @@ export default function () {
             </thead>
             <tbody>
               <tr>
-                <td className="px-4">代表藥物</td>
+                <td className="px-4">{t("table.medicine")}</td>
               </tr>
               <tr>
-                <td className="px-4">奏效速度</td>
+                <td className="px-4">{t("table.timeliness")}</td>
               </tr>
               <tr>
-                <td className="px-4">效力</td>
+                <td className="px-4">{t("table.potency")}</td>
               </tr>
               <tr>
-                <td className="px-4">副作用</td>
+                <td className="px-4">{t("table.sideEffects")}</td>
               </tr>
               <tr>
-                <td className="px-4">使用方式</td>
+                <td className="px-4">{t("table.administration")}</td>
               </tr>
               <tr>
-                <td className="px-4">價錢</td>
+                <td className="px-4">{t("table.cost")}</td>
               </tr>
               <tr>
-                <td className="px-4">推薦順序</td>
+                <td className="px-4">{t("table.preference")}</td>
               </tr>
             </tbody>
           </table>
@@ -338,76 +338,76 @@ export default function () {
             <table cellPadding={4} className="w-full text-center">
               <thead>
                 <tr className="bg-red-50">
-                  <th>症狀控制藥</th>
-                  <th>第四代黃體素</th>
-                  <th>避孕藥</th>
-                  <th>子宮內投藥避孕器</th>
-                  <th>性腺激素釋放素促進劑</th>
-                  <th>(類)雄性素</th>
-                  <th>保守性手術</th>
-                  <th>根除性手術</th>
+                  <th>{t("table.symptomControllingDrugs")}</th>
+                  <th>{t("table.4thGenerationProgesterone")}</th>
+                  <th>{t("table.birthControlPills")}</th>
+                  <th>{t("table.IUD")}</th>
+                  <th>{t("table.gnRHAgonists")}</th>
+                  <th>{t("table.androgen")}</th>
+                  <th>{t("table.conservativeSurgery")}</th>
+                  <th>{t("table.radicalSurgery")}</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>-</td>
-                  <td>Dienogest (異位寧)</td>
-                  <td>Diane (黛麗安)</td>
+                  <td>{t("table.dienogest")}</td>
+                  <td>{t("table.diane")}</td>
                   <td>-</td>
-                  <td>Leuprolide (柳培林)</td>
-                  <td>Gestrinone (佑汝)</td>
-                  <td>肌腺瘤切除、神經阻斷等</td>
-                  <td>子宮切除</td>
+                  <td>{t("table.leuprolide")}</td>
+                  <td>{t("table.gestrinone")}</td>
+                  <td>{t("table.adenomyomectomyNerveBlockEtc")}</td>
+                  <td>{t("table.hysterectomy")}</td>
                 </tr>
                 <tr>
                   <td>-</td>
-                  <td>快</td>
-                  <td>快</td>
+                  <td>{t("table.fastActing")}</td>
+                  <td>{t("table.fastActing")}</td>
                   <td>-</td>
-                  <td>3週</td>
-                  <td>2週</td>
-                  <td>快</td>
-                  <td>快</td>
+                  <td>{t("table.3weeks")}</td>
+                  <td>{t("table.2weeks")}</td>
+                  <td>{t("table.fastActing")}</td>
+                  <td>{t("table.fastActing")}</td>
                 </tr>
                 <tr>
                   <td>-</td>
-                  <td>極有效</td>
-                  <td>有效</td>
+                  <td>{t("table.extremelyPotent")}</td>
+                  <td>{t("table.potent")}</td>
                   <td>-</td>
-                  <td>極有效</td>
-                  <td>極有效</td>
-                  <td>極有效</td>
-                  <td>極有效</td>
+                  <td>{t("table.extremelyPotent")}</td>
+                  <td>{t("table.extremelyPotent")}</td>
+                  <td>{t("table.extremelyPotent")}</td>
+                  <td>{t("table.extremelyPotent")}</td>
                 </tr>
                 <tr>
                   <td>-</td>
-                  <td>一般</td>
-                  <td>一般</td>
+                  <td>{t("table.moderate")}</td>
+                  <td>{t("table.moderate")}</td>
                   <td>-</td>
-                  <td>一般</td>
-                  <td>稍強</td>
-                  <td>稍強</td>
-                  <td>稍強</td>
+                  <td>{t("table.moderate")}</td>
+                  <td>{t("table.moderateToSevere")}</td>
+                  <td>{t("table.moderateToSevere")}</td>
+                  <td>{t("table.moderateToSevere")}</td>
                 </tr>
                 <tr>
                   <td>-</td>
-                  <td>每天口服</td>
-                  <td>每天口服</td>
+                  <td>{t("table.oralIntakeDaily")}</td>
+                  <td>{t("table.oralIntakeDaily")}</td>
                   <td>-</td>
-                  <td>每月一針共3-6針</td>
-                  <td>每天口服</td>
-                  <td>微創或傳統手術</td>
-                  <td>微創或傳統手術</td>
+                  <td>{t("table.injectionMonthTotalOf3-6Injections")}</td>
+                  <td>{t("table.oralIntakeDaily")}</td>
+                  <td>{t("table.microsurgeryOrConventionalSurgery")}</td>
+                  <td>{t("table.microsurgeryOrConventionalSurgery")}</td>
                 </tr>
                 <tr>
                   <td>-</td>
-                  <td>健保</td>
-                  <td>健保</td>
+                  <td>{t("table.coveredByHealthInsurance")}</td>
+                  <td>{t("table.coveredByHealthInsurance")}</td>
                   <td>-</td>
-                  <td>每針6000元以上</td>
-                  <td>健保</td>
-                  <td>通常萬元起跳</td>
-                  <td>通常萬元起跳</td>
+                  <td>{t("table.NT6000AndMorePerInjection")}</td>
+                  <td>{t("table.coveredByHealthInsurance")}</td>
+                  <td>{t("table.usuallyNT10KandMore")}</td>
+                  <td>{t("table.usuallyNT10KandMore")}</td>
                 </tr>
                 <tr>
                   <td>-</td>
@@ -425,13 +425,13 @@ export default function () {
         </div>
 
         <h1 className="title-block">
-          <div className="title">計畫懷孕</div>
+          <div className="title">{t("objectives.3.title")}</div>
           <div className="sub-title">
-            卵巢功能
+            {t("objectives.3.text.0")}
             <span>|</span>
-            受孕能力
+            {t("objectives.3.text.1")}
             <span>|</span>
-            備孕計畫
+            {t("objectives.3.text.2")}
           </div>
         </h1>
         <div className="my-10 text-center text-4xl font-bold text-red-500">

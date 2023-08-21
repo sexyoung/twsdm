@@ -1,0 +1,90 @@
+{
+  "hero": [
+    "Create Your Own Treatment Protocol",
+    "in Super Easy Three Steps"
+  ],
+  "step1": {
+    "title": "Step 1: Tell Us Your Chief Complaints!",
+    "text": "Before starting any interventions, we need to know if you plan to become pregnant in the next 3–6 months. Then, we will set your treatment in three different dimensions based on the objectives:"
+  },
+  "objectives": [
+    {
+      "title": "To relieve cramps (menstrual pain)",
+      "text": [
+        "To sleep well",
+        "To be happy at work ",
+        "To have a happy family life"
+      ]
+    },
+    {
+      "title": "To stop abnormal bleeding",
+      "text": [
+        "To have a quality life",
+        "To increase comfort level",
+        "To move freely"
+      ]
+    },
+    {
+      "title": "To remove chocolate cysts",
+      "text": [
+        "To prevent recurrence",
+        "To reduce possibility of surgery",
+        "To lower cancer risks"
+      ]
+    },
+    {
+      "title": "To prepare for pregnancy",
+      "text": [
+        "To improve ovary function",
+        "To increase fertility",
+        "To set a personal pregnancy plan"
+      ]
+    }
+  ],
+  "table": {
+    "symptomControllingDrugs": "Symptom-Controlling Drugs",
+    "4thGenerationProgesterone": "4th Generation Progesterone",
+    "birthControlPills": "Birth-control Pills",
+    "IUD": "IUD",
+    "gnRHAgonists": "GnRH Agonists",
+    "androgen": "Androgen (Androgen-like)",
+    "conservativeSurgery": "Conservative Surgery",
+    "radicalSurgery": "Radical Surgery",
+    "medicine": "Medicine",
+    "timeliness": "Timeliness",
+    "potency": "Potency",
+    "sideEffects": "Side Effects",
+    "administration": "Administration",
+    "cost": "Cost",
+    "preference": "Preference",
+    "naproxen": "Naproxen",
+    "dienogest": "Dienogest",
+    "diane": "Diane",
+    "mirena": "Mirena",
+    "leuprolide": "Leuprolide",
+    "gestrinone": "Gestrinone",
+    "adenomyomectomyNerveBlockEtc": "Adenomyomectomy, Nerve Block, etc.",
+    "hysterectomy": "Hysterectomy",
+    "severalDays": "Several days",
+    "moderate": "Moderate",
+    "potent": "Potent",
+    "extremelyPotent": "Extremely Potent",
+    "coveredByHealthInsurance": "Covered by Health Insurance",
+    "moderateToSevere": "Moderate to Severe",
+    "usuallyNT10KandMore": "Usually NT$10K and more",
+    "microsurgeryOrConventionalSurgery": "Microsurgery or conventional surgery",
+    "oralIntakeDailyDuringPeriod": "Oral Intake, Daily, During Period",
+    "oralIntakeDaily": "Oral Intake, Daily",
+    "injectionMonthTotalOf3-6Injections": "Injection/month, total of3-6 injections",
+    "NT6000AndMorePerInjection": "NT$6,000 and more per injection",
+    "oneDeviceFor5Years": "One device for 5 years",
+    "minor": "Minor",
+    "fastActing": "Fast-acting",
+    "3weeks": "3 weeks",
+    "2weeks": "2 weeks",
+    "6-9MonthsAndLonger": "6-9 months and longer",
+    "transamine": "Transamine",
+    "adenomyomectomy": "Adenomyomectomy",
+    "coveredByHealthInsuranceIfHbLess10": "Covered by Health Insurance if Hb<10"
+  }
+}
