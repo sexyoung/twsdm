@@ -1,0 +1,65 @@
+{
+  "title1": "",
+  "title2": "Xin chào! Hoan nghênh đến với những chuyện lớn nhỏ về Bệnh lạc nội mạc tử cung",
+  "title3": "Tư vấn vi chuyên nghiệp trực tuyến của bạn",
+  "whatIsEndometriosis": "Bệnh lạc nội mạc tử cung?",
+  "planFreeChoose": "Tự do lựa chọn kế hoạch: ",
+  "3step": "3 bước xây dựng phương án trị liệu cá nhân",
+  "endometriosis": [
+    {
+      "title": "Nguồn gốc của kinh nguyệt",
+      "text": "Thông thường, mỗi tháng nội mạc tử cung giàu mạch máu nuôi sẽ tăng sinh để chuẩn bị cho việc mang thai, khi chu kỳ này không có kế hoạch thụ thai, nội mạc và mạch máu nuôi dư thừa sẽ bong tróc tạo kinh nguyệt, và lặp lại vào chu kỳ sau."
+    },
+    {
+      "title": "Nội mạc tử cung chuyển nhà",
+      "text": "Nếu nội mạc tử cung và mạch máu nuôi của nó nằm trong lòng tử cung, thì sau khi tăng sinh chúng sẽ được đào thải ra ngoài cơ thể thông qua kinh nguyệt hàng tháng. Nhưng nếu nội mạc tử cung chạy đến những chỗ khác thì sao?"
+    },
+    {
+      "title": "Kinh nguyệt bị cản trở",
+      "text": "Nội mạc tử cung vì một số lý do nào đó chạy đến các cơ quan khác. Lúc này, mỗi tháng kinh nguyệt vẫn được sản sinh, nhưng máu kinh không cách nào đào thải ra ngoài cơ thể, chúng sẽ tích tụ tại cơ quan bị ảnh hưởng, phóng thích lượng lớn vật chất gây viêm."
+    },
+    {
+      "title": "Bệnh tuyến cơ tử cung ",
+      "text": "Nơi bị ảnh hưởng thường gặp nhất là lớp cơ tử cung. Vì không liên thông với khoang tử cung, máu kinh bị cản trở và vật chất gây viêm sẽ gây đau dữ dội vào mỗi tháng."
+    },
+    {
+      "title": "U nang sô-cô-la",
+      "text": "Nơi thường gặp thứ 2 là buồng trứng. Những máu kinh bị cản trở và vật chất gây viêm liên tục tích tụ trong buồng trứng, hình thành loại dịch đặc sệt giống kem sô-cô-la, ngoài việc làm cho buồng trứng càng ngày càng to ra, chúng cũng có thể làm tổn hại nang trứng và gây ra các biến chứng."
+    }
+  ],
+  "3stepArticle": [
+    {
+      "title": "Nói cho chúng tôi biết nỗi lo chính của bạn nhé!",
+      "text": "Có thể bạn cùng lúc có hơn một mục đích điều trị, hãy để chúng ta chiến bại kẻ thù chính trước, rồi từng bước khắc phục khó khăn nhé."
+    },
+    {
+      "title": "Cân nhắc nhu cầu",
+      "text": "Lấy kết quả và ưu khuyết điểm của trị liệu để phân tích tìm hiểu tổ hợp trị liệu thích hợp nhất với bản thân!"
+    },
+    {
+      "title": "Thảo luận với bác sĩ",
+      "text": "Thể hiện giá trị quan và trí tuệ siêu cấp của bản thân"
+    }
+  ],
+  "go2freeChoose": "Tiến đến Tự do lựa chọn kế hoạch",
+  "choiceBarrier": {
+    "title1": "Có rào cản lựa chọn không?",
+    "title2": "Xin hãy tham khảo phương án ưu tiên lựa chọn được thiết lập riêng bởi bác sĩ vi chuyên nghiệp",
+    "title3": "",
+    "text": "Thông qua học tập đa truyền thông, giúp chúng ta càng dễ dàng đánh bại Bệnh lạc nội mạc tử cung nhé!",
+    "goTo": "Tiến đến Chuyên khu rào cản lựa chọn"
+  },
+  "treatments": {
+    "title": "Dựa vào trị số CP nhận biết mỗi loại trị liệu",
+    "text": "Mỗi loại trị liệu có thể giúp chúng ta giảm nhẹ bệnh tật, nhưng cũng có những cân nhắc riêng về ưu khuyết điểm, tính thời hiệu, tác dụng phụ và kinh phí của chúng. Thông qua góc độ của phần lớn phụ nữ thông thường và bác sĩ vi chuyên nghiệp, để chúng ta tăng thêm tính khả thi cho việc kiểm soát bệnh tật dài lâu.",
+    "go2CP": "Tiến đến Chuyên khu trị số CP"
+  },
+  "evaluate": {
+    "title": "Công cụ đánh giá của chuyên gia cao cấp",
+    "text1": "Đánh giá tác dụng phụ của Hormon",
+    "text2": "đánh giá nguy cơ ung thư buồng trứng",
+    "text3": "hạng mục kiểm sát trong quá trình điều trị",
+    "go2Evaluate": "Tiến đến Đánh giá chuyên nghiệp"
+  },
+  "xxxxx": "蛤????"
+}

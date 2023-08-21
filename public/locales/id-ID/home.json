@@ -1,0 +1,65 @@
+{
+  "title1": "Halo! Selamat datang di tanya jawab tentang penyakit endometriosis",
+  "title2": "(lapisan dalam rahim tumbuh di luar dinding rahim)",
+  "title3": "Konsultasi mikro-profesional online",
+  "whatIsEndometriosis": "Endometriosis?",
+  "planFreeChoose": "Bebas memilih program:",
+  "3step": "Tiga langkah menciptakan program pengobatan eksklusif",
+  "endometriosis": [
+    {
+      "title": "Asal Usul Menstruasi",
+      "text": "Pada umumnya, endometrium (lapisan dalam rahim) yang mengandung kaya darah akan menebal setiap bulan untuk menjadi tempat penanaman ovum yang telah dibuahi. Bagi yang tidak ada rencana hamil pada siklus ini, lapisan tersebut dan darah yang berlebihan akan meluruh menjadi darah haid, dan keadaan ini akan sirkulasi lagi pada siklus berikutnya."
+    },
+    {
+      "title": "Endometrium Pindah Tempat",
+      "text": "Jika endometrium yang mengandung kaya darah tumbuh di dalam rongga rahim, setelah menebal akan dikeluarkan dari tubuh melalui menstruasi per bulan. Namun, bagaimana jika endometrium pindah ke tempat lain?"
+    },
+    {
+      "title": "Menstruasi Terhambat",
+      "text": "Endometrium bisa pindah ke organ lain untuk beberapa alasan. Dalam hal ini, menstruasi akan tetap terjadi setiap bulan, namun darah haid tidak bisa dikeluarkan dari tubuh dan akan terakumulasi pada organ yang terdampak sehingga melepaskan zat inflamasi dalam jumlah besar."
+    },
+    {
+      "title": "Adenomiosis (lapisan dalam rahim tumbuh di dalam dinding otot rahim)",
+      "text": "Tempat utama yang biasanya terdampak adalah lapisan otot rahim. Karena tidak terhubung dengan rongga rahim, maka darah haid yang terhambat dan zat inflamasi bisa menimbulkan rasa sakit berat pada setiap bulan."
+    },
+    {
+      "title": "Kista Cokelat (kista ovarium berisi darah tua)",
+      "text": "Tempat kedua yang biasanya terdampak adalah ovarium. Darah haid yang terhambat dan zat inflamasi akan terakumulasi berlanjutan di dalam ovarium, dan lama- kelamaan membentuk cairan kental seperti saus cokelat. Hal ini selain membuat ovarium semakin membesar, juga mungkin merusak ovum atau mengakibatkan perubahan patologis."
+    }
+  ],
+  "3stepArticle": [
+    {
+      "title": "Beritahukan kami masalah utama Anda!",
+      "text": "Anda mungkin secara bersamaan memiliki lebih dari satu tujuan pengobatan, mari kita terlebih dulu mengalahkan musuh utama, kemudian baru mengatasi masalah satu per satu."
+    },
+    {
+      "title": "Menimbang Kebutuhan",
+      "text": "Anda dapat mencari kombinasi pengobatan yang paling sesuai untuk diri sendiri berdasarkan kelebihan & kekurangan pengobatan dan hasil analisa!"
+    },
+    {
+      "title": "Berdiskusi dengan dokter",
+      "text": "Menampilkan nilai diri dan kecerdasan luar biasa"
+    }
+  ],
+  "go2freeChoose": "Pergi ke Bebas memilih program",
+  "choiceBarrier": {
+    "title1": "Apakah ada hambatan memilih?",
+    "title2": "Silakan merujuk program optimal yang khusus dibuat oleh dokter mikro-profesional",
+    "title3": "",
+    "text": "Melalui pembelajaran multimedia, mari kita mengalahkan endometriosis dengan lebih mudah!",
+    "goTo": "Pergi ke Zona untuk hambatan memilih"
+  },
+  "treatments": {
+    "title": "Mengenal setiap pengobatan melalui rasio biaya-kinerja",
+    "text": "Setiap pengobatan dapat meringankan penyakit yang diderita, namun masing-masing pengobatan memiliki kelebihan dan kekurangannya, kemanjurannya, efek sampingnya, dan pertimbangan biayanya. Melalui sudut pandang dokter mikro-profesional dan kaum wanita umum, mari kita menambah beberapa kemungkinan dalam pengendalian penyakit jangka panjang!",
+    "go2CP": "Pergi ke Zona rasio biaya-kinerja"
+  },
+  "evaluate": {
+    "title": "Peralatan penilaian profesional senior",
+    "text1": "Penilaian efek samping hormon",
+    "text2": "penilaian risiko kanker ovarium",
+    "text3": "item yang dipantau selama pengobatan",
+    "go2Evaluate": "Pergi ke Zona penilaian professional"
+  },
+  "xxxxx": "蛤????"
+}
