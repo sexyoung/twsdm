@@ -48,17 +48,17 @@ export default function LangModal({ onClose, lang }: ModalProps) {
                     className="text-base font-semibold leading-6 text-gray-900"
                     id="modal-title"
                   >
-                    切換語系
+                    {t("menu.choose")}
                   </h3>
                   <div className="mt-2 text-sm text-gray-500">
                     <ul className="whitespace-nowrap bg-white py-2 text-black [&>*]:py-0.5">
                       <li>
+                        <a href={`/${path}`.replace("//", "/")}>{t("menu.")}</a>
+                      </li>
+                      <li>
                         <a href={[`/zh-TW`, path].join("")}>
                           {t("menu.zh-TW")}
                         </a>
-                      </li>
-                      <li>
-                        <a href={`/${path}`.replace("//", "/")}>{t("menu.")}</a>
                       </li>
                       <li>
                         <a href={["/ja-JP", path].join("")}>

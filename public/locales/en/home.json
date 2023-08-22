@@ -5,6 +5,28 @@
   "whatIsEndometriosis": "What is “Endometriosis”?",
   "planFreeChoose": "Mix-and-Match Plans:",
   "3step": "Have an individualized treatment plan in only three steps",
+  "endometriosis": [
+    {
+      "title": "All about Periods",
+      "text": "In general, the endometrium grows to a thick and blood vessel-rich layer approximately every month for pregnancy. If the person does not become pregnant, the thickened endometrial lining will shed and trigger menstruation, and the process recurs during the next menstrual cycle."
+    },
+    {
+      "title": "Relocation of Shredded Endometrium",
+      "text": "Normally, the blood vessel-enriched endometrium within the uterine cavity may be shredded during each menstrual cycle and excreted through the vagina. What happens if the endometrium is relocated?"
+    },
+    {
+      "title": "Accumulated Menstrual Blood",
+      "text": "Shredded endometrium may be delivered to other places for various reasons. Though with regular menstrual cycles, some menstrual blood/endometrium may accumulate at the lesion site and then release excessive inflammatory substances."
+    },
+    {
+      "title": "Adenomyosis",
+      "text": "The most common lesion site is the uterine muscle layer. As the menstrual blood and inflammatory substances accumulated within the uterine muscle layer, without an opening to the uterine cavity, the accumulated materials may induce severe menstrual pain during each cycle."
+    },
+    {
+      "title": "Chocolate Cyst",
+      "text": "The second common lesion site is the ovary. Once the menstrual blood and inflammatory substances accumulate in the ovary, the materials may turn to a thick cream like Nutella, which stretches out the ovary and causes damage to the oocytes or results in pathological changes."
+    }
+  ],
   "3stepArticle": [
     {
       "title": "Tell Us about Your Chief Complaints!",

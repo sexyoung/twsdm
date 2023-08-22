@@ -15,7 +15,7 @@ export default function Footer({ lang, openLang }: FooterProps) {
           className="mx-auto block h-[auto] w-[120px] lg:mr-5 lg:inline-block"
           alt="Home"
         /> */}
-        <ul className="my-5 inline-block whitespace-nowrap [&>*]:mx-2 [&>*]:my-2 sm:[&>*]:block md:[&>*]:inline-block">
+        <ul className="my-5 inline-block [&>*]:mx-2 [&>*]:my-2 sm:[&>*]:block md:[&>*]:inline-block">
           <Links {...{ lang }} openLang={openLang} />
         </ul>
         <div className="flex-1 px-4">
