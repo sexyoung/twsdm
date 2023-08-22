@@ -20,7 +20,6 @@ import * as gtag from "~/utils/gtags.client";
 /** @deprecated */
 import { getUser } from "~/session.server";
 // import i18next from "~/i18next.server";
-import formLink from "~/data/form.json";
 
 import logo from "~/images/twsdm.gif";
 import icon5 from "~/images/home-5.png";
@@ -72,7 +71,7 @@ export const loader = async ({ request, params }: LoaderArgs) => {
 
   return json(
     {
-      lang: (params.lang || "") as keyof typeof formLink,
+      lang: params.lang || "",
       locale,
       user: await getUser(request),
       gaTrackingId: process.env.GA_TRACKING_ID,
@@ -100,7 +99,7 @@ export default function App() {
   // Get the locale from the loader
   let { locale, lang, gaTrackingId } = useLoaderData<typeof loader>();
 
-  let { i18n } = useTranslation();
+  let { t, i18n } = useTranslation();
 
   // This hook will change the i18n instance language to the current locale
   // detected by the loader, this way, when we do something to change the
@@ -204,10 +203,10 @@ export default function App() {
             您對整個醫療環境的評論！
           </div>
           <div className="flex justify-center gap-4">
-            <Link to={formLink[lang].person} className="link-btn">
+            <Link to={t("formLink.personal")} className="link-btn">
               個人表單
             </Link>
-            <Link to={formLink[lang].pro} className="link-btn">
+            <Link to={t("formLink.pro")} className="link-btn">
               醫療人員表單
             </Link>
           </div>
@@ -215,8 +214,8 @@ export default function App() {
         <Footer lang={lang} openLang={setShowLangModal.bind(null, true)} />
         {showModal && !isToday() && (
           <Modal
-            proLink={formLink[lang].pro}
-            personLink={formLink[lang].person}
+            proLink={t("formLink.pro")}
+            personLink={t("formLink.personal")}
             onClose={handleCloseModal}
           />
         )}
