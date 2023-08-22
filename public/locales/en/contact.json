@@ -1,0 +1,19 @@
+{
+  "hero": "About Us",
+  "title": "Multi-variate and Innovative Topics",
+  "text": "“My Mom was hard on me out of nowhere today!” “My wife has been a different person these days,” “How comes she’s asking for medical leave again?” As we remembered, there are always a few days in a month that some women suffer disturbances while at work or doing housework, or are moody, due to their physical discomfort. They have to visit the Emergency Department frequently, seek conventional therapies, or receive surgeries for the side effects, but are still being strong and acting like nothing has happened at the same time to fight against other’s judgement.",
+  "articles": [
+    {
+      "title": "Truth Be Told – From WCBP’s Perspectives",
+      "text": "Have you been embarrassed about having troubles understanding medical terms, making medical decisions, digesting overwhelming medical conditions during a brief outpatient visit? Or, have you felt that your rights to medical attention are not protected as you have problems asking the “right” questions or “properly” expressing your concerns? Healthcare Professionals should provide medical knowledge and simplified medical terms along with diagrams for WCBPs to catch up, so WCBPs can be aware of their condition and thus establish/achieve adequate treatment goals!"
+    },
+    {
+      "title": "Corporate Three Primary Elements",
+      "text": "In 2022, to address common miscommunications and to take advantage of leading technologies, we used educational psychology approaches to learn about the principles and the use of brand-new doctor–patient communication tools such as various multi-media platforms, communication skills and artificial intelligence devices."
+    },
+    {
+      "title": "Academia–Industry Cooperation",
+      "text": "We would like to acknowledge the technical assistance, research counseling and collaboration from the Department of Medical Education & Bioethics/Graduate Institute of Medical Education & Bioethics, National Taiwan University College of Medicine, and National Yunlin University of Science and Technology. In the future, we plan to apply research outcomes in NTUH and its affiliations via an interactive and visualized intelligence system. Through organizing outreaching events by domestic Obstetrics and Gynecology Associations, hopefully Women with Child Bearing Potential (WCBPs) can access individualized treatment protocols per personal demands."
+    }
+  ]
+}
