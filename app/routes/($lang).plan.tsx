@@ -3,8 +3,6 @@ import { useTranslation } from "react-i18next";
 
 import stylesheet from "~/styles/plan.css";
 
-import todo1 from "~/images/1.png";
-
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
 ];
@@ -434,10 +432,27 @@ export default function () {
             {t("objectives.3.text.2")}
           </div>
         </h1>
-        <div className="my-10 text-center text-4xl font-bold text-red-500">
-          @todo ↓ 這邊要用字取代圖
-        </div>
-        <img src={todo1} alt="todo" />
+        <div className="title">{t("pregnant.title")}</div>
+        <div className="desc my-6 text-xl">{t("pregnant.text")}</div>
+        <ul className="text-xl [&>*+*]:mt-4 [&>*]:list-disc">
+          <li>
+            <span className="border-b-2 border-solid border-green-400">
+              {t("pregnant.items.0")}
+            </span>
+          </li>
+          <li>
+            <span className="border-b-2 border-solid border-yellow-400">
+              {t("pregnant.items.1")}
+            </span>
+          </li>
+          <li>
+            <span className="border-b-2 border-solid border-red-400">
+              {t("pregnant.items.2")}
+            </span>
+          </li>
+        </ul>
+        <div className="title">{t("pregnant.b2w")}</div>
+        <div className="desc my-6 text-xl">{t("pregnant.b2w-text")}</div>
       </div>
     </div>
   );

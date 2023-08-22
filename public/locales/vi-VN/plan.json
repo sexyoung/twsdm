@@ -86,5 +86,16 @@
     "transamine": "Transamine",
     "adenomyomectomy": "Cắt bỏ u cơ tuyến",
     "coveredByHealthInsuranceIfHbLess10": "BHYT khi huyết sắc tố <10"
+  },
+  "pregnant": {
+    "title": "Kế hoạch mang thai trong vòng 3-6 tháng",
+    "text": "So với người thường, tỉ lệ thụ thai tự nhiên của bệnh nhân lạc nội mạc tử cung giảm thấp dựa theo mức độ nặng của bệnh, nếu kết hợp với các nguyên nhân vô sinh khác (ví dụ như tắc nghẽn ống dẫn trứng 2 bên), thì tỉ lệ thụ thai tự nhiên càng giảm thấp. Hiện nay công nghệ sinh sản nhân tạo phát triển, vì vậy nếu có kế hoạch mang thai, nên tư vấn trước với bác sĩ khoa vô sinh, sắp xếp kiểm tra tiền sản (ví dụ như chụp tử cung vòi trứng, phân tích tinh trùng v.v… ), thảo luận ra sách lược trị liệu tốt nhất. Sau đây đề xuất tự đánh giá đơn giản:",
+    "items": [
+      "Nếu ống dẫn trứng ít nhất 1 bên thông thoáng, và không có vấn đề vô sinh nam nghiêm trọng, có thể cân nhắc tiếp nhận kích thích rụng trứng và thụ tinh nhân tạo.",
+      "Nếu ống dẫn trứng 2 bên bị tắc nghẽn hoặc kèm chứng vô sinh nam, hoặc thụ tinh nhân tạo trước đó đã thất bại vài lần, có thể cân nhắc chấp nhận liệu trình kích thích rụng trứng tiến hành thụ tinh ống nghiệm.",
+      "Nếu kết hợp đồng thời đau đớn nghiêm trọng khoang chậu và u nang sô-cô-la quá to ảnh hưởng phẫu thuật lấy nang, chúng tôi kiến nghị đánh giá có nên tiến hành phẫu thuật lấy đi tổ chức lạc nội mạc tử cung hoặc u nang sô-cô-la buồng trứng trước rồi mới tiến hành liệu trình nội tiết tố sinh dục."
+    ],
+    "b2w": "Chuyện ngoài lề: Gần đây không có kế hoạch mang thai",
+    "b2w-text": "Vì bản thân bệnh lạc nội mạc tử cung và phẫu thuật buồng trứng đều có khả năng làm giảm lượng trứng dự trữ của buồng trứng. Vì thế khi được chẩn đoán bệnh lạc nội mạc tử cung, trước khi tiếp nhận phẫu thuật buồng trứng, và gần đây chưa có kế hoạch mang thai, có thể thảo luận với bác sĩ khoa vô sinh bảo tồn khả năng sinh sản hoặc trữ đông trứng."
   }
 }

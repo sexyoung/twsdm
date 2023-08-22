@@ -85,5 +85,16 @@
     "transamine": "Transamine",
     "adenomyomectomy": "Myadenomektomi",
     "coveredByHealthInsuranceIfHbLess10": "Hemoglobin <10 boleh pakai Asuransi Kesehatan"
+  },
+  "pregnant": {
+    "title": "Berencana hamil dalam waktu 3-6 bulan",
+    "text": "Jika dibandingkan dengan orang normal, rasio pembuahan alami untuk pasien endometriosis akan menurun sesuai dengan tingkat keparahan kondisinya, bahkan akan lebih rendah jika masih terkombinasi dengan penyebab infertilitas (kemandulan) lainnya (misalnya: kedua saluran tuba falopi tersumbat). Kendatipun demikian, berkat teknologi prokreasi artifisial yang canggih saat ini, jika Anda ada rencana hamil sebaiknya berkonsultasi dulu dengan dokter infertilitas untuk mengadakan pemeriksaan pra-hamil (misalnya: histerosalpingografi (pemeriksaan radiologi untuk melihat bagian dalam rahim dan saluran tuba falopi), analisa sperma dan sebagainya) agar dapat membahas strategi pengobatan yang terbaik. Berikut disediakan penilaian diri secara simpel:",
+    "items": [
+      "Jika salah satu saluran tuba falopi berjalan lancar dan tidak ada masalah di bagian infertilitas pria yang parah, maka dalam hal ini boleh menimbang untuk menerima stimulasi ovulasi dan pembuahan artifisial.",
+      "Jika kedua saluran tuba falopi tersumbat atau terkombinasi dengan infertilitas pria, atau pembuahan artifisial yang tersebut di atas gagal beberapa kali, maka dalam hal ini boleh menimbang untuk menerima program stimulasi ovulasi guna melakukan bayi tabung.",
+      "Jika secara bersamaan terkombinasi dengan sakit panggul yang parah, atau kista cokelat terlalu besar sehingga memengaruhi operasi pengambilan ovum, maka dalam hal ini kami menyarankan untuk melakukan penilaian apakah perlu mengadakan pembedahan dulu untuk memotong jaringan endometriosis atau kista cokelat ovarium sebelum memulai program endokrinologi (kelenjar dalam tubuh yang menghasilkan hormon) reproduksi."
+    ],
+    "b2w": "Luar Topik: Tidak ada rencana hamil dalam waktu dekat ini",
+    "b2w-text": "Sehubungan dengan endometriosis dan pembedahan ovarium mungkin bisa mengakibatkan jumlah persediaan ovum berkurang, maka saat pasien didiagnosis menderita endometriosis atau sebelum melakukan pembedahan ovarium, dan tidak ada rencana hamil dalam waktu dekat ini, pasien dapat membahas dengan dokter infertilitas mengenai preservasi fertilitas atau pembekuan ovum."
   }
 }

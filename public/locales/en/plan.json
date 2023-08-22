@@ -86,5 +86,16 @@
     "transamine": "Transamine",
     "adenomyomectomy": "Adenomyomectomy",
     "coveredByHealthInsuranceIfHbLess10": "Covered by Health Insurance if Hb<10"
+  },
+  "pregnant": {
+    "title": "For Those Who Plan to Become Pregnant in the Next 3–6 Months",
+    "text": "Compared with the general population, the success rate of natural conception in females with endometriosis decreases based on the severity of endometriosis. Those with concurrent infertility causes (e.g. bilateral tubal occlusion) may have an even lower success rate of natural conception. However, as the development of in vitro fertilization (IVF) is quite advanced in modern days, those who plan to become pregnant could consult with doctors from the Reproductive Department to schedule a pre-pregnancy physical exam (e.g. hysterosalpingogram (HSG), semen analysis) and establish the most optimal intervention strategy. Below are some brief self-assessment items:",
+    "items": [
+      "For clients with at least one non-occlusive tube, and whose male partners are without severe infertility issues, they may consider ovulation induction and intrauterine insemination.",
+      "For clients with bilateral tubal occlusion or combined with male infertility, or having failed intrauterine insemination several times previously, they may consider ovulation induction and IVF.",
+      "For clients who have severe pelvic pain or a large chocolate cyst (which already interferes with ovum pick-up), it is recommended to remove the endometriosis or the ovarian chocolate cyst before starting the reproductive and endocrinological interventions."
+    ],
+    "b2w": "By the way, for those who do not plan to become pregnant soon",
+    "b2w-text": "As endometriosis itself and oophorectomy may reduce the amount of oocyte depository, after the diagnosis of endometriosis but prior to oophorectomy, if the clients do not plan to become pregnant in the near future, they can discuss with the doctors from the Reproductive Department about fertility preservation or oocyte cryopreservation."
   }
 }
