@@ -51,22 +51,6 @@
   position: relative;
 }
 
-.img1 {
-  background-image: url(~/images/choice1.png);
-}
-
-.img2 {
-  background-image: url(~/images/choice2.png);
-}
-
-.img3 {
-  background-image: url(~/images/choice3.png);
-}
-
-.img4 {
-  background-image: url(~/images/choice4.png);
-}
-
 .img-title {
   opacity: 85%;
   padding: 0 20px;
@@ -135,6 +119,7 @@
 
 .img3-text {
   color: #626e79;
+  background-color: #a7c5cc;
 }
 
 .img4-box {
@@ -175,6 +160,7 @@
   align-items: center;
   border-radius: 50%;
   margin: 42px auto 15px;
+  padding: 18px;
   background-color: #fff;
 }
 
