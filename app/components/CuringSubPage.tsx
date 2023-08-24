@@ -7,6 +7,7 @@ import cp6 from "~/images/cp6.png";
 import cp7 from "~/images/cp7.png";
 import cp8 from "~/images/cp8.png";
 import cp9 from "~/images/cp9.png";
+import { useTranslation } from "react-i18next";
 
 const image = {
   cp1,
@@ -44,6 +45,7 @@ type CuringSubPageProps = {
 
 const CuringSubPage = (props: CuringSubPageProps) => {
   const { data } = props;
+  let { t } = useTranslation("curing");
 
   return (
     <div className="cp-container">
@@ -76,7 +78,7 @@ const CuringSubPage = (props: CuringSubPageProps) => {
           </div>
         </div>
         <div className="cp-short">
-          <div className="cp-short-text">微專業短評</div>
+          <div className="cp-short-text">{t("cpShortText")}</div>
           <div className="cp-short-divider" />
         </div>
         <div
@@ -159,7 +161,7 @@ const CuringSubPage = (props: CuringSubPageProps) => {
         <table>
           <tbody>
             <tr>
-              <th>副作用</th>
+              <th>{t("sideEffect")}</th>
             </tr>
             <tr>
               <td>
