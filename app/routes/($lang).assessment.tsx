@@ -3,12 +3,30 @@ import { useTranslation } from "react-i18next";
 import stylesheet from "~/styles/assessment.css";
 
 import usCDC from "~/images/us-cdc.png";
+import { getTitle } from "~/utils";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
 ];
 
-export const meta: V2_MetaFunction = () => [{ title: "專業評估" }];
+export const meta: V2_MetaFunction = (x) => {
+  const { menu, greeting } = getTitle(x.params?.lang || "en");
+  return [
+    { title: menu.assessment },
+    {
+      property: "og:type",
+      content: "website",
+    },
+    {
+      property: "og:title",
+      content: menu.assessment,
+    },
+    {
+      name: "description",
+      content: greeting,
+    },
+  ];
+};
 
 export default function () {
   let { t } = useTranslation("assessment");

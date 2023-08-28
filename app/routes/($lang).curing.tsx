@@ -5,12 +5,30 @@ import curingData from "~/data/curing.json";
 import type { CuringDataType } from "~/components/CuringSubPage";
 import CuringSubPage from "~/components/CuringSubPage";
 import { useTranslation } from "react-i18next";
+import { getTitle } from "~/utils";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
 ];
 
-export const meta: V2_MetaFunction = () => [{ title: "CP 值專區" }];
+export const meta: V2_MetaFunction = (x) => {
+  const { menu, greeting } = getTitle(x.params?.lang || "en");
+  return [
+    { title: menu.curing },
+    {
+      property: "og:type",
+      content: "website",
+    },
+    {
+      property: "og:title",
+      content: menu.curing,
+    },
+    {
+      name: "description",
+      content: greeting,
+    },
+  ];
+};
 
 export default function () {
   let { t, ready } = useTranslation("curing");

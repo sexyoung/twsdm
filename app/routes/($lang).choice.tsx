@@ -14,12 +14,30 @@ import choice1 from "~/images/choice1.png";
 import choice2 from "~/images/choice2.png";
 import choice3 from "~/images/choice3.png";
 import choice4 from "~/images/choice4.png";
+import { getTitle } from "~/utils";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
 ];
 
-export const meta: V2_MetaFunction = () => [{ title: "選擇障礙專區" }];
+export const meta: V2_MetaFunction = (x) => {
+  const { menu, greeting } = getTitle(x.params?.lang || "en");
+  return [
+    { title: menu.choice },
+    {
+      property: "og:type",
+      content: "website",
+    },
+    {
+      property: "og:title",
+      content: menu.choice,
+    },
+    {
+      name: "description",
+      content: greeting,
+    },
+  ];
+};
 
 export default function () {
   let { t } = useTranslation("choice");

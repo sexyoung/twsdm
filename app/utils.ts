@@ -3,6 +3,12 @@ import { useMemo } from "react";
 
 import type { User } from "~/models/user.server";
 
+import en from "../public/locales/en/common.json";
+import zh from "../public/locales/zh-TW/common.json";
+import ja from "../public/locales/ja-JP/common.json";
+import vi from "../public/locales/vi-VN/common.json";
+import id from "../public/locales/id-ID/common.json";
+
 const DEFAULT_REDIRECT = "/";
 
 /**
@@ -75,3 +81,23 @@ export const setToday = () => {
   tomorrow.setHours(24, 0, 0, 0);
   document.cookie = "status=stillToday; expires=" + tomorrow.toString();
 };
+
+export const getTitle = (lang: string) => {
+  return {
+    "en": en,
+    "zh-TW": zh,
+    "ja-JP": ja,
+    "vi-VN": vi,
+    "id-ID": id,
+  }[lang] as {
+    greeting: string;
+    menu: {
+      home: string;
+      plan: string;
+      choice: string;
+      curing: string;
+      assessment: string;
+      contact: string;
+    };
+  };
+}

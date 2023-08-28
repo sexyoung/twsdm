@@ -2,12 +2,30 @@ import type { LinksFunction, V2_MetaFunction } from "@remix-run/node";
 import { useTranslation } from "react-i18next";
 
 import stylesheet from "~/styles/plan.css";
+import { getTitle } from "~/utils";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
 ];
 
-export const meta: V2_MetaFunction = () => [{ title: "計畫自由選" }];
+export const meta: V2_MetaFunction = (x) => {
+  const { menu, greeting } = getTitle(x.params?.lang || "en");
+  return [
+    { title: menu.plan },
+    {
+      property: "og:type",
+      content: "website",
+    },
+    {
+      property: "og:title",
+      content: menu.plan,
+    },
+    {
+      name: "description",
+      content: greeting,
+    },
+  ];
+};
 
 export default function () {
   let { t } = useTranslation("plan");

@@ -1,4 +1,4 @@
-import type { LinksFunction } from "@remix-run/node";
+import type { LinksFunction, V2_MetaFunction } from "@remix-run/node";
 import { Link } from "@remix-run/react";
 import { useTranslation } from "react-i18next";
 import stylesheet from "~/styles/home.css";
@@ -13,6 +13,7 @@ import endometriosis1 from "~/images/endometriosis-1.png";
 import endometriosis2 from "~/images/endometriosis-2.png";
 import endometriosis3 from "~/images/endometriosis-3.png";
 import endometriosis4 from "~/images/endometriosis-4.png";
+import { getTitle } from "~/utils";
 
 const endometriosis = [
   endometriosis0,
@@ -26,7 +27,24 @@ export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
 ];
 
-// export let handle = { i18n: "home" };
+export const meta: V2_MetaFunction = (x) => {
+  const { menu, greeting } = getTitle(x.params?.lang || "en");
+  return [
+    { title: menu.home },
+    {
+      property: "og:type",
+      content: "website",
+    },
+    {
+      property: "og:title",
+      content: menu.home,
+    },
+    {
+      name: "description",
+      content: greeting,
+    },
+  ];
+};
 
 export default function () {
   let { t } = useTranslation("home");

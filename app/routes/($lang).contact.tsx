@@ -3,12 +3,30 @@ import stylesheet from "~/styles/contact.css";
 
 import people from "~/images/361068627_1015588909782458_8471306656182809679_n.png";
 import { useTranslation } from "react-i18next";
+import { getTitle } from "~/utils";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
 ];
 
-export const meta: V2_MetaFunction = () => [{ title: "關於我們" }];
+export const meta: V2_MetaFunction = (x) => {
+  const { menu, greeting } = getTitle(x.params?.lang || "en");
+  return [
+    { title: menu.contact },
+    {
+      property: "og:type",
+      content: "website",
+    },
+    {
+      property: "og:title",
+      content: menu.contact,
+    },
+    {
+      name: "description",
+      content: greeting,
+    },
+  ];
+};
 
 export default function () {
   let { t } = useTranslation("contact");
