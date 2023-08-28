@@ -14,6 +14,7 @@ import choice1 from "~/images/choice1.png";
 import choice2 from "~/images/choice2.png";
 import choice3 from "~/images/choice3.png";
 import choice4 from "~/images/choice4.png";
+import logo from "~/images/logo.png";
 import { getTitle } from "~/utils";
 
 export const links: LinksFunction = () => [
@@ -35,6 +36,10 @@ export const meta: V2_MetaFunction = (x) => {
     {
       name: "description",
       content: greeting,
+    },
+    {
+      name: "og:image",
+      content: logo,
     },
   ];
 };

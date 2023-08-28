@@ -1,10 +1,11 @@
 import type { LinksFunction, V2_MetaFunction } from "@remix-run/node";
+import { useTranslation } from "react-i18next";
 import { ArrowAltCircleDown } from "~/components/icons";
 import stylesheet from "~/styles/curing.css";
 import curingData from "~/data/curing.json";
 import type { CuringDataType } from "~/components/CuringSubPage";
 import CuringSubPage from "~/components/CuringSubPage";
-import { useTranslation } from "react-i18next";
+import logo from "~/images/logo.png";
 import { getTitle } from "~/utils";
 
 export const links: LinksFunction = () => [
@@ -26,6 +27,10 @@ export const meta: V2_MetaFunction = (x) => {
     {
       name: "description",
       content: greeting,
+    },
+    {
+      name: "og:image",
+      content: logo,
     },
   ];
 };

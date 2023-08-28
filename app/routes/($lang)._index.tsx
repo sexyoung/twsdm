@@ -13,6 +13,8 @@ import endometriosis1 from "~/images/endometriosis-1.png";
 import endometriosis2 from "~/images/endometriosis-2.png";
 import endometriosis3 from "~/images/endometriosis-3.png";
 import endometriosis4 from "~/images/endometriosis-4.png";
+import logo from "~/images/logo.png";
+
 import { getTitle } from "~/utils";
 
 const endometriosis = [
@@ -42,6 +44,10 @@ export const meta: V2_MetaFunction = (x) => {
     {
       name: "description",
       content: greeting,
+    },
+    {
+      name: "og:image",
+      content: logo,
     },
   ];
 };

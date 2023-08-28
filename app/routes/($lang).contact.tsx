@@ -1,6 +1,7 @@
 import type { LinksFunction, V2_MetaFunction } from "@remix-run/node";
 import stylesheet from "~/styles/contact.css";
 
+import logo from "~/images/logo.png";
 import people from "~/images/361068627_1015588909782458_8471306656182809679_n.png";
 import { useTranslation } from "react-i18next";
 import { getTitle } from "~/utils";
@@ -24,6 +25,10 @@ export const meta: V2_MetaFunction = (x) => {
     {
       name: "description",
       content: greeting,
+    },
+    {
+      name: "og:image",
+      content: logo,
     },
   ];
 };
