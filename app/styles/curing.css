@@ -21,7 +21,7 @@
 }
 
 .cp-right-block {
-  @apply mx-[30px] inline-block w-fit pt-[40px] text-[#857162];
+  @apply ml-[30px] inline-block w-fit pt-[40px] text-[#857162];
 }
 
 .cp-title {
@@ -37,7 +37,7 @@
 
 .cp-title-text {
   right: 30px;
-  width: 400px;
+  width: 420px;
   text-align: center;
   position: absolute;
   margin: auto;
@@ -54,7 +54,7 @@
 .cp-title-content-m {
   right: 0;
   width: 400px;
-  font-size: 30px;
+  font-size: 36px;
   position: absolute;
   text-align: center;
 }
@@ -148,7 +148,7 @@ td {
 }
 
 .cp-main-titleS {
-  @apply text-[60px] leading-[80px];
+  @apply text-[50px] leading-[80px];
 }
 
 @media (max-width: 1024px) {
@@ -158,6 +158,10 @@ td {
   .cp-right-block {
     margin-left: auto;
     margin-right: auto;
+  }
+  table {
+    width: fit-content;
+    max-width: 500px;
   }
 }
 
