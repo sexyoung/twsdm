@@ -40,7 +40,7 @@ export default function () {
   return (
     <div>
       <div className="hero">
-        <div>CP 值專區</div>
+        <div>{t("mainTitle")}</div>
       </div>
       <div className="mx-auto mt-16">
         {(curingData as CuringDataType[]).map((data, index: number) => {
