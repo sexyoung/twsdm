@@ -1,6 +1,7 @@
 {
   "mainTitle": "Chuyên khu trị số CP",
-  "cpShortText": "Bình luận vi chuyên nghiệp",
+  "cpShortText": "",
+  "cpShortTextS": "Bình luận vi chuyên nghiệp",
   "sideEffect": "Tác dụng phụ",
   "data": [
     {
@@ -95,7 +96,7 @@
       "image": "cp7"
     },
     {
-      "title": "Phẫu thuật bảo tồn",
+      "title": "",
       "titleS": "Phẫu thuật bảo tồn",
       "subtitleS": [
         "Cắt bỏ u nang buồng trứng, cắt bỏ khối u tuyến cơ, phong bế thần kinh v.v…"

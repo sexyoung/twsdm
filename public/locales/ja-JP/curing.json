@@ -1,13 +1,14 @@
 {
   "mainTitle": "費用VS効果",
   "cpShortText": "専門家による評価",
+  "cpShortTextS": "",
   "sideEffect": "副作用",
   "data": [
     {
-      "title": "",
+      "title": "対症療法薬",
       "titleS": "",
-      "subtitleS": [""],
-      "subtitleM": ["Naproxen", "Tranexamic acid", "Ergonovine"],
+      "subtitleS": ["Naproxen", "Tranexamic acid", "Ergonovine"],
+      "subtitleM": [""],
       "shortComment": "これらの薬剤は、薬局や国外からの入手が可能な常備薬で、迅速な鎮痛や止血作用があります。その止血作用は、どの薬剤も平均30-50%の出血量を減少させることができます。そのため、止血薬を飲んでも出血が止まらないということがありますが、症状が改善しなければ、専門医に相談し､原因を探ることが必要です。",
       "sideEffect": [
         ">10%：消化器系の不快感、出血リスク",
@@ -108,7 +109,7 @@
       "image": "cp8"
     },
     {
-      "title": "根治的手術",
+      "title": "摘出手術",
       "titleS": "",
       "subtitleS": ["子宮切除、卵巣・卵管切除など"],
       "subtitleM": [""],
