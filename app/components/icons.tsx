@@ -20,7 +20,7 @@ export const StarUnCheck = () => {
 export const ArrowAltCircleDown = () => {
   return (
     <div className="mx-auto my-[10px] h-[50px] w-[50px]">
-      <FontAwesomeIcon icon={faCircleArrowDown} color="#B1C951" />
+      <FontAwesomeIcon icon={faCircleArrowDown} color="#B1C951" size="3x" />
     </div>
   );
 };
