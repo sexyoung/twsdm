@@ -2,6 +2,8 @@ import type { LinksFunction } from "@remix-run/node";
 import stylesheet from "~/styles/curing.css";
 // import { StarCheck, StarUnCheck } from "./icons";
 import cp1 from "~/images/cp1.png";
+import cp2 from "~/images/cp2.png";
+import cp3 from "~/images/cp3.png";
 import cp5 from "~/images/cp5.png";
 import cp6 from "~/images/cp6.png";
 import cp7 from "~/images/cp7.png";
@@ -11,6 +13,8 @@ import { useTranslation } from "react-i18next";
 
 const image = {
   cp1,
+  cp2,
+  cp3,
   cp5,
   cp6,
   cp7,
@@ -78,8 +82,18 @@ const CuringSubPage = (props: CuringSubPageProps) => {
           </div>
         </div>
         <div className="cp-short">
-          <div className="cp-short-text">{t("cpShortText")}</div>
-          <div className="cp-short-divider" />
+          {t("cpShortText") && (
+            <div className="cp-short-text">{t("cpShortText")}</div>
+          )}
+          {t("cpShortTextS") && (
+            <div className="cp-short-textS">{t("cpShortTextS")}</div>
+          )}
+          <div
+            className="cp-short-divider"
+            style={{
+              backgroundImage: `url(${image.cp2})`,
+            }}
+          />
         </div>
         <div
           className="cp-short-content"
@@ -157,7 +171,12 @@ const CuringSubPage = (props: CuringSubPageProps) => {
             </td>
           </tr>
         </table> */}
-        <div className="cp-effect-divider" />
+        <div
+          className="cp-effect-divider"
+          style={{
+            backgroundImage: `url(${image.cp3})`,
+          }}
+        />
         <table>
           <tbody>
             <tr>

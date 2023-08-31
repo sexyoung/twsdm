@@ -72,23 +72,30 @@
   background-color: #857162;
 }
 
+.cp-short-textS {
+  width: fit-content;
+  padding: 4px 16px;
+  border-radius: 16px;
+  font-size: 28px;
+  color: #ffffff;
+  background-color: #857162;
+}
+
 .cp-short-divider {
   flex: 1;
   height: auto;
   background-size: 100%;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url(~/images/cp2.png);
 }
 
 .cp-effect-divider {
   height: 30px;
-  width: 60%;
+  width: 240px;
   margin: 20px auto;
   background-size: 100%;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url(~/images/cp3.png);
 }
 
 .cp-short-content {
@@ -148,7 +155,7 @@ td {
 }
 
 .cp-main-titleS {
-  @apply text-[50px] leading-[80px];
+  @apply text-[50px];
 }
 
 @media (max-width: 1024px) {
@@ -171,7 +178,7 @@ td {
     margin-right: 20px;
   }
   .cp-title {
-    height: 140px;
+    height: 120px;
   }
   .cp-title-text {
     right: 0;
@@ -185,7 +192,7 @@ td {
     @apply text-[50px] leading-[60px];
   }
   .cp-main-titleS {
-    @apply text-[40px] leading-[50px];
+    @apply text-[40px];
   }
   .cp-title-content {
     font-size: 16px;
@@ -195,6 +202,9 @@ td {
   }
   .cp-short-text {
     font-size: 30px;
+  }
+  .cp-short-textS {
+    font-size: 20px;
   }
   .cp-short-content {
     font-size: 18px;
@@ -207,10 +217,13 @@ td {
     @apply text-[40px] leading-[50px];
   }
   .cp-main-titleS {
-    @apply text-[30px] leading-[40px];
+    @apply text-[30px];
   }
   .cp-short-text {
     font-size: 22px;
+  }
+  .cp-short-textS {
+    font-size: 16px;
   }
   .cp-short-content {
     font-size: 16px;
