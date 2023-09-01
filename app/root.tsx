@@ -194,20 +194,18 @@ export default function App() {
         <Outlet />
         <div className="mt-10 text-center text-[#9b8e8e]">
           <img src={icon5} className="mx-auto w-20" alt="icon" />
-          <h2 className="text-2xl lg:text-4xl">我們需要您寶貴的意見</h2>
+          <h2 className="text-2xl lg:text-4xl">{t("yourOpinion")}</h2>
           <div className="my-4 px-4">
-            只要幾秒，表達您對醫療環境的看法！
+            {t("shareYourComments")}
             <br />
-            完成這個簡單的調查並與我們分享
-            <span className="block md:inline" />
-            您對整個醫療環境的評論！
+            {t("thankText")}
           </div>
           <div className="flex justify-center gap-4">
             <Link to={t("formLink.personal")} className="link-btn">
-              個人表單
+              {t("personalForm")}
             </Link>
             <Link to={t("formLink.pro")} className="link-btn">
-              醫療人員表單
+              {t("proForm")}
             </Link>
           </div>
         </div>

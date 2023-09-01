@@ -42,7 +42,7 @@ export default function () {
       <div className="hero">
         <div>{t("mainTitle")}</div>
       </div>
-      <div className="mx-auto mt-16">
+      <div className="mx-auto mt-16 px-6 lg:px-0">
         {(curingData as CuringDataType[]).map((data, index: number) => {
           const dataI18n: CuringDataType = t(`data.${index}`, {
             returnObjects: true,
@@ -50,7 +50,7 @@ export default function () {
           if (!ready) return null;
           return (
             <div key={index}>
-              <CuringSubPage data={dataI18n} />
+              <CuringSubPage index={index} data={dataI18n} />
               {index !== curingData.length - 1 && <ArrowAltCircleDown />}
             </div>
           );

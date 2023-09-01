@@ -85,7 +85,9 @@
     "6-9MonthsAndLonger": "6-9か月以上",
     "transamine": "Transamine",
     "adenomyomectomy": "腺筋腫切除",
-    "coveredByHealthInsuranceIfHbLess10": "ヘモグロビン<10健康保険適用可"
+    "coveredByHealthInsuranceIfHbLess10": "ヘモグロビン<10健康保険適用可",
+    "cystectomy": "卵巣囊腫切除",
+    "cophorectomyAndSalpingectomy": "卵巣・卵管切除"
   },
   "pregnant": {
     "title": "3-6か月以内の計画妊娠",

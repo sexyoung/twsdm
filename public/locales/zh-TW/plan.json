@@ -85,7 +85,9 @@
     "6-9MonthsAndLonger": "6-9個月以上",
     "transamine": "Transamine (斷血炎)",
     "adenomyomectomy": "肌腺瘤切除",
-    "coveredByHealthInsuranceIfHbLess10": "血紅素<10可健保"
+    "coveredByHealthInsuranceIfHbLess10": "血紅素<10可健保",
+    "cystectomy": "囊腫切除",
+    "cophorectomyAndSalpingectomy": "卵巢及輸卵管切除"
   },
   "pregnant": {
     "title": "3-6個月內計劃懷孕",

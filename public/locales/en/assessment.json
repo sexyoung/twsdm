@@ -6,5 +6,6 @@
   "recommended": "Recommended Monitoring Items during Interventions",
   "WCBPs": "For WCBPs: Pregnancy Plans, Ultrasound exams, CA-125, liver function tests (if clinically indicated)",
   "Premenopause": "For Females at Premenopause: Ultrasound exams, CA-125, FSH, Estradiol, AMH (if clinically indicated/out-of-pocket expense), TSH, Free T4",
-  "Postmenopause": "For Females at Postmenopause: Ultrasound exams, breast cancer screening every 2 years (females aged 40 and above and with second-degree relatives of breast cancer history, or females aged 45 and above), bone density scan (Out-of-Pocket Expense)."
+  "Postmenopause": "For Females at Postmenopause: Ultrasound exams, breast cancer screening every 2 years (females aged 40 and above and with second-degree relatives of breast cancer history, or females aged 45 and above), bone density scan (Out-of-Pocket Expense).",
+  "IOTA": "The international ovarian tumour analysis (IOTA) calculator is currently undergoing the European Medical Device Regulation certification process. Before they can be legally made available to healthcare professionals, please refer to the following figure for 10 features from the Simple Rules. For Sonography Evaluation of Ovarian Tumors, please refer to “International Ovarian Tumor Analysis – Simple Rules Risk Calculator, Sonography Images”"
 }

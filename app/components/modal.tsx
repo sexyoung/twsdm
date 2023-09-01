@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Link } from "@remix-run/react";
 import { useEffect } from "react";
 import { setToday } from "~/utils";
@@ -9,6 +10,7 @@ type ModalProps = {
 };
 
 export default function Modal({ onClose, personLink, proLink }: ModalProps) {
+  const { t } = useTranslation("common");
   useEffect(() => {
     document.body.classList.add("overflow-hidden");
     setToday();
@@ -55,12 +57,10 @@ export default function Modal({ onClose, personLink, proLink }: ModalProps) {
                     className="text-base font-semibold leading-6 text-gray-900"
                     id="modal-title"
                   >
-                    只要幾秒，表達您對醫療環境的看法！
+                    {t("shareYourComments")}
                   </h3>
                   <div className="mt-2">
-                    <p className="text-sm text-gray-500">
-                      完成這個簡單的調查並與我們分享您對整個醫療環境的評論！
-                    </p>
+                    <p className="text-sm text-gray-500">{t("thankText")}</p>
                   </div>
                 </div>
               </div>
@@ -70,13 +70,13 @@ export default function Modal({ onClose, personLink, proLink }: ModalProps) {
                 to={personLink}
                 className="rounded-full bg-[#9b8e8e] px-4 py-2 font-bold text-white hover:bg-[#7a6f6f]"
               >
-                個人表單
+                {t("personalForm")}
               </Link>
               <Link
                 to={proLink}
                 className="rounded-full bg-[#9b8e8e] px-4 py-2 font-bold text-white hover:bg-[#7a6f6f]"
               >
-                醫療人員表單
+                {t("proForm")}
               </Link>
             </div>
           </div>

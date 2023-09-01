@@ -84,7 +84,9 @@
     "6-9MonthsAndLonger": "6-9 bulan ke atas",
     "transamine": "Transamine",
     "adenomyomectomy": "Myadenomektomi",
-    "coveredByHealthInsuranceIfHbLess10": "Hemoglobin <10 boleh pakai Asuransi Kesehatan"
+    "coveredByHealthInsuranceIfHbLess10": "Hemoglobin <10 boleh pakai Asuransi Kesehatan",
+    "cystectomy": "Pengangkatan kista ovarium",
+    "cophorectomyAndSalpingectomy": "Ovariektomi (pengangkatan ovarium), dan salpingektomi (pengangkatan tuba falopi)"
   },
   "pregnant": {
     "title": "Berencana hamil dalam waktu 3-6 bulan",

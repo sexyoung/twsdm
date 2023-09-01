@@ -17,5 +17,14 @@
   "formLink": {
     "personal": "https://forms.gle/3GNm36fpQ5S9ssGv9",
     "pro": "https://forms.gle/aK1ve65S56echiRG9"
-  }
+  },
+  "footer": {
+    "declaration": "本網站是由台大醫院雲林分院所贊助，網站作者群無財務衝突關係",
+    "copyright": "2023/08/01 © 版權所有、翻印必究。"
+  },
+  "yourOpinion": "我們需要您寶貴的意見。",
+  "shareYourComments": "只要幾秒，表達您對醫療環境的看法！",
+  "thankText": "感謝您使用本網站並特地駐足給我們回饋。您的意見將促進本網站改變，以促進您照顧的患者的就醫經驗以及您的看診整體舒適度。",
+  "personalForm": "個人表單",
+  "proForm": "醫療人員表單"
 }

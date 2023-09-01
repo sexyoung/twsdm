@@ -17,5 +17,14 @@
   "formLink": {
     "personal": "https://forms.gle/45qqnPtwQ8RH8Srf7",
     "pro": "https://forms.gle/LwuNm4oNynY8wquCA"
-  }
+  },
+  "footer": {
+    "declaration": "Trang web này được tài trợ bởi Bệnh viện Đại học Quốc gia Đài Loan, cơ sở Yunlin. Nhóm tác giả của trang web không có mâu thuẫn tài chính.",
+    "copyright": "2023/08/01 © Bản quyền thuộc về chúng tôi, việc sao chép không được phép sẽ bị truy cứu trách nhiệm."
+  },
+  "yourOpinion": "Ý kiến của bạn rất quý báu đối với chúng tôi. ",
+  "shareYourComments": "Chỉ cần vài giây, thể hiện cách nhìn của bạn về hoàn cảnh y tế!",
+  "thankText": "Cảm tạ quý vị đã sử dụng trang web này và đã nán lại phản hồi cho chúng tôi. Ý kiến của bạn sẽ thúc đẩy trang web của chúng tôi thay đổi và độ thoải mái tổng thể của khi khám bệnh.",
+  "personalForm": "Kiên nhẫn",
+  "proForm": "Chuyên gia y tế"
 }

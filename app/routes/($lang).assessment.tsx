@@ -4,6 +4,8 @@ import stylesheet from "~/styles/assessment.css";
 
 import logo from "~/images/logo.png";
 import usCDC from "~/images/us-cdc.png";
+import sr from "~/images/sr.png";
+import iota from "~/images/iota.png";
 import { getTitle } from "~/utils";
 
 export const links: LinksFunction = () => [
@@ -55,13 +57,17 @@ export default function () {
         >
           {t("click2Eng")}
         </a>
-
         <div className="title">{t("recommended")}</div>
         <ul className="text-left [&>*+*]:mt-4">
           <li>{t("WCBPs")}</li>
           <li>{t("Premenopause")}</li>
           <li>{t("Postmenopause")}</li>
         </ul>
+        <div className="mt-10 text-left">
+          <img src={iota} alt="IOTA" className="mx-auto mb-4" />
+          {t("IOTA")}
+        </div>
+        <img src={sr} alt="SR" />
       </div>
     </div>
   );
