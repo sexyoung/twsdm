@@ -91,42 +91,42 @@ export default function () {
           className="choice-img"
           style={{ backgroundImage: `url(${choice1})` }}
         >
-          <div className="img-box img1-box">
+          <div className="img-box">
             <div className="img-title img1-title">{t("imgTitle1")}</div>
-            <div
-              className="img-text img1-text [&>span]:underline"
-              dangerouslySetInnerHTML={{
-                __html: t("imgText1").replace(
-                  "{{underline}}",
-                  `<span>${t("imgTextU1")}</span>`
-                ),
-              }}
-            />
           </div>
         </div>
+        <div
+          className="img-text img1-text [&>span]:underline"
+          dangerouslySetInnerHTML={{
+            __html: t("imgText1").replace(
+              "{{underline}}",
+              `<span>${t("imgTextU1")}</span>`
+            ),
+          }}
+        />
       </div>
       <div className="choice-img-container">
         <div
           className="choice-img"
           style={{ backgroundImage: `url(${choice2})` }}
         >
-          <div className="img-box img2-box">
-            <div className="img-text img2-text">
-              <div
-                className="[&>span]:underline"
-                dangerouslySetInnerHTML={{
-                  __html: t("imgText21").replace(
-                    "{{underline}}",
-                    `<span>${t("imgTextU21")}</span>${t("imgTextU22")}<span>${t(
-                      "imgTextU23"
-                    )}</span>${t("imgTextU24")}`
-                  ),
-                }}
-              />
-              <div>{t("imgText22")}</div>
-            </div>
+          <div className="img-box">
             <div className="img-title img2-title">{t("imgTitle2")}</div>
           </div>
+        </div>
+        <div className="img-text img2-text">
+          <div>{t("imgText22")}</div>
+          <div
+            className="[&>span]:underline"
+            dangerouslySetInnerHTML={{
+              __html: t("imgText21").replace(
+                "{{underline}}",
+                `<span>${t("imgTextU21")}</span>${t("imgTextU22")}<span>${t(
+                  "imgTextU23"
+                )}</span>${t("imgTextU24")}`
+              ),
+            }}
+          />
         </div>
       </div>
       <div className="choice-img-container">
@@ -134,30 +134,30 @@ export default function () {
           className="choice-img"
           style={{ backgroundImage: `url(${choice3})` }}
         >
-          <div className="img-box img3-box">
+          <div className="img-box">
             <div className="img-title img3-title">{t("imgTitle3")}</div>
-            <div
-              className="img-text img3-text [&>span]:underline"
-              dangerouslySetInnerHTML={{
-                __html: t("imgText3").replace(
-                  "{{underline}}",
-                  `<span>${t("imgTextU3")}</span>`
-                ),
-              }}
-            />
           </div>
         </div>
+        <div
+          className="img-text img3-text [&>span]:underline"
+          dangerouslySetInnerHTML={{
+            __html: t("imgText3").replace(
+              "{{underline}}",
+              `<span>${t("imgTextU3")}</span>`
+            ),
+          }}
+        />
       </div>
       <div className="choice-img-container">
         <div
           className="choice-img"
           style={{ backgroundImage: `url(${choice4})` }}
         >
-          <div className="img-box img4-box">
-            <div className="img-text img4-text">{t("imgText4")}</div>
+          <div className="img-box">
             <div className="img-title img4-title">{t("imgTitle4")}</div>
           </div>
         </div>
+        <div className="img-text img4-text">{t("imgText4")}</div>
       </div>
     </div>
   );
