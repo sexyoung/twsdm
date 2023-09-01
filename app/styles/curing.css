@@ -26,11 +26,11 @@
 
 .cp-title {
   max-width: 100%;
-  color: #857162;
+  color: #fff;
   position: relative;
   margin-bottom: 40px;
   @apply rounded-3xl
-  bg-[#c3ff73]
+  bg-[#ff914d]
     p-3
     text-center
     lg:flex
