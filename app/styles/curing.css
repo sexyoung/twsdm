@@ -29,10 +29,12 @@
   color: #857162;
   position: relative;
   margin-bottom: 40px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  @apply rounded-3xl bg-[#c3ff73] text-center lg:flex lg:text-left;
+  @apply rounded-3xl
+  bg-[#c3ff73]
+    p-3
+    text-center
+    lg:flex
+    lg:text-left;
 }
 
 .cp-title-text {

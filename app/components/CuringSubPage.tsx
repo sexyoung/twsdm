@@ -80,7 +80,7 @@ const CuringSubPage = (props: CuringSubPageProps) => {
       <div className="cp-left-block">
         <div className="cp-title">
           <div
-            className="mx-auto h-[100px] w-[180px] bg-contain bg-center bg-no-repeat lg:h-full"
+            className="mx-auto h-[100px] w-[180px] bg-contain bg-center bg-no-repeat lg:h-[auto]"
             style={{
               backgroundImage: `url(${titleImage[index]})`,
             }}
