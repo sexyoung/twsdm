@@ -115,7 +115,6 @@ export default function () {
           </div>
         </div>
         <div className="img-text img2-text">
-          <div>{t("imgText22")}</div>
           <div
             className="[&>span]:underline"
             dangerouslySetInnerHTML={{
@@ -127,6 +126,7 @@ export default function () {
               ),
             }}
           />
+          <div>{t("imgText22")}</div>
         </div>
       </div>
       <div className="choice-img-container">
