@@ -1,0 +1,126 @@
+{
+  "mainTitle": "Affordable Options",
+  "cpShortText": "Brief Summaries",
+  "cpShortTextS": "",
+  "sideEffect": "Side Effects",
+  "data": [
+    {
+      "title": "",
+      "titleS": "",
+      "subtitleS": [""],
+      "subtitleM": ["Naproxen", "Tranexamic acid", "Ergonovine"],
+      "shortComment": "The above drugs are the most common medicinal products available in regular pharmacies or through reselling channels, which aim to rapid pain relief or hemostasis. In fact, taking “hemostasis” as an example, the above medicines can only reduce bleeding by 30–50%, i.e. sometimes females who have undergone these interventions still have chief complaints about continuous bleeding. If the drugs fail, a specialist visit is required to ascertain the background causes.",
+      "sideEffect": [
+        ">10%: Stomach upset, bleeding risks",
+        "1–10%: Fatigue",
+        "<1%: Venous thrombosis, chest tightness, seizure"
+      ],
+      "image": "cp1"
+    },
+    {
+      "title": "Dienogest",
+      "titleS": "",
+      "subtitleS": [""],
+      "subtitleM": [""],
+      "shortComment": "The updated generation of Progesterone greatly improves severe side effects seen in similar drugs. For example, based on study statistics, most of the females experienced significant menstrual pain relief on the same day of drug administration, and the recurrence of ovary chocolate cysts was reduced by 90%! Vaginal spotting may be improved after the administration of Progesterone for about 9–12 months. A few females may experience spotting again 15 months after drug administration. In this case, the subject may start drug administration right after the end of menstruation, apply Leuprolide for 3–6 months to adjust overall hormonal levels, or add symptom-controlling drugs for symptom relief. Clients may consult with their doctors for pregnancy test, ultrasound examination, and endometrium exploration. While only a few females developed bothersome side effects; most of the population choose continuous administration due to Progesterone’s relatively amazing pain relief effects.",
+      "sideEffect": [
+        ">5%: Headache, vaginal spotting, breast tenderness",
+        "1–5%: Depression, agitation, acne, hair loss, weight gain",
+        "<1%: Diarrhea, edema",
+        "*For those with medical condition contraindicated to HRT, a doctor’s evaluation is required prior to HRT administration."
+      ],
+      "image": "cp1"
+    },
+    {
+      "title": "Diane",
+      "titleS": "",
+      "subtitleS": ["Cyproterone and ethinyl estradiol"],
+      "subtitleM": [""],
+      "shortComment": "Diane is the combination of Progesterone and Estrogen, which slows down the progression of endometriosis by eliminating drastic changes in hormone levels in vivo. However, as the menstrual cycle still exists, the effects of Diane on menstrual pain relief and prevention of endometriosis recurrence may be slightly less effective than Dienogest. On the contrary, compared with Dienogest (with intolerable side effects), Diane has more acceptable side effects, and can be considered as an alternative option.",
+      "sideEffect": [
+        ">5%: Breast tenderness",
+        "1–5%: Headache, depression, edema",
+        "<1%: Abnormal liver functions, venous thrombosis",
+        "*Which may induce venous thrombosis (rare in Asians). For smokers, HRT may be the relative contraindication therapy; a doctor’s assessment prior to drug administration is required."
+      ],
+      "image": "cp1"
+    },
+    {
+      "title": "",
+      "titleS": "Danazol Gestrinone",
+      "subtitleS": [""],
+      "subtitleM": [""],
+      "shortComment": "Danazol had been one of the preference medicines for controlling endometriosis decades ago. Unfortunately, due to its overwhelming risk, i.e. irreversible side effects (potent muscularization), the clinical application of Danazol is limited. Gestrinone, through minimizing the side effects of muscularization and easy administration, has become one of the emerging and the most welcomed drugs for the treatment of endometriosis among the female population.",
+      "sideEffect": [
+        ">5%: Weight gain, edema, macromastia, acne, hirsutism, husky voice",
+        "<5%: Venous thrombosis, myocardial infarction, abnormal liver functions"
+      ],
+      "image": "cp1"
+    },
+    {
+      "title": "",
+      "titleS": "Leuprolide Acetate",
+      "subtitleS": [""],
+      "subtitleM": [""],
+      "shortComment": "Prior to the listing of Dienogest, Leuprolide injection once was the standard of care for patients with endometriosis. After 3–6 months of intervention, there is a possibility to develop temporary drug-induced menopause for up to 1 year. If the client happens to be close to post-menopause phase, she may no longer have problems cause by endometriosis from then. However, Leuprolide injections are not affordable options to most, plus there’s a risk of developing osteoporosis after prolonged Leuprolide injections. Currently, up to 6 months of Leuprolide injection protocol for one interventional cycle is recommended.",
+      "sideEffect": [
+        ">5%: Insomnia, night sweats, hot flushes, edema",
+        "1–5%: Osteoporosis, fracture, mood disorder",
+        "<1%: Lung fibrosis"
+      ],
+      "image": "cp5"
+    },
+    {
+      "title": "",
+      "titleS": "Intrauterine Device",
+      "subtitleS": [""],
+      "subtitleM": [""],
+      "shortComment": "Different from general birth control devices, Mirena may reduce menstrual bleeding (result in endometrium atrophy and then drug-induced menopause) and relieve menstrual pain by slow-releasing Progesterone. Such device is convenient as it requires no daily oral intake or injections, but there will be about 6 months of vaginal spotting prior to reaching the hemostatic effects. Concurrent use of intrauterine endometrium ablation via hysteroscopy may be helpful for preliminary hemostasis. Furthermore, for clients with unique uterine structure, the IUD may be expelled along with the first few menstruations. IUD placement may be performed at outpatient visits or hysteroscopy under mild anesthesia if needed.",
+      "sideEffect": [
+        ">10%: Lower abdominal pain, vaginitis, early gestational bleeding, headache",
+        "1–10%: Breast tenderness, depression",
+        "<1%: Ectopic pregnancy, uterine rupture"
+      ],
+      "image": "cp6"
+    },
+    {
+      "title": "Hysteroscope",
+      "titleS": "",
+      "subtitleS": ["Endometrium exploration, biopsy, ablation"],
+      "subtitleM": [""],
+      "shortComment": "Hysteroscope is an outpatient procedure or under mild anesthesia. Clients may experience slight soreness during the procedure (like having a Pap smear). A hysteroscope is usually used in females with abnormal intrauterine bleeding and post-menopausal bleeding, to determine the existence of polyps, submucosal fibroids, endometriosis or cancer. For females who have had a child, extensive intrauterine endometrium ablation using a hysteroscope may achieve hemostasis for several months. The effects of hemostasis may be extended with concurrent IUD placement.",
+      "sideEffect": [
+        "1–5%: Intrauterine adhesions",
+        "<1%: Uterine rupture, bleeding, water intoxication, pelvic organs rupture"
+      ],
+      "image": "cp7"
+    },
+    {
+      "title": "",
+      "titleS": "Conservative surgeries",
+      "subtitleS": ["Cystectomy, Myomectomy, Pudendal Nerve Block"],
+      "subtitleM": [""],
+      "shortComment": "All surgeries are invasive procedures, and therefore indicated for those with drug treatment failure, with significant symptoms, or with suspicion of malignancy. Conservative surgeries can mostly be completed through minimally invasive procedures (laparoscopy, natural orifice translumenal endoscopic surgery (NOTES), Da Vinci surgery system). Laparotomy may be required for clients with particularly severe conditions, adhesions, or suspicion of malignancies. Different doctors may take different measures and thus achieve different therapeutic effects. For clients with child bearing needs, consultation with IVF specialists prior to any intervention is recommended.",
+      "sideEffect": [
+        "1–5%: Wound hernia, infection, damages to urinary tract",
+        "<1%: GI tract damages",
+        "*Though most of the conservative procedures may solve problems, time for post-operative recovery and long-term wound complications should also be considered."
+      ],
+      "image": "cp8"
+    },
+    {
+      "title": "",
+      "titleS": "Radical surgery",
+      "subtitleS": ["Hysterectomy, Oophorectomy and Salpingectomy"],
+      "subtitleM": [""],
+      "shortComment": "Radical surgery also applies to females who have had a child or are aged 40 and above, and with drug treatment failure, with significant symptoms, or with suspicious malignancies. Most of the radical surgeries may be completed via minimally invasive procedures. However, laparotomy may still be required at the doctor’s discretion for particularly severe conditions, adhesions or suspicion of malignancy.",
+      "sideEffect": [
+        ">10%: Wound hernia, post-operative adhesion, fever",
+        "1–10%: Damages to the urinary tract, nerve damages",
+        "<1%: GI tract damages",
+        "*Though radical surgery is curative, time for post-operative recovery and long-term wound complications should also be considered."
+      ],
+      "image": "cp9"
+    }
+  ]
+}

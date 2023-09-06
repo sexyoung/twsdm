@@ -1,0 +1,132 @@
+{
+  "mainTitle": "Zona rasio biaya-kinerja",
+  "cpShortText": "",
+  "cpShortTextS": "Komentar Mikro-Profesional",
+  "sideEffect": "Efek Samping",
+  "data": [
+    {
+      "title": "",
+      "titleS": "",
+      "subtitleS": [""],
+      "subtitleM": ["Naproxen", "Tranexamic acid", "Ergonovine"],
+      "shortComment": "Obat-obatan ini adalah obat persediaan rumah yang biasanya dapat kita beli di apotek atau dari luar negeri. Pada umumnya, obat-obatan ini digunakan agar dapat cepat meredakan rasa sakit dan menghentikan pendarahan. Namun pada faktanya, dalam hal menghentikan pendarahan, setiap jenis obat hanya dapat mengurangi kuantitas pendarahan rata-rata 30-50%, sehingga kadang-kadang ada wanita mengeluh meskipun telah minum obat hemostatik (obat menghentikan pendarahan) masih tetap berdarah. Jika gejalanya tidak mendapat perbaikan, sebaiknya pergi ke dokter profesional untuk mencari penyebabnya.",
+      "sideEffect": [
+        ">10%: perut tidak enak, risiko pendarahan;",
+        "1-10%: kecapekan;",
+        "<1%: trombosis vena (pembekuan darah pada pembuluh vena), sesak dada, epilepsi (penyakit ayan)"
+      ],
+      "image": "cp1"
+    },
+    {
+      "title": "Dienogest",
+      "titleS": "",
+      "subtitleS": [""],
+      "subtitleM": [""],
+      "shortComment": "Jika dibandingkan dengan obat serupa lainnya, Progesteron generasi terbaru dapat mengurangi efek samping secara signifikan. Kebanyakan wanita setelah minum obat pada hari itu dapat jelas merasakan sakit haid mendapat perbaikan, dan berdasarkan statistik yang diteliti dapat mengurangi kekambuhan kista cokelat ovarium hingga 90%! Penggunaan obat pada beberapa bulan pertama mungkin masih ada bintik-bintik darah, dan akan membaik setelah minum obat selama 9 sampai 12 bulan, namun sebagian wanita mungkin masih ada bintik-bintik darah lagi setelah 15 bulan. Bagi yang memiliki kondisi terkait dapat mencoba mulai minum obat saat menstruasi baru saja berakhir dengan terlebih dulu menerapkan Leuprolide selama 3-6 bulan untuk menyesuaikan hormon, atau menambahkan obat pereda gejala untuk memperbaiki kondisi. Selain itu juga dapat konsultasi ke dokter untuk melakukan tes kehamilan, pemeriksaan ultrasonik, dan pemeriksaan endometrium. Sebagian wanita bisa ada efek samping lain yang mengganggu, tetapi mereka tetap melanjutkan obat tersebut berkat efeknya yang sangat manjur dalam meredakan sakit haid.",
+      "sideEffect": [
+        ">5%: sakit kepala, bintik darah di vagina, sakit payudara;",
+        "1-5%: depresi, lekas marah, tumbuh jerawat, rambut rontok, penambahan berat tubuh;",
+        "<1%: mencret, edema (pembengkakan yang disebabkan oleh penumpukan cairan pada jaringan tubuh)",
+        "*Jika menderita penyakit internal yang relatif kontraindikasi dalam penggunaan hormon harus minta dokter melakukan penilaian sebelum menggunakan."
+      ],
+      "image": "cp1"
+    },
+    {
+      "title": "Diane",
+      "titleS": "",
+      "subtitleS": ["Cyproterone and ethinyl estradiol"],
+      "subtitleM": [""],
+      "shortComment": "Diane merupakan kombinasi dari Progesteron dan Estrogen, dan memiliki kemanjuran dalam pengendalian penyakit endometriosis dengan mengurangi perubahan drastis hormon di dalam tubuh. Tetapi karena masih ada perubahan siklus menstruasi, maka efek pengobatan di bagian meredakan sakit haid dan mencegah kekambuhan mungkin lebih lemah daripada Dienogest. Kendatipun demikian, efek samping Diane relatif sedikit, oleh karena itu dapat dipertimbangkan sebagai obat alternatif untuk pasien yang tidak tahan efek samping Dienogest.",
+      "sideEffect": [
+        ">5%: sakit payudara;",
+        "1-5%: sakit kepala, depresi, edema;",
+        "<1%: fungsi hati abnormal, trombosis vena",
+        "*Mungkin bisa menyebabkan trombosis vena (jarang terjadi pada orang Asia). Jika ada merokok, atau menderita penyakit internal yang relatif kontraindikasi dalam penggunaan hormon harus minta dokter melakukan penilaian sebelum menggunakan."
+      ],
+      "image": "cp1"
+    },
+    {
+      "title": "",
+      "titleS": "",
+      "subtitleS": [""],
+      "subtitleM": ["Danazol", "Gestrinone"],
+      "shortComment": "Pada beberapa dekade yang lalu, Danazol merupakan salah satu obat pilihan pertama untuk mengontrol endometriosis. Namun, sehubungan dengan risiko efek sampingnya yang bisa menimbulkan virilisasi (menyebabkan wanita memproduksi hormon seks pria) (tidak dapat diubah kembali) lebih gawat daripada kemanjurannya, maka penggunaan Danazol di klinis sangat terbatas. Gestrinone adalah salah satu pilihan obat yang lebih baru untuk mengobati endometriosis dalam beberapa tahun terakhir ini, dan disukai oleh sebagian wanita karena efek samping virilisasi agak berkurang dan cara minum obatnya juga lebih simpel.",
+      "sideEffect": [
+        ">5%: penambahan berat tubuh, edema, payudara menjadi kecil, tumbuh jerawat, berbulu, suara bernada rendah;",
+        "<5%: trombosis vena, infark miokard (serangan jantung), fungsi hati abnormal"
+      ],
+      "image": "cp1"
+    },
+    {
+      "title": "",
+      "titleS": "Leuprolide Acetate",
+      "subtitleS": [""],
+      "subtitleM": [""],
+      "shortComment": "Sebelum Dienogest diperkenalkan, obat suntikan Leuprolide merupakan obat standar untuk mengobati endometriosis. Pasien setelah diobati dengan Leuprolide selama 3-6 bulan mungkin bisa mencapai status amenore obat sementara hingga 1 tahun, bila kebetulan mendekati masa menopause, pasien akan bebas dari segala sesuatu gangguan yang berkaitan dengan endometriosis. Namun, bukan setiap orang mampu membeli obat yang mahal ini. Selain itu, karena harus melakukan pengobatan jangka panjang dan mungkin bisa membawa risiko osteoporosis (kepadatan tulang berkurang), maka saat ini disarankan masa pengobatan untuk satu tahap maksimal 6 bulan.",
+      "sideEffect": [
+        ">5%: susah tidur, sering berkeringat, panas memerah, edema;",
+        "1-5%: osteoporosis, patah tulang, gangguan emosi;",
+        "<1%: fibrosis paru (proses pembentukan jaringan parut di paru-paru)"
+      ],
+      "image": "cp5"
+    },
+    {
+      "title": "",
+      "titleS": "Intrauterine Device",
+      "subtitleS": [""],
+      "subtitleM": [""],
+      "shortComment": "Mirena berbeda dengan alat kontrasepsi biasa karena selain dapat meredakan sakit haid dengan meriliskan progesteron secara perlahan, juga dapat menyusut endometrium untuk mencapai efek pengurangan darah haid atau amenore obat. Metode pengobatannya relatif nyaman karena tidak perlu minum obat atau menyuntik setiap hari. Tetapi sebelum mencapai efek hemostasis (berhenti berdarah) masih tetap ada bintik-bintik darah selama lebih dari 6 bulan, dalam hal ini dapat melakukan pengendalian awal melalui pembedahan-elektro endometrium dengan menggunakan histeroskop (alat yang memiliki cahaya dan kamera di ujungnya untuk memeriksa keadaan rahim). Selain itu, apabila struktur rahim istimewa, alat kontrasepsi mungkin bisa mengalir keluar bersama darah haid dalam beberapa bulan pertama menstruasi. Jika perlu, saat rawat jalan atau melakukan prosedur histeroskopi (pemeriksaan bagian dalam rahim dengan menggunakan histeroskop) dengan obat bius ringan dapat sekaligus memasang alat kontrasepsi.",
+      "sideEffect": [
+        ">10%: sakit perut bagian bawah, radang vagina, pendarahan abnormal dini, sakit kepala;",
+        "1-10%: sakit payudara, depresi;",
+        "<1%: hamil di luar rahim, rahim pecah"
+      ],
+      "image": "cp6"
+    },
+    {
+      "title": "Histeroskopi",
+      "titleS": "",
+      "subtitleS": [
+        "Pemeriksaan, pengirisan, dan pembedahan-elektro endometrium"
+      ],
+      "subtitleM": [""],
+      "shortComment": "Histeroskopi dapat dilakukan melalui rawat jalan atau obat bius ringan, prosedur ini akan membuat pasien merasa perih seperti saat melakukan Pap Smear (pemeriksaan pada leher rahim untuk mengetahui kondisinya). Histeroskopi umumnya digunakan untuk periksa pendarahan rahim abnormal, atau pendarahan setelah menopause guna menilai apakah ada polip (jaringan abnormal yang dapat muncul di bagian tubuh manapun), tumor submukosa (tumor di bawah selaput lendir), hiperplasia endometrium (lapisan rahim menebal secara abnormal), atau kanker. Bagi wanita yang telah selesai melahirkan, selain dapat melakukan pembedahan-elektro endometrium dengan menggunakan histeroskop untuk mencapai efek hemostasis selama beberapa bulan ke atas, juga dapat memasang alat kontrasepsi di dalam rahim untuk memperpanjang efek hemostasis.",
+      "sideEffect": [
+        "1-5%: adhesi di rongga rahim;",
+        "<1%: rahim pecah, pendarahan, keracunan air, organ panggul pecah"
+      ],
+      "image": "cp7"
+    },
+    {
+      "title": "",
+      "titleS": "Operasi konservatif",
+      "subtitleS": [
+        "Pengangkatan kista ovarium, myadenomektomi (pengangkatan tumor yang berasal dari kelenjar dan otot), dan pemutusan saraf panggul"
+      ],
+      "subtitleM": [""],
+      "shortComment": "Operasi apa saja bersifat invasif, dan biasanya diperlukan tindakan operasi saat pengobatan dengan obat gagal, gejalanya jelas, atau dicurigai merupakan tumor ganas. Sebagian besar operasi konservatif dapat dilakukan melalui operasi invasif mikro (misalnya: laparoskopi (prosedur medis untuk memeriksa dan mengobati kondisi bagian dalam perut atau panggul), operasi lubang alami, operasi Da Vinci), sedangkan untuk sebagian kondisi yang sangat serius, adhesi, atau dicurigai merupakan tumor ganas akan perlu ditangani dengan laparotomi. Dokter yang berbeda niscaya akan menghasilkan efek pengobatan yang berbeda pula. Jika ada kebutuhan di bagian fertilitas, disarankan untuk berkonsultasi dulu dengan dokter infertilitas.",
+      "sideEffect": [
+        "1-5%: luka hernia (muncul benjolan pada luka operasi), infeksi, cedera saluran kemih; ",
+        "<1%: cedera usus",
+        "*Walaupun sebagian besar operasi konservatif dapat memecahkan masalah dengan sekaligus, namun masa pemulihan pasca operasi dan komplikasi luka jangka panjang harus dipertimbangkan juga."
+      ],
+      "image": "cp8"
+    },
+    {
+      "title": "",
+      "titleS": "Operasi radikal",
+      "subtitleS": [
+        "Histerektomi (pengangkatan rahim), ovariektomi (pengangkatan ovarium), dan salpingektomi (pengangkatan tuba falopi)"
+      ],
+      "subtitleM": [""],
+      "shortComment": "Operasi radikal dapat dilakukan saat pengobatan dengan obat gagal, gejalanya jelas, atau dicurigai merupakan tumor ganas, dan cocok untuk wanita yang telah selesai melahirkan atau berusia 40 tahun ke atas. Sebagian besar operasi radikal juga dapat dilakukan melalui operasi invasif mikro, namun untuk kondisi yang sangat serius, adhesi, atau dicurigai merupakan tumor ganas akan perlu ditangani dengan laparotomi setelah dinilai oleh dokter.",
+      "sideEffect": [
+        ">10%: luka hernia, adhesi pasca operasi, demam;",
+        "1-10%: cedera saluran kemih, cedera saraf;",
+        "<1%: cedera usus",
+        "*Walaupun operasi radikal dapat menghilangkan penyakit hingga ke sumber utamanya, namun masa pemulihan pasca operasi dan komplikasi luka jangka panjang harus dipertimbangkan juga."
+      ],
+      "image": "cp9"
+    }
+  ]
+}

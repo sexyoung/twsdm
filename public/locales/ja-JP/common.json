@@ -1,5 +1,5 @@
 {
-  "greeting": "こんにちは",
+  "greeting": "子宮内膜症の専門医",
   "menu": {
     "home": "Home",
     "plan": "治療プランの選択",
@@ -17,5 +17,14 @@
   "formLink": {
     "personal": "https://forms.gle/RSgPLj9vG9iWRdCh8",
     "pro": "https://forms.gle/gyaJjNBiNTbBkk299"
-  }
+  },
+  "footer": {
+    "declaration": "このウェブサイトは、国立台湾大学病院雲林分院によってスポンサードされています。ウェブサイトの著者グループは、金銭的な利益相反関係はありません。",
+    "copyright": "2023/08/01 © すべての権利が保持されており、無許可の複製は訴訟の対象となります。"
+  },
+  "yourOpinion": "あなたのご意見は私たちにとって貴重です。",
+  "shareYourComments": "医療環境に対するあなたのご意見をお知らせください。",
+  "thankText": "このサイトに対するご意見をぜひお寄せください。いただいたご意見は本サイトの改善に役立ち、最終的には診察の質の向上にもつながります。",
+  "personalForm": "患者さん",
+  "proForm": "医療従事者"
 }

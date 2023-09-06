@@ -2,13 +2,38 @@ import type { LinksFunction, V2_MetaFunction } from "@remix-run/node";
 import { useTranslation } from "react-i18next";
 import stylesheet from "~/styles/assessment.css";
 
+import logo from "~/images/logo.png";
 import usCDC from "~/images/us-cdc.png";
+import sr from "~/images/sr.png";
+import iota from "~/images/iota.png";
+import { getTitle } from "~/utils";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
 ];
 
-export const meta: V2_MetaFunction = () => [{ title: "專業評估" }];
+export const meta: V2_MetaFunction = (x) => {
+  const { menu, greeting } = getTitle(x.params?.lang || "en");
+  return [
+    { title: menu.assessment },
+    {
+      property: "og:type",
+      content: "website",
+    },
+    {
+      property: "og:title",
+      content: menu.assessment,
+    },
+    {
+      name: "description",
+      content: greeting,
+    },
+    {
+      name: "og:image",
+      content: logo,
+    },
+  ];
+};
 
 export default function () {
   let { t } = useTranslation("assessment");
@@ -32,13 +57,17 @@ export default function () {
         >
           {t("click2Eng")}
         </a>
-
         <div className="title">{t("recommended")}</div>
         <ul className="text-left [&>*+*]:mt-4">
           <li>{t("WCBPs")}</li>
           <li>{t("Premenopause")}</li>
           <li>{t("Postmenopause")}</li>
         </ul>
+        <div className="mt-10 text-left">
+          <img src={iota} alt="IOTA" className="mx-auto mb-4" />
+          {t("IOTA")}
+        </div>
+        <img src={sr} alt="SR" />
       </div>
     </div>
   );

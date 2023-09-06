@@ -15,6 +15,7 @@
 .choice-all-content {
   padding: 60px 50px 70px 50px;
   display: flex;
+  gap: 20px;
   flex-direction: row;
   max-width: 1150px;
   margin: auto;
@@ -38,7 +39,7 @@
 
 .choice-img-container {
   width: 100%;
-  padding: 10px;
+  padding: 30px 10px;
 }
 
 .choice-img {
@@ -55,28 +56,27 @@
   opacity: 85%;
   padding: 0 20px;
   font-size: 50px;
-  width: fit-content;
-  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
 }
 
 .img-text {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
   opacity: 80%;
   font-size: 26px;
   padding: 4px 8px;
-  border-radius: 6px;
+  border-radius: 0 0 6px 6px;
 }
 
 .img-box {
   display: flex;
-  position: absolute;
   flex-direction: column;
-}
-
-.img1-box {
-  bottom: 20%;
-  right: 10px;
-  width: 590px;
-  align-items: end;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .img1-title {
@@ -89,13 +89,6 @@
   background-color: #fbf7ee;
 }
 
-.img2-box {
-  bottom: 20%;
-  left: 10px;
-  width: 570px;
-  align-items: end;
-}
-
 .img2-title {
   color: #ffffff;
   background-color: #e82012;
@@ -106,12 +99,6 @@
   background-color: #f3f2ea;
 }
 
-.img3-box {
-  bottom: 20%;
-  left: 10px;
-  width: 620px;
-}
-
 .img3-title {
   color: #ffffff;
   background-color: #808b96;
@@ -120,13 +107,6 @@
 .img3-text {
   color: #626e79;
   background-color: #a7c5cc;
-}
-
-.img4-box {
-  bottom: 40px;
-  right: 10px;
-  width: 900px;
-  align-items: end;
 }
 
 .img4-title {
@@ -141,7 +121,7 @@
   background-color: #a7c5cc;
 }
 
-.img .icons-container {
+.icons-container {
   width: 370px;
 }
 
@@ -192,16 +172,9 @@
   .banner-text {
     font-size: 1.5rem;
   }
-  .img-box {
-    bottom: 10%;
-    width: 90%;
-  }
-  .img-text {
-    font-size: 30px;
-  }
   .img-title {
     font-size: 60px;
-    border-radius: 6px;
+    border-radius: 6px 6px 0 0;
   }
   .img4-title {
     font-size: 46px;
@@ -216,7 +189,7 @@
     width: 50%;
   }
   .img-text {
-    font-size: 20px;
+    font-size: 22px;
   }
   .img-title {
     font-size: 44px;
@@ -240,7 +213,7 @@
   }
   .img-text {
     width: 100%;
-    font-size: 16px;
+    font-size: 20px;
   }
   .img-title {
     font-size: 30px;
@@ -248,17 +221,11 @@
   .img4-title {
     font-size: 24px;
   }
-  .img-box {
-    width: 95%;
-  }
 }
 
 @media (max-width: 375px) {
-  .img-box {
-    bottom: 6px;
-  }
   .img-text {
-    font-size: 12px;
+    font-size: 16px;
   }
   .img-title {
     font-size: 20px;

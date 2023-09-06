@@ -1,13 +1,36 @@
 import type { LinksFunction, V2_MetaFunction } from "@remix-run/node";
 import { useTranslation } from "react-i18next";
 
+import logo from "~/images/logo.png";
 import stylesheet from "~/styles/plan.css";
+import { getTitle } from "~/utils";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
 ];
 
-export const meta: V2_MetaFunction = () => [{ title: "計畫自由選" }];
+export const meta: V2_MetaFunction = (x) => {
+  const { menu, greeting } = getTitle(x.params?.lang || "en");
+  return [
+    { title: menu.plan },
+    {
+      property: "og:type",
+      content: "website",
+    },
+    {
+      property: "og:title",
+      content: menu.plan,
+    },
+    {
+      name: "description",
+      content: greeting,
+    },
+    {
+      name: "og:image",
+      content: logo,
+    },
+  ];
+};
 
 export default function () {
   let { t } = useTranslation("plan");
@@ -354,8 +377,8 @@ export default function () {
                   <td>-</td>
                   <td>{t("table.leuprolide")}</td>
                   <td>{t("table.gestrinone")}</td>
-                  <td>{t("table.adenomyomectomyNerveBlockEtc")}</td>
-                  <td>{t("table.hysterectomy")}</td>
+                  <td>{t("table.cystectomy")}</td>
+                  <td>{t("table.cophorectomyAndSalpingectomy")}</td>
                 </tr>
                 <tr>
                   <td>-</td>
@@ -436,19 +459,13 @@ export default function () {
         <div className="desc my-6 text-xl">{t("pregnant.text")}</div>
         <ul className="text-xl [&>*+*]:mt-4 [&>*]:list-disc">
           <li>
-            <span className="border-b-2 border-solid border-green-400">
-              {t("pregnant.items.0")}
-            </span>
+            <span>{t("pregnant.items.0")}</span>
           </li>
           <li>
-            <span className="border-b-2 border-solid border-yellow-400">
-              {t("pregnant.items.1")}
-            </span>
+            <span>{t("pregnant.items.1")}</span>
           </li>
           <li>
-            <span className="border-b-2 border-solid border-red-400">
-              {t("pregnant.items.2")}
-            </span>
+            <span>{t("pregnant.items.2")}</span>
           </li>
         </ul>
         <div className="title">{t("pregnant.b2w")}</div>

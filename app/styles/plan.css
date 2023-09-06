@@ -13,7 +13,7 @@
 
 .section .title-block {
   background-image: url(~/images/bg-flower.png);
-  @apply mx-auto mb-10 mt-20 max-w-[max-content] bg-cover bg-center p-10 text-center text-2xl font-bold;
+  @apply mx-auto mb-10 mt-20 bg-cover bg-center p-10 text-center text-2xl font-bold;
 }
 
 .section .title-block:before,

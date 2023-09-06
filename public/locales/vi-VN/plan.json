@@ -85,7 +85,9 @@
     "6-9MonthsAndLonger": "> 6-9 tháng",
     "transamine": "Transamine",
     "adenomyomectomy": "Cắt bỏ u cơ tuyến",
-    "coveredByHealthInsuranceIfHbLess10": "BHYT khi huyết sắc tố <10"
+    "coveredByHealthInsuranceIfHbLess10": "BHYT khi huyết sắc tố <10",
+    "cystectomy": "Cắt bỏ u nang buồng trứng",
+    "cophorectomyAndSalpingectomy": "Cắt bỏ buồng trứng và ống dẫn trứng"
   },
   "pregnant": {
     "title": "Kế hoạch mang thai trong vòng 3-6 tháng",

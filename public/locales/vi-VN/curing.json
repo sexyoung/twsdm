@@ -1,0 +1,128 @@
+{
+  "mainTitle": "Chuyên khu trị số CP",
+  "cpShortText": "",
+  "cpShortTextS": "Bình luận vi chuyên nghiệp",
+  "sideEffect": "Tác dụng phụ",
+  "data": [
+    {
+      "title": "",
+      "titleS": "",
+      "subtitleS": [""],
+      "subtitleM": ["Naproxen", "Tranexamic acid", "Ergonovine"],
+      "shortComment": "Những loại thuốc này thường được trữ trong tủ thuốc gia đình mà chúng ta rất dễ tìm thấy ở tiệm thuốc, thuốc xách tay từ nước ngoài, thông thường nhằm mục đích nhanh chóng giảm đau, cầm máu; nhưng trên thực tế lấy cầm máu mà nói, mỗi loại thuốc bình quân chỉ có thể giảm 30-50% lượng máu chảy, vì thế đôi khi sẽ có phụ nữ than phiền rằng dù đã uống thuốc cầm máu mà vẫn chảy máu. Nếu không thể cải thiện triệu chứng, vẫn phải tìm đến bác sĩ chuyên khoa hỗ trợ tìm ra nguyên nhân gây bệnh.",
+      "sideEffect": [
+        ">10%: khó chịu đường ruột, nguy cơ chảy máu",
+        "1-10%: mệt mỏi",
+        "<1%: huyết khối tĩnh mạch, tức ngực, động kinh"
+      ],
+      "image": "cp1"
+    },
+    {
+      "title": "Dienogest",
+      "titleS": "",
+      "subtitleS": [""],
+      "subtitleM": [""],
+      "shortComment": "Progesterone thế hệ mới nhất giảm đi đáng kể tác dụng phụ nghiêm trọng của các loại thuốc thế hệ cũ khác, đa số phụ nữ ngay ngày sử dụng thuốc đã cảm thấy cải thiện rõ rệt triệu chứng thống kinh, mà nghiên cứu thống kê có thể giảm 90% tỉ lệ tái phát u nang sô-cô-la buồng trứng! Vài tháng đầu sử dụng có thể sẽ có tình trạng xuất huyết dạng điểm kéo dài, và sẽ cải thiện sau khi dùng thuốc khoảng 9-12 tháng, có số ít phụ nữ có thể tái xuất huyết dạng điểm sau khi sử dụng 15 tháng. Nếu có tình trạng liên quan, có thể thử bắt đầu dùng thuốc lúc vừa sạch kinh, trước tiên sử dụng Leuprolide 3-6 tháng để điều chỉnh trạng thái Hormon hoặc kèm thêm thuốc giảm nhẹ triệu chứng để cải thiện. Ngoài ra cũng có thể tư vấn bác sĩ tiến hành thử thai, kiểm tra siêu âm, kiểm tra nội mạc tử cung. Số ít phụ nữ sẽ có những tác dụng phụ gây phiền não khác, nhưng nhìn chung khi so sánh với hiệu quả giảm nhẹ thống kinh kỳ dịu cũng sẽ lựa chọn tiếp tục dùng thuốc.",
+      "sideEffect": [
+        ">5%: đau đầu, âm đạo xuất huyết dạng điểm, căng đau tuyến vú",
+        "1-5%: trầm cảm, dễ tức giận, nổi mụn, rụng tóc, tăng cân",
+        "<1%: tiêu chảy, phù",
+        "* Nếu có bệnh nội khoa có chống chỉ định tương đối sử dụng Hormon, trước khi sử dụng phải nhờ bác sĩ đánh giá."
+      ],
+      "image": "cp1"
+    },
+    {
+      "title": "Diane",
+      "titleS": "",
+      "subtitleS": ["Cyproterone and ethinyl estradiol"],
+      "subtitleM": [""],
+      "shortComment": "Diane là tổ hợp của Progesterone và Estrogen, thông qua việc làm giảm đột ngột Hormon trong cơ thể để đạt hiệu quả kiểm soát bệnh lạc nội mạc tử cung, tuy nhiên do vẫn có sự thay đổi theo chu kỳ sinh lý, cho nên về hiệu quả điều trị giảm nhẹ thống kinh và ngăn ngừa tái phát có thể hơi yếu hơn so với Dienogest. Tác dụng phụ mà Diane gây ra tương đối làm người ta hài lòng, vì thế có thể cân nhắc chọn làm điều trị thay thế khi không thể chịu đựng được tác dụng phụ của Dienogest.",
+      "sideEffect": [
+        ">5%: căng đau tuyến vú",
+        "1-5%: đau đầu, trầm cảm, phù",
+        "<1%: bất thường chức năng gan, huyết khối tĩnh mạch",
+        "* Có thể gây ra huyết khối tĩnh mạch (hiếm gặp ở người châu Á), nếu có hút thuốc lá, bệnh nội khoa có chống chỉ định tương đối sử dụng Hormon, trước khi sử dụng phải nhờ bác sĩ đánh giá."
+      ],
+      "image": "cp1"
+    },
+    {
+      "title": "",
+      "titleS": "",
+      "subtitleS": [""],
+      "subtitleM": ["Danazol", "Gestrinone"],
+      "shortComment": "Vài chục năm trước Danazol là loại thuốc lựa chọn đầu tay để kiểm soát bệnh lạc nội mạc tử cung, thế nhưng vì nguy cơ mà tác dụng phụ nam hóa quá mạnh (không đảo ngược) mang lại có thể nghiêm trọng hơn cả hiệu ích, nên đã hạn chế việc sử dụng nó trên lâm sàng. Vài năm gần đây Gestrinone là một trong những lựa chọn tương đối mới để điều trị bệnh lạc nội mạc tử cung, thông qua việc giảm thiểu tác dụng phụ của nam hóa, phương thức dùng thuốc tương đối đơn giản, nhận được sự ưa thích của một số phụ nữ.",
+      "sideEffect": [
+        ">5%: tăng cân, phù, vú teo nhỏ, nổi mụn, rậm lông, giọng trầm",
+        "<5%: huyết khối tĩnh mạch, nhồi máu cơ tim, bất thường chức năng gan"
+      ],
+      "image": "cp1"
+    },
+    {
+      "title": "",
+      "titleS": "Leuprolide Acetate",
+      "subtitleS": [""],
+      "subtitleM": [""],
+      "shortComment": "Mũi tiêm Leuprolide trước khi dùng Dienogest là bộ tiêm tiêu chuẩn cho bệnh lạc nội mạc tử cung, trải qua 3-6 tháng trị liệu, có cơ hội về sau đạt được trạng thái ngừng kinh tạm thời bằng thuốc kéo dài đến 1 năm, nếu vừa lúc gần tới thời kỳ mãn kinh, càng có thể từ đó giã từ các phiền não liên quan bệnh lạc nội mạc tử cung. Thế nhưng không phải tất cả mọi người đều có khả năng chi trả mức phí quá cao của thuốc. Do điều trị dài lâu có thể dẫn đến nguy cơ loãng xương, trước mắt kiến nghị 1 liệu trình điều trị tối đa 6 tháng.",
+      "sideEffect": [
+        ">5%: mất ngủ, đổ mồ hôi trộm, bốc hỏa, phù",
+        "1-5%: loãng xương, gãy xương, rối loạn cảm xúc",
+        "<1%: xơ hóa phổi"
+      ],
+      "image": "cp5"
+    },
+    {
+      "title": "",
+      "titleS": "Intrauterine Device",
+      "subtitleS": [""],
+      "subtitleM": [""],
+      "shortComment": "Không giống với dụng cụ tránh thai thông thường, Mirena thông qua phóng thích chậm Progesteron giảm nhẹ thống kinh và làm cho nội mạc tử cung teo lại rồi đạt hiệu quả giảm lượng máu kinh, ngừng kinh bằng thuốc. Bởi vì không cần uống thuốc hoặc tiêm chích mỗi ngày, phương thức trị liệu này tương đối tiện lợi, nhưng trước khi đạt được hiệu quả cầm máu sẽ bị xuất huyết dạng điểm khoảng hơn 6 tháng, có thể kiểm soát thời kỳ đầu thông qua nội soi đốt điện nội mạc tử cung. Ngoài ra, nếu cấu trúc tử cung đặc biệt, dụng cụ tránh thai có thể bị thải ra ngoài cùng máu kinh vào những kỳ kinh nguyệt trước. Nếu có nhu cầu, có thể đặt dụng cụ tránh thai ngay khi khi tiến hành soi tử cung tại phòng khám hoặc gây tê nhẹ.",
+      "sideEffect": [
+        ">10%: đau bụng dưới, viêm âm đạo, ra máu bất thường giai đoạn đầu, đau đầu",
+        "1-10%: căng đau tuyến vú, trầm cảm",
+        "<1%: thai ngoài tử cung, vỡ tử cung"
+      ],
+      "image": "cp6"
+    },
+    {
+      "title": "Soi tử cung",
+      "titleS": "",
+      "subtitleS": ["Kiểm tra nội mạc tử cung, sinh thiết, đốt điện v.v…"],
+      "subtitleM": [""],
+      "shortComment": "Soi tử cung có thể thực hiện tại phòng khám hoặc dưới sự gây tê nhẹ, sẽ có cảm giác căng nhức giống như làm phết tế bào cổ tử cung. Soi tử cung thông thường dùng để đánh giá tình trạng ra huyết bất thường, ra huyết sau mãn kinh xem có polyp, khối u dưới niêm mạc, tăng sinh nội mạc hoặc ung thư hay không. Đối với phụ nữ đã hoàn thành việc sinh đẻ, có thể thông qua soi tử cung đốt điện nội mạc tử cung rộng rãi đạt hiệu quả cầm máu đến hơn vài tháng, đồng thời đặt vòng tránh thai nội tết kéo dài hiệu quả cầm máu.",
+      "sideEffect": [
+        "1-5%: dính buồng tử cung",
+        "<1%: vỡ tử cung, xuất huyết, ngộ độc nước, vỡ cơ quan vùng chậu"
+      ],
+      "image": "cp7"
+    },
+    {
+      "title": "",
+      "titleS": "Phẫu thuật bảo tồn",
+      "subtitleS": [
+        "Cắt bỏ u nang buồng trứng, cắt bỏ khối u tuyến cơ, phong bế thần kinh v.v…"
+      ],
+      "subtitleM": [""],
+      "shortComment": "Bất cứ thủ thuật nào cũng tương đối có tính xâm lấn, thông thường thích hợp áp dụng trong các trường hợp điều trị bằng thuốc thất bại, triệu chứng rõ rệt, hoặc nghi ngờ khối u ác tính v.v… Phẫu thuật bảo tồn đa số có thể hoàn thành thông qua mổ nội soi (nội soi ổ bụng, phẫu thuật qua lỗ tự nhiên, phẫu thuật Da Vinci), đối với một số trường hợp đặc biệt nghiêm trọng, dính hoặc nghi ngờ khối u ác tính, thì có thể cần phải tiến hành mổ hở. Mỗi bác sĩ có thể có hiệu quả điều trị khác nhau, nếu có nhu cầu sinh đẻ kiến nghị tư vấn bác sĩ chuyên khoa vô sinh trước.",
+      "sideEffect": [
+        "1-5%: thoát vị vết mổ, nhiễm trùng, tổn thưởng đường tiết niệu",
+        "<1%: tổn thương đường ruột",
+        "* Tuy rằng phẫu thuật bảo tồn phần lớn có thể giải quyết vấn đề trong 1 lần, nhưng cần cân nhắc thời kỳ hồi phục sau phẫu thuật và biến chứng vết thương dài lâu."
+      ],
+      "image": "cp8"
+    },
+    {
+      "title": "",
+      "titleS": "Phẫu thuật tận gốc",
+      "subtitleS": ["Cắt bỏ tử cung, cắt bỏ buồng trứng và ống dẫn trứng v.v…"],
+      "subtitleM": [""],
+      "shortComment": "Phẫu thuật tận gốc cũng thích hợp áp dụng trong các trường hợp điều trị bằng thuốc thất bại, triệu chứng rõ rệt, hoặc nghi ngờ khối u ác tính v.v…, và với phụ nữ trên 40 tuổi, đã hoàn thành việc sinh đẻ. Phần lớn phẫu thuật tận gốc vẫn có thể thông qua mổ nội soi để hoàn thành, nhưng đối với trường hợp đặc biệt nghiêm trọng, dính hoặc nghi ngờ khối u ác tính, thì sẽ tiến hành mổ hở dưới sự đánh giá của bác sĩ.",
+      "sideEffect": [
+        ">10%: thoát vị vết mổ, dính sau phẫu thuật, sốt",
+        "1-10%: tổn thương đường tiết niệu, tổn thương thần kinh",
+        "<1%: tổn thươngg đường ruột",
+        "* Phẫu thuật tận gốc tuy có thể đạt được hiệu quả trọn đời, nhưng cần cân nhắc thời kỳ hồi phục sau phẫu thuật và biến chứng vết thương dài lâu."
+      ],
+      "image": "cp9"
+    }
+  ]
+}
