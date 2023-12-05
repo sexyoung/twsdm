@@ -1,7 +1,5 @@
 {
-  "hero": [
-    "Tiga langkah simpel menciptakan program pengobatan eksklusif"
-  ],
+  "hero": ["Tiga langkah simpel menciptakan program pengobatan eksklusif"],
   "step1": {
     "title": "Langkah 1: Beritahukan kami masalah utama Anda!",
     "text": "Sebelum memutuskan program pengobatan apapun, kami harus terlebih dulu memahami apakah Anda ada rencana hamil dalam waktu 3-6 bulan ini, setelah itu baru menimbang tujuan pengobatan yang berbeda terbagi atas 3 kategori:"
@@ -32,11 +30,11 @@
       ]
     },
     {
-      "title": "?????",
+      "title": "Berencana hamil",
       "text": [
-        "Berencana hamil",
         "Fungsi ovarium",
-        "Kemampuan pembuahan"
+        "Kemampuan pembuahan",
+        "Rencana Persiapan Kehamilan"
       ]
     }
   ],
@@ -75,7 +73,7 @@
     "oralIntakeDailyDuringPeriod": "Oral per hari selama haid",
     "oralIntakeDaily": "Oral per hari",
     "injectionMonthTotalOf3-6Injections": "1 injeksi/bulan, total 3-6 injeksi",
-    "NT6000AndMorePerInjection": "Lebih dari NTD 6000/buah",
+    "NT6000AndMorePerInjection": "Lebih dari NTD 6000/injeksi",
     "oneDeviceFor5Years": "Pasang satu selama 5 tahun",
     "minor": "Ringan",
     "fastActing": "Cepat",

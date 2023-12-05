@@ -2,7 +2,6 @@ import type { LinksFunction, V2_MetaFunction } from "@remix-run/node";
 import { useTranslation } from "react-i18next";
 import { ArrowAltCircleDown } from "~/components/icons";
 import stylesheet from "~/styles/curing.css";
-import curingData from "~/data/curing.json";
 import type { CuringDataType } from "~/components/CuringSubPage";
 import CuringSubPage from "~/components/CuringSubPage";
 import logo from "~/images/logo.png";
@@ -37,6 +36,7 @@ export const meta: V2_MetaFunction = (x) => {
 
 export default function () {
   let { t, ready } = useTranslation("curing");
+  const curingData = Array.from(t("data", { returnObjects: true }) as any);
   return (
     <div>
       <div className="hero">
