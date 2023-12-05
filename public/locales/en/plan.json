@@ -1,8 +1,5 @@
 {
-  "hero": [
-    "Create Your Own Treatment Protocol",
-    "in Super Easy Three Steps"
-  ],
+  "hero": ["Create Your Own Treatment Protocol", "in Super Easy Three Steps"],
   "step1": {
     "title": "Step 1: Tell Us Your Chief Complaints!",
     "text": "Before starting any interventions, we need to know if you plan to become pregnant in the next 3–6 months. Then, we will set your treatment in three different dimensions based on the objectives:"
@@ -72,7 +69,7 @@
     "coveredByHealthInsurance": "Covered by Health Insurance",
     "moderateToSevere": "Moderate to Severe",
     "usuallyNT10KandMore": "Usually NT$10K and more",
-    "microsurgeryOrConventionalSurgery": "Microsurgery or conventional surgery",
+    "microsurgeryOrConventionalSurgery": "Minimally invasive surgery or conventional surgery",
     "oralIntakeDailyDuringPeriod": "Oral Intake, Daily, During Period",
     "oralIntakeDaily": "Oral Intake, Daily",
     "injectionMonthTotalOf3-6Injections": "Injection/month, total of3-6 injections",
