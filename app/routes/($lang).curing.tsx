@@ -34,6 +34,10 @@ export const meta: V2_MetaFunction = (x) => {
   ];
 };
 
+export const handle = {
+  i18n: "curing",
+};
+
 export default function () {
   let { t, ready } = useTranslation("curing");
   const curingData = Array.from(t("data", { returnObjects: true }) as any);
