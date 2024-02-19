@@ -44,6 +44,10 @@ export const meta: V2_MetaFunction = (x) => {
   ];
 };
 
+export const handle = {
+  i18n: "choice",
+};
+
 export default function () {
   let { t } = useTranslation("choice");
   return (

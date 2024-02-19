@@ -32,6 +32,10 @@ export const meta: V2_MetaFunction = (x) => {
   ];
 };
 
+export const handle = {
+  i18n: "plan",
+};
+
 export default function () {
   let { t } = useTranslation("plan");
   return (
