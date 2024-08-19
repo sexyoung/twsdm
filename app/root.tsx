@@ -24,6 +24,8 @@ import { getUser } from "~/session.server";
 import logo from "~/images/twsdm.gif";
 import icon5 from "~/images/home-5.png";
 
+import twendometriosis from "~/images/tw-endometriosis.png";
+
 import stylesheet from "~/tailwind.css";
 
 import Modal from "./components/modal";
@@ -192,6 +194,20 @@ export default function App() {
           lang={lang}
         />
         <Outlet />
+        <div className="mb-10 mt-20 text-center">
+          <img src={twendometriosis} className="mx-auto" alt="icon" />
+          <div className="mt-4 text-[#9b8e8e]">
+            歡迎造訪台灣子宮內膜異位症學會進一步瞭解國內外子宮內膜異位症研究、診治新知，及最新學術演講及專題討論。
+          </div>
+          <a
+            target="_blank"
+            href="https://www.endometriosis.org.tw/"
+            referrerPolicy="no-referrer"
+            rel="noreferrer"
+          >
+            https://www.endometriosis.org.tw/
+          </a>
+        </div>
         <div className="mt-10 text-center text-[#9b8e8e]">
           <img src={icon5} className="mx-auto w-20" alt="icon" />
           <h2 className="text-2xl lg:text-4xl">{t("yourOpinion")}</h2>
