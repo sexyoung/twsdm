@@ -56,7 +56,7 @@ export default function () {
         <a
           target="_blank"
           className="mt-10 inline-block rounded-full bg-[#9b8e8e] px-4 py-2 font-bold text-white hover:bg-[#7a6f6f]"
-          href="https://www.cdc.gov/reproductivehealth/contraception/pdf/summary-chart-us-medical-eligibility-criteria_508tagged.pdf"
+          href="https://www.cdc.gov/contraception/media/pdfs/2024/07/us-mec-summary-chart-color-508.pdf"
           rel="noreferrer"
         >
           {t("click2Eng")}
