@@ -1,8 +1,0 @@
-.hero {
-  background-image: url(~/images/hero-contact.png);
-  @apply bg-cover bg-center;
-}
-
-.title {
-  @apply mb-2 mt-4 w-fit bg-[#9b8e8e] px-2 py-1 text-white;
-}

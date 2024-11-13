@@ -1,61 +1,47 @@
-# base node image
-FROM node:16-bullseye-slim as base
+# 使用與 devcontainer 相同的基礎鏡像
+FROM node:22-alpine AS builder
 
-# set for base and all layer that inherit from it
-ENV NODE_ENV production
+# 設置工作目錄
+WORKDIR /app
 
-# Install openssl for Prisma
-RUN apt-get update && apt-get install -y openssl sqlite3
+# 複製 package.json 和 package-lock.json (如果存在)
+COPY package*.json ./
 
-# Install all node_modules, including dev dependencies
-FROM base as deps
+# 安裝所有依賴（包括 devDependencies）
+RUN npm ci
 
-WORKDIR /myapp
+# 複製所有源代碼
+COPY . .
 
-ADD package.json package-lock.json .npmrc ./
-RUN npm install --include=dev
-
-# Setup production node_modules
-FROM base as production-deps
-
-WORKDIR /myapp
-
-COPY --from=deps /myapp/node_modules /myapp/node_modules
-ADD package.json package-lock.json .npmrc ./
-RUN npm prune --omit=dev
-
-# Build the app
-FROM base as build
-
-WORKDIR /myapp
-
-COPY --from=deps /myapp/node_modules /myapp/node_modules
-
-ADD prisma .
-RUN npx prisma generate
-
-ADD . .
+# 構建應用
 RUN npm run build
 
-# Finally, build the production image with minimal footprint
-FROM base
+# 創建精簡的生產鏡像
+FROM node:22-alpine
 
-ENV DATABASE_URL=file:/data/sqlite.db
 ENV PORT="8080"
-ENV NODE_ENV="production"
 
-# add shortcut for connecting to database CLI
-RUN echo "#!/bin/sh\nset -x\nsqlite3 \$DATABASE_URL" > /usr/local/bin/database-cli && chmod +x /usr/local/bin/database-cli
+WORKDIR /app
 
-WORKDIR /myapp
+# 複製 package.json 和 package-lock.json
+COPY package*.json ./
 
-COPY --from=production-deps /myapp/node_modules /myapp/node_modules
-COPY --from=build /myapp/node_modules/.prisma /myapp/node_modules/.prisma
+# 只安裝生產依賴
+RUN npm ci --only=production
 
-COPY --from=build /myapp/build /myapp/build
-COPY --from=build /myapp/public /myapp/public
-COPY --from=build /myapp/package.json /myapp/package.json
-COPY --from=build /myapp/start.sh /myapp/start.sh
-COPY --from=build /myapp/prisma /myapp/prisma
+# 從構建階段複製編譯後的代碼
+COPY --from=builder /app/dist/ ./
 
+COPY --from=builder /app/server.js ./server.js
+
+COPY --from=builder /app/start.sh ./start.sh
+
+RUN npm install express@^4.19.2
+
+RUN chmod +x ./start.sh
+
+# 使用 npm start 作為啟動命令
 ENTRYPOINT [ "./start.sh" ]
+
+# 暴露應用可能使用的端口（根據您的應用需求調整）
+EXPOSE 3000
