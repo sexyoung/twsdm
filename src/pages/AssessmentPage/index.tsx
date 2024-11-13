@@ -8,6 +8,7 @@ import { useLanguage } from "@/hooks/useLanguage";
 import { useDocumentTitle } from "@/hooks/useDocumentTitle";
 
 import "./assessment.css";
+import { InteractiveForm } from "./InteractiveForm";
 
 export const AssessmentPage = () => {
   useLanguage();
@@ -45,6 +46,7 @@ export const AssessmentPage = () => {
         </div>
         <img src={sr} alt="SR" />
       </div>
+      <InteractiveForm />
     </div>
   );
 };
