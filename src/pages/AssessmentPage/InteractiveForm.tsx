@@ -1,7 +1,10 @@
 import { useTranslation } from "react-i18next";
 import { FormProvider, useForm } from "react-hook-form";
 import { useEffect, useState } from "react";
+import cx from "classnames";
+
 import { calcProb, SickType, TimeType } from "@/utils/model.calc";
+import woman from "@/images/woman.png";
 
 // calcProb({
 //   Adenomyosis: 0,
@@ -45,6 +48,8 @@ const SickNameMap: Record<SickType, string> = {
   ImprovementOfAnemia: "貧血改善率",
   ImprovementOfCA125: "腫瘤指數CA-125改善率",
 } as const;
+
+const ImprovementSick = ["ImprovementOfCA125", "ImprovementOfAnemia"];
 
 const TimeNameMap: Record<TimeType, string> = {
   HalfYear: "半年",
@@ -156,9 +161,69 @@ export const InteractiveForm = () => {
     ca125,
   ]);
 
+  const chartResult: {
+    Chest: number[];
+    Brain: number[];
+    Uterus: number[];
+  } = {
+    Chest: [0, 0], // [good, bad]
+    Brain: [0, 0], // [good, bad]
+    Uterus: [0, 0], // [good, bad]
+  };
+
+  if (Object.keys(result).length !== 0) {
+    const {
+      BreastCancer: Chest,
+      CerebrovascularDisease: Brain,
+      ...Uterus
+    } = JSON.parse(JSON.stringify(result));
+    Object.entries(Chest).forEach(([time, value]) => {
+      value = Math.min(value as number, 20);
+      value = Math.max(value as number, -20);
+      Chest[time] = ~~((((value as number) / 2) * 3) / 5) * 5;
+
+      if (Chest[time] >= 0) {
+        chartResult.Chest[1] += Math.abs(Chest[time]);
+      } else {
+        chartResult.Chest[0] += Math.abs(Chest[time]);
+      }
+    });
+
+    Object.entries(Brain).forEach(([time, value]) => {
+      value = Math.min(value as number, 20);
+      value = Math.max(value as number, -20);
+      Brain[time] = ~~((((value as number) / 2) * 3) / 5) * 5;
+
+      if (Brain[time] >= 0) {
+        chartResult.Brain[1] += Math.abs(Brain[time]);
+      } else {
+        chartResult.Brain[0] += Math.abs(Brain[time]);
+      }
+    });
+
+    Object.entries(Uterus).forEach(([sick, value]) => {
+      Object.entries(value ?? {}).forEach(([time, value]) => {
+        value = Math.min(value, 20);
+        value = Math.max(value, -20);
+        Uterus[sick][time] = ~~(value / 4 / 5) * 5;
+        if (ImprovementSick.includes(sick)) {
+          Uterus[sick][time] = -Uterus[sick][time];
+        }
+
+        if (Uterus[sick][time] >= 0) {
+          chartResult.Uterus[1] += Math.abs(Uterus[sick][time]);
+        } else {
+          chartResult.Uterus[0] += Math.abs(Uterus[sick][time]);
+        }
+      });
+    });
+  }
+
+  console.log(chartResult);
+
   return (
     <FormProvider {...formMethod}>
-      <form className="text-center mt-10 interactive-form max-w-4xl mx-auto">
+      <form className="text-center mt-10 interactive-form max-w-5xl mx-auto">
         <h3 className="font-semibold text-2xl">{t("interactiveForm")}</h3>
         <div className="mx-auto block sm:flex">
           <div className="text-left [&>dl>dd]:w-full [&>dl+dl]:mt-2 w-full sm:w-max gap-2 p-2">
@@ -366,7 +431,28 @@ export const InteractiveForm = () => {
               </dd>
             </dl>
           </div>
-          <div className="hidden sm:block sm:flex-1">放圖</div>
+          <div className="hidden sm:block relative">
+            <img src={woman} alt="woman" className="w-[200px] max-w-none" />
+            <div
+              className={`absolute translate-y-[-50%] translate-x-[-50%] left-[122px] top-[40px] w-12 aspect-square rounded-full transition-colors duration-300 bg-white/${chartResult.Brain[0]}`}
+            />
+            <div
+              className={`absolute translate-y-[-50%] translate-x-[-50%] left-[122px] top-[40px] w-12 aspect-square rounded-full transition-colors duration-300 bg-orange-600/${chartResult.Brain[1]}`}
+            />
+
+            <div
+              className={`absolute translate-y-[-50%] translate-x-[-50%] left-[122px] top-[140px] w-12 aspect-square rounded-full transition-colors duration-300 bg-white/${chartResult.Chest[0]}`}
+            />
+            <div
+              className={`absolute translate-y-[-50%] translate-x-[-50%] left-[122px] top-[140px] w-12 aspect-square rounded-full transition-colors duration-300 bg-orange-600/${chartResult.Chest[1]}`}
+            />
+            <div
+              className={`absolute translate-y-[-50%] translate-x-[-50%] left-[122px] top-[250px] w-12 aspect-square rounded-full transition-colors duration-300 bg-white/${chartResult.Uterus[0]}`}
+            />
+            <div
+              className={`absolute translate-y-[-50%] translate-x-[-50%] left-[122px] top-[250px] w-12 aspect-square rounded-full transition-colors duration-300 bg-orange-600/${chartResult.Uterus[1]}`}
+            />
+          </div>
           <div className="text-left w-full sm:w-auto inline-flex flex-col sm:[&>*+*]:mt-4">
             {(isVisanne || isDanol || isDiane35 || isMirena || isLupron) &&
               Object.entries(result).map(([sick, value]) => (
@@ -407,7 +493,12 @@ export const InteractiveForm = () => {
                           <div className="absolute left-[50%] top-0 w-px translate-x-[-50%] h-full bg-gray-200" />
                           {
                             <div
-                              className="absolute right-[50%] block top-[50%] translate-y-[-50%] h-[30%] bg-orange-200 transition-[width] duration-300"
+                              className={cx(
+                                "absolute right-[50%] block top-[50%] translate-y-[-50%] h-[30%] transition-[width] duration-300",
+                                ImprovementSick.includes(sick)
+                                  ? "bg-orange-600"
+                                  : "bg-orange-200"
+                              )}
                               style={{
                                 width: `${
                                   value < 0 ? Math.abs(value * 2.5) : 0
@@ -417,7 +508,12 @@ export const InteractiveForm = () => {
                           }
                           {
                             <div
-                              className="absolute left-[50%] block top-[50%] translate-y-[-50%] h-[30%] bg-orange-600 transition-[width] duration-300"
+                              className={cx(
+                                "absolute left-[50%] block top-[50%] translate-y-[-50%] h-[30%] transition-[width] duration-300",
+                                ImprovementSick.includes(sick)
+                                  ? "bg-orange-200"
+                                  : "bg-orange-600"
+                              )}
                               style={{
                                 width: `${value > 0 ? value * 2.5 : 0}%`,
                               }}
