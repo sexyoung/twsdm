@@ -8,6 +8,7 @@ import { useLanguage } from "@/hooks/useLanguage";
 import { useDocumentTitle } from "@/hooks/useDocumentTitle";
 
 import "./assessment.css";
+import { InteractiveForm } from "./InteractiveForm";
 
 export const AssessmentPage = () => {
   useLanguage();
@@ -18,6 +19,7 @@ export const AssessmentPage = () => {
       <div className="hero">
         <div>{t("hero")}</div>
       </div>
+      <InteractiveForm />
       <div className="container mx-auto max-w-3xl px-10 text-center text-[#7a6f6f]">
         <div className="title">
           {t("refer")}

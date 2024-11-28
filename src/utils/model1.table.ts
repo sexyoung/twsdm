@@ -1,0 +1,219 @@
+/**
+  RadicalSurgeryAcceptanceRate (接受根除性手術率)
+  BreastCancer (乳癌)
+  OvarianCancer (卵巢癌)
+  EndometrialCancer (子宮內膜癌)
+  CerebrovascularDisease (腦血管疾病)
+
+  Adenomyosis (子宮肌腺症)
+  ChocolateCyst (巧克力囊腫)
+  Endometriosis (子宮內膜異位症)
+  Age (年齡)
+  BMI (身體質量指數)
+  Visanne (異位寧)
+  Danol (達爾諾)
+  Diane35 (黛麗安)
+  Mirena (蜜蕊娜)
+  Lupron (柳菩林)
+
+  HalfYear (半年)
+  OneYear (一年)
+  FiveYear (五年)
+ */
+
+export const ModelTable1 = {
+  // RadicalSurgeryAcceptanceRate
+  "RadicalSurgeryAcceptanceRate.Adenomyosis.HalfYear": 3.427855,
+  "RadicalSurgeryAcceptanceRate.ChocolateCyst.HalfYear": 1.636553,
+  "RadicalSurgeryAcceptanceRate.Endometriosis.HalfYear": 0.1672087,
+  "RadicalSurgeryAcceptanceRate.Age.HalfYear": 0.0387427,
+  "RadicalSurgeryAcceptanceRate.BMI.HalfYear": 0.0386783,
+  "RadicalSurgeryAcceptanceRate.Visanne.HalfYear": -1.443064,
+  "RadicalSurgeryAcceptanceRate.Danol.HalfYear": -1.696929,
+  "RadicalSurgeryAcceptanceRate.Diane35.HalfYear": -2.155708,
+  "RadicalSurgeryAcceptanceRate.Mirena.HalfYear": 0,
+  "RadicalSurgeryAcceptanceRate.Lupron.HalfYear": 0.4342872,
+  "RadicalSurgeryAcceptanceRate.Cons.HalfYear": -8.41301,
+
+  // BreastCancer
+  "BreastCancer.Adenomyosis.HalfYear": 0,
+  "BreastCancer.ChocolateCyst.HalfYear": 0,
+  "BreastCancer.Endometriosis.HalfYear": 0,
+  "BreastCancer.Age.HalfYear": 0.0702028,
+  "BreastCancer.BMI.HalfYear": -0.144781,
+  "BreastCancer.Visanne.HalfYear": 0,
+  "BreastCancer.Danol.HalfYear": 3.536822,
+  "BreastCancer.Diane35.HalfYear": 0,
+  "BreastCancer.Mirena.HalfYear": 0,
+  "BreastCancer.Lupron.HalfYear": 0,
+  "BreastCancer.Cons.HalfYear": -7.150516,
+
+  // OvarianCancer
+  "OvarianCancer.Adenomyosis.HalfYear": 1.700079,
+  "OvarianCancer.ChocolateCyst.HalfYear": 2.222011,
+  "OvarianCancer.Endometriosis.HalfYear": 1.647011,
+  "OvarianCancer.Age.HalfYear": 0.0815946,
+  "OvarianCancer.BMI.HalfYear": 0.0812621,
+  "OvarianCancer.Visanne.HalfYear": 0,
+  "OvarianCancer.Danol.HalfYear": 0,
+  "OvarianCancer.Diane35.HalfYear": 0,
+  "OvarianCancer.Mirena.HalfYear": 0,
+  "OvarianCancer.Lupron.HalfYear": 1.65239,
+  "OvarianCancer.Cons.HalfYear": -14.42742,
+
+  // EndometrialCancer
+  "EndometrialCancer.Adenomyosis.HalfYear": 2.810694,
+  "EndometrialCancer.ChocolateCyst.HalfYear": 0,
+  "EndometrialCancer.Endometriosis.HalfYear": 0,
+  "EndometrialCancer.Age.HalfYear": 0.0424822,
+  "EndometrialCancer.BMI.HalfYear": 0.1039071,
+  "EndometrialCancer.Visanne.HalfYear": 0,
+  "EndometrialCancer.Danol.HalfYear": 0,
+  "EndometrialCancer.Diane35.HalfYear": 0,
+  "EndometrialCancer.Mirena.HalfYear": 0.5072369,
+  "EndometrialCancer.Lupron.HalfYear": 0,
+  "EndometrialCancer.Cons.HalfYear": -12.66895,
+
+  // CerebrovascularDisease
+  "CerebrovascularDisease.Adenomyosis.HalfYear": 0.2898337,
+  "CerebrovascularDisease.ChocolateCyst.HalfYear": 0.6376441,
+  "CerebrovascularDisease.Endometriosis.HalfYear": -0.3407148,
+  "CerebrovascularDisease.Age.HalfYear": 0.1040057,
+  "CerebrovascularDisease.BMI.HalfYear": 0.054923,
+  "CerebrovascularDisease.Visanne.HalfYear": -1.230188,
+  "CerebrovascularDisease.Danol.HalfYear": 1.67824,
+  "CerebrovascularDisease.Diane35.HalfYear": 0,
+  "CerebrovascularDisease.Mirena.HalfYear": 0.1518981,
+  "CerebrovascularDisease.Lupron.HalfYear": 0,
+  "CerebrovascularDisease.Cons.HalfYear": -11.6999,
+
+  // RadicalSurgeryAcceptanceRate
+  "RadicalSurgeryAcceptanceRate.Adenomyosis.OneYear": 3.499829,
+  "RadicalSurgeryAcceptanceRate.ChocolateCyst.OneYear": 1.555571,
+  "RadicalSurgeryAcceptanceRate.Endometriosis.OneYear": 0.1279283,
+  "RadicalSurgeryAcceptanceRate.Age.OneYear": 0.0419279,
+  "RadicalSurgeryAcceptanceRate.BMI.OneYear": 0.0454714,
+  "RadicalSurgeryAcceptanceRate.Visanne.OneYear": -1.579492,
+  "RadicalSurgeryAcceptanceRate.Danol.OneYear": -1.093878,
+  "RadicalSurgeryAcceptanceRate.Diane35.OneYear": -1.21912,
+  "RadicalSurgeryAcceptanceRate.Mirena.OneYear": -1.521052,
+  "RadicalSurgeryAcceptanceRate.Lupron.OneYear": 0.7726047,
+  "RadicalSurgeryAcceptanceRate.Cons.OneYear": -8.656296,
+
+  // BreastCancer
+  "BreastCancer.Adenomyosis.OneYear": 0,
+  "BreastCancer.ChocolateCyst.OneYear": 0,
+  "BreastCancer.Endometriosis.OneYear": 0,
+  "BreastCancer.Age.OneYear": 0.0498015,
+  "BreastCancer.BMI.OneYear": -0.0750112,
+  "BreastCancer.Visanne.OneYear": 0,
+  "BreastCancer.Danol.OneYear": 2.5697,
+  "BreastCancer.Diane35.OneYear": 0,
+  "BreastCancer.Mirena.OneYear": 0,
+  "BreastCancer.Lupron.OneYear": 0.4951245,
+  "BreastCancer.Cons.OneYear": -7.029569,
+
+  // OvarianCancer
+  "OvarianCancer.Adenomyosis.OneYear": 1.511093,
+  "OvarianCancer.ChocolateCyst.OneYear": 1.309298,
+  "OvarianCancer.Endometriosis.OneYear": 1.473174,
+  "OvarianCancer.Age.OneYear": 0.0301407,
+  "OvarianCancer.BMI.OneYear": 0.0138032,
+  "OvarianCancer.Visanne.OneYear": 0,
+  "OvarianCancer.Danol.OneYear": 0,
+  "OvarianCancer.Diane35.OneYear": 0,
+  "OvarianCancer.Mirena.OneYear": 0,
+  "OvarianCancer.Lupron.OneYear": 0.9571801,
+  "OvarianCancer.Cons.OneYear": -9.46739,
+
+  // EndometrialCancer
+  "EndometrialCancer.Adenomyosis.OneYear": 2.239419,
+  "EndometrialCancer.ChocolateCyst.OneYear": 0,
+  "EndometrialCancer.Endometriosis.OneYear": 0,
+  "EndometrialCancer.Age.OneYear": 0.0592403,
+  "EndometrialCancer.BMI.OneYear": 0.1011359,
+  "EndometrialCancer.Visanne.OneYear": 0,
+  "EndometrialCancer.Danol.OneYear": 0,
+  "EndometrialCancer.Diane35.OneYear": 0,
+  "EndometrialCancer.Mirena.OneYear": 0.3701643,
+  "EndometrialCancer.Lupron.OneYear": 0,
+  "EndometrialCancer.Cons.OneYear": -12.65597,
+
+  // CerebrovascularDisease
+  "CerebrovascularDisease.Adenomyosis.OneYear": 0.3535778,
+  "CerebrovascularDisease.ChocolateCyst.OneYear": 0.4401349,
+  "CerebrovascularDisease.Endometriosis.OneYear": -0.5518575,
+  "CerebrovascularDisease.Age.OneYear": 0.0999897,
+  "CerebrovascularDisease.BMI.OneYear": 0.0609675,
+  "CerebrovascularDisease.Visanne.OneYear": -1.527908,
+  "CerebrovascularDisease.Danol.OneYear": 1.480932,
+  "CerebrovascularDisease.Diane35.OneYear": 0,
+  "CerebrovascularDisease.Mirena.OneYear": 0.6001326,
+  "CerebrovascularDisease.Lupron.OneYear": 0.1548361,
+  "CerebrovascularDisease.Cons.OneYear": -11.52679,
+
+  // RadicalSurgeryAcceptanceRate
+  "RadicalSurgeryAcceptanceRate.Adenomyosis.FiveYear": 3.451355,
+  "RadicalSurgeryAcceptanceRate.ChocolateCyst.FiveYear": 1.614009,
+  "RadicalSurgeryAcceptanceRate.Endometriosis.FiveYear": 0.0518121,
+  "RadicalSurgeryAcceptanceRate.Age.FiveYear": 0.0449291,
+  "RadicalSurgeryAcceptanceRate.BMI.FiveYear": 0.0474987,
+  "RadicalSurgeryAcceptanceRate.Visanne.FiveYear": -1.039157,
+  "RadicalSurgeryAcceptanceRate.Danol.FiveYear": -0.1753279,
+  "RadicalSurgeryAcceptanceRate.Diane35.FiveYear": -0.618618,
+  "RadicalSurgeryAcceptanceRate.Mirena.FiveYear": -1.080847,
+  "RadicalSurgeryAcceptanceRate.Lupron.FiveYear": 0.8929265,
+  "RadicalSurgeryAcceptanceRate.Cons.FiveYear": -8.60215,
+
+  // BreastCancer
+  "BreastCancer.Adenomyosis.FiveYear": 0,
+  "BreastCancer.ChocolateCyst.FiveYear": 0,
+  "BreastCancer.Endometriosis.FiveYear": 0,
+  "BreastCancer.Age.FiveYear": 0.0670535,
+  "BreastCancer.BMI.FiveYear": 0.0061195,
+  "BreastCancer.Visanne.FiveYear": -0.1098956,
+  "BreastCancer.Danol.FiveYear": 1.013432,
+  "BreastCancer.Diane35.FiveYear": 0.3611535,
+  "BreastCancer.Mirena.FiveYear": 0,
+  "BreastCancer.Lupron.FiveYear": -0.9595926,
+  "BreastCancer.Cons.FiveYear": -8.361175,
+
+  // OvarianCancer
+  "OvarianCancer.Adenomyosis.FiveYear": 1.718086,
+  "OvarianCancer.ChocolateCyst.FiveYear": 1.952855,
+  "OvarianCancer.Endometriosis.FiveYear": 1.487358,
+  "OvarianCancer.Age.FiveYear": 0.047569,
+  "OvarianCancer.BMI.FiveYear": 0.052763,
+  "OvarianCancer.Visanne.FiveYear": -1.763819,
+  "OvarianCancer.Danol.FiveYear": 0,
+  "OvarianCancer.Diane35.FiveYear": 0,
+  "OvarianCancer.Mirena.FiveYear": 0,
+  "OvarianCancer.Lupron.FiveYear": 0.7483202,
+  "OvarianCancer.Cons.FiveYear": -10.92082,
+
+  // EndometrialCancer
+  "EndometrialCancer.Adenomyosis.FiveYear": 1.767145,
+  "EndometrialCancer.ChocolateCyst.FiveYear": 0,
+  "EndometrialCancer.Endometriosis.FiveYear": 0,
+  "EndometrialCancer.Age.FiveYear": 0.0540695,
+  "EndometrialCancer.BMI.FiveYear": 0.1009472,
+  "EndometrialCancer.Visanne.FiveYear": 0,
+  "EndometrialCancer.Danol.FiveYear": 0,
+  "EndometrialCancer.Diane35.FiveYear": 0.5693319,
+  "EndometrialCancer.Mirena.FiveYear": 0.4806161,
+  "EndometrialCancer.Lupron.FiveYear": 0,
+  "EndometrialCancer.Cons.FiveYear": -11.51049,
+
+  // CerebrovascularDisease
+  "CerebrovascularDisease.Adenomyosis.FiveYear": 0,
+  "CerebrovascularDisease.ChocolateCyst.FiveYear": 0,
+  "CerebrovascularDisease.Endometriosis.FiveYear": 0,
+  "CerebrovascularDisease.Age.FiveYear": 0.1233669,
+  "CerebrovascularDisease.BMI.FiveYear": 0.0637054,
+  "CerebrovascularDisease.Visanne.FiveYear": -0.9779023,
+  "CerebrovascularDisease.Danol.FiveYear": 0.7807737,
+  "CerebrovascularDisease.Diane35.FiveYear": 0.1336306,
+  "CerebrovascularDisease.Mirena.FiveYear": -0.0485663,
+  "CerebrovascularDisease.Lupron.FiveYear": 0.2409535,
+  "CerebrovascularDisease.Cons.FiveYear": -11.84915,
+};

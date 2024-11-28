@@ -6,3 +6,11 @@
 .assessment-page .title {
   @apply mb-4 mt-12 text-lg lg:text-2xl;
 }
+
+.assessment-page .interactive-form .text-field {
+  @apply border-2 border-orange-300 bg-white rounded p-1 w-full focus:outline-none sm:w-60;
+}
+
+.assessment-page .interactive-form .question-text {
+  @apply text-right whitespace-nowrap;
+}

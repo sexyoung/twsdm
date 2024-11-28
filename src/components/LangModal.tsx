@@ -14,7 +14,7 @@ export default function LangModal({ onClose, lang }: ModalProps) {
     document.body.classList.add("overflow-hidden");
   }, [lang]);
 
-  path = location.pathname.replace(/\/(zh-TW|id-ID|ja-JP|vi-VN)/g, "");
+  path = location.pathname.replace(/\/(en|zh-TW|id-ID|ja-JP|vi-VN)/g, "");
   if (path === "/") path = "";
 
   return (
