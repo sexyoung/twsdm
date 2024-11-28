@@ -10,4 +10,13 @@ export default defineConfig({
       "@": path.resolve("./src"), // 這裡設置 @ 為 src 目錄的別名
     },
   },
+  build: {
+    minify: "esbuild",
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+        inlineDynamicImports: true,
+      },
+    },
+  },
 });
