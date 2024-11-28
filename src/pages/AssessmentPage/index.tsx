@@ -14,7 +14,7 @@ export const AssessmentPage = () => {
   useDocumentTitle("assessment");
   const { t } = useTranslation("assessment");
   return (
-    <div>
+    <div className="assessment-page">
       <div className="hero">
         <div>{t("hero")}</div>
       </div>

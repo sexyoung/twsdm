@@ -12,7 +12,7 @@ export const ContactPage = () => {
   useDocumentTitle("contact");
   const { t } = useTranslation("contact");
   return (
-    <div>
+    <div className="contact-page">
       <div className="hero">
         <div className="text">{t("hero")}</div>
       </div>
