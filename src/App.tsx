@@ -30,6 +30,16 @@ const isAtBottom = (): boolean =>
 const isToday = () => !!document.cookie.includes("status=stillToday");
 
 const gaTrackingId = import.meta.env.VITE_GA_TRACKING_ID;
+
+const RedirectToDefaultLang = () => {
+  const location = window.location.pathname;
+  if (location === "/") {
+    window.location.href = "/zh-TW";
+    return null;
+  }
+  return null;
+};
+
 function App() {
   const { t, i18n } = useTranslation();
   const lang = i18n.language;
@@ -109,12 +119,14 @@ function App() {
           v7_relativeSplatPath: true,
         }}
       >
+        <RedirectToDefaultLang />
         <Header
           isHeaderBG={isHeaderBG}
           openLang={setShowLangModal.bind(null, true)}
           lang={lang}
         />
         <Routes>
+          <Route path="/" element={<RedirectToDefaultLang />} />
           <Route path="/:lang?" element={<HomePage />} />
           <Route path="/:lang?/assessment" element={<AssessmentPage />} />
           <Route path="/:lang?/choice" element={<ChoicePage />} />
