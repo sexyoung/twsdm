@@ -29,8 +29,6 @@ const isAtBottom = (): boolean =>
 
 const isToday = () => !!document.cookie.includes("status=stillToday");
 
-const gaTrackingId = import.meta.env.VITE_GA_TRACKING_ID;
-
 const RedirectToDefaultLang = () => {
   const location = window.location.pathname;
   if (location === "/") {
@@ -84,31 +82,6 @@ function App() {
     document.cookie = "twsdmlogo=1";
     setIsPlayLogo(true);
     setTimeout(() => setIsPlayLogo(false), 3000);
-  }, []);
-
-  useEffect(() => {
-    if (!gaTrackingId) return;
-
-    // 动态创建并添加 GA 脚本
-    const script = document.createElement("script");
-    script.src = `https://www.googletagmanager.com/gtag/js?id=${gaTrackingId}`;
-    script.async = true;
-    document.head.appendChild(script);
-
-    // 初始化 GA
-    window.dataLayer = window.dataLayer || [];
-    function gtag(...args: unknown[]) {
-      window.dataLayer.push(args);
-    }
-    gtag("js", new Date());
-    gtag("config", gaTrackingId, {
-      page_path: window.location.pathname,
-    });
-
-    // 清理函数
-    return () => {
-      document.head.removeChild(script);
-    };
   }, []);
 
   return (
