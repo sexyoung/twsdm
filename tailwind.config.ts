@@ -6,4 +6,9 @@ export default {
     extend: {},
   },
   plugins: [],
+  safelist: [
+    {
+      pattern: /^bg-(white|orange-600)\/\d+$/,
+    },
+  ],
 } satisfies Config;

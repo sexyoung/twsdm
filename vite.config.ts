@@ -19,4 +19,9 @@ export default defineConfig({
       },
     },
   },
+  define: {
+    "process.env.VITE_GA_TRACKING_ID": JSON.stringify(
+      process.env.VITE_GA_TRACKING_ID
+    ),
+  },
 });

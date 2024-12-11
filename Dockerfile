@@ -4,6 +4,10 @@ FROM node:22-alpine AS builder
 # 設置工作目錄
 WORKDIR /app
 
+# 添加環境變數到 builder 階段
+ARG VITE_GA_TRACKING_ID
+ENV VITE_GA_TRACKING_ID=$VITE_GA_TRACKING_ID
+
 # 複製 package.json 和 package-lock.json (如果存在)
 COPY package*.json ./
 
@@ -19,6 +23,9 @@ RUN npm run build
 # 創建精簡的生產鏡像
 FROM node:22-alpine
 
+# 在最終階段也保留環境變數
+ARG VITE_GA_TRACKING_ID
+ENV VITE_GA_TRACKING_ID=$VITE_GA_TRACKING_ID
 ENV PORT="8080"
 
 WORKDIR /app
