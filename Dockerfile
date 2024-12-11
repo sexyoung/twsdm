@@ -13,12 +13,17 @@ RUN npm ci
 # 複製所有源代碼
 COPY . .
 
+# 構建應用時注入環境變數
+ARG VITE_GA_TRACKING_ID
+ENV VITE_GA_TRACKING_ID=$VITE_GA_TRACKING_ID
+
 # 構建應用
 RUN npm run build
 
 # 創建精簡的生產鏡像
 FROM node:22-alpine
 
+# 在最終階段設置環境變數
 ENV PORT="8080"
 
 WORKDIR /app

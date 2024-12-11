@@ -142,7 +142,11 @@ jobs:
         if: ${{ github.event.inputs.stage == 'dev' }}
         uses: superfly/flyctl-actions@1.4
         with:
-          args: deploy --remote-only --build-arg COMMIT_SHA=${{ github.sha }} --app ${{ steps.app_name.outputs.value }}-staging
+          args: >
+            deploy --remote-only 
+            --build-arg COMMIT_SHA=${{ github.sha }}
+            --build-arg VITE_GA_TRACKING_ID=${{ vars.VITE_GA_TRACKING_ID_DEV }}
+            --app ${{ steps.app_name.outputs.value }}-staging
         env:
           FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
 
@@ -150,6 +154,10 @@ jobs:
         if: ${{ github.event.inputs.stage == 'prd' }}
         uses: superfly/flyctl-actions@1.4
         with:
-          args: deploy --remote-only --build-arg COMMIT_SHA=${{ github.sha }} --app ${{ steps.app_name.outputs.value }}
+          args: >
+            deploy --remote-only 
+            --build-arg COMMIT_SHA=${{ github.sha }}
+            --build-arg VITE_GA_TRACKING_ID=${{ vars.VITE_GA_TRACKING_ID_PRD }}
+            --app ${{ steps.app_name.outputs.value }}
         env:
           FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
