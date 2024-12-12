@@ -32,7 +32,7 @@ const isToday = () => !!document.cookie.includes("status=stillToday");
 const RedirectToDefaultLang = () => {
   const location = window.location.pathname;
   if (location === "/") {
-    window.location.href = "/zh-TW";
+    window.location.href = "/en";
     return null;
   }
   return null;

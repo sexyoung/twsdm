@@ -14,7 +14,7 @@ export default function LangModal({ onClose, lang }: ModalProps) {
     document.body.classList.add("overflow-hidden");
   }, [lang]);
 
-  path = location.pathname.replace(/\/(zh-TW|id-ID|ja-JP|vi-VN)/g, "");
+  path = location.pathname.replace(/\/(en|zh-TW|id-ID|ja-JP|vi-VN)/g, "");
   if (path === "/") path = "";
 
   return (
@@ -24,16 +24,6 @@ export default function LangModal({ onClose, lang }: ModalProps) {
       role="dialog"
       aria-modal="true"
     >
-      {/* <!--
-    Background backdrop, show/hide based on modal state.
-
-    Entering: "ease-out duration-300"
-      From: "opacity-0"
-      To: "opacity-100"
-    Leaving: "ease-in duration-200"
-      From: "opacity-100"
-      To: "opacity-0"
-  --> */}
       <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
 
       <div className="fixed inset-0 z-10 overflow-y-auto">
@@ -54,9 +44,7 @@ export default function LangModal({ onClose, lang }: ModalProps) {
                   <div className="mt-2 text-sm text-gray-500">
                     <ul className="whitespace-nowrap bg-white py-2 text-black [&>*]:py-0.5">
                       <li>
-                        <a href={`/${path}`.replace("//", "/")}>
-                          {t("menu.en")}
-                        </a>
+                        <a href={["/en", path].join("")}>{t("menu.en")}</a>
                       </li>
                       <li>
                         <a href={[`/zh-TW`, path].join("")}>
