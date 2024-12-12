@@ -7,6 +7,7 @@ import { i18nInstance } from "./i18n";
 
 import "./i18n";
 import "./index.css";
+
 const trackingId = import.meta.env.VITE_GA_TRACKING_ID;
 
 if (trackingId) {
